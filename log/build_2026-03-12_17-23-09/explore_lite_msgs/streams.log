@@ -1,0 +1,224 @@
+[0.013s] Invoking command in '/home/kky/cde2310_ws/build/explore_lite_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kky/colcon_ws/install/py_pubsub:/home/kky/colcon_ws/install/cde2310_e2:/home/kky/colcon_ws/install/auto_nav:/home/kky/turtlebot3_ws/install/turtlebot3_teleop:/home/kky/turtlebot3_ws/install/turtlebot3_example:/opt/ros/humble /usr/bin/cmake /home/kky/cde2310_ws/src/m-explore-ros2-main/explore_lite_msgs -DCMAKE_INSTALL_PREFIX=/home/kky/cde2310_ws/install/explore_lite_msgs
+[0.067s] -- The C compiler identification is GNU 11.4.0
+[0.117s] -- The CXX compiler identification is GNU 11.4.0
+[0.125s] -- Detecting C compiler ABI info
+[0.189s] -- Detecting C compiler ABI info - done
+[0.195s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.195s] -- Detecting C compile features
+[0.195s] -- Detecting C compile features - done
+[0.197s] -- Detecting CXX compiler ABI info
+[0.275s] -- Detecting CXX compiler ABI info - done
+[0.281s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.281s] -- Detecting CXX compile features
+[0.281s] -- Detecting CXX compile features - done
+[0.286s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.414s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.516s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[0.522s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.532s] -- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.581s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.836s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[0.985s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.164s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.181s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") 
+[1.184s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[1.202s] -- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") 
+[1.203s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[1.203s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[1.203s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[1.219s] -- Found PythonExtra: .so  
+[1.250s] -- Configuring done
+[1.272s] -- Generating done
+[1.280s] -- Build files have been written to: /home/kky/cde2310_ws/build/explore_lite_msgs
+[1.287s] Invoked command in '/home/kky/cde2310_ws/build/explore_lite_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kky/colcon_ws/install/py_pubsub:/home/kky/colcon_ws/install/cde2310_e2:/home/kky/colcon_ws/install/auto_nav:/home/kky/turtlebot3_ws/install/turtlebot3_teleop:/home/kky/turtlebot3_ws/install/turtlebot3_example:/opt/ros/humble /usr/bin/cmake /home/kky/cde2310_ws/src/m-explore-ros2-main/explore_lite_msgs -DCMAKE_INSTALL_PREFIX=/home/kky/cde2310_ws/install/explore_lite_msgs
+[1.288s] Invoking command in '/home/kky/cde2310_ws/build/explore_lite_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kky/colcon_ws/install/py_pubsub:/home/kky/colcon_ws/install/cde2310_e2:/home/kky/colcon_ws/install/auto_nav:/home/kky/turtlebot3_ws/install/turtlebot3_teleop:/home/kky/turtlebot3_ws/install/turtlebot3_example:/opt/ros/humble /usr/bin/cmake --build /home/kky/cde2310_ws/build/explore_lite_msgs -- -j16 -l16
+[1.331s] [  3%] [34m[1mGenerating C code for ROS interfaces[0m
+[1.341s] [  6%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[1.351s] [  6%] Built target ament_cmake_python_copy_explore_lite_msgs
+[1.539s] running egg_info
+[1.540s] creating explore_lite_msgs.egg-info
+[1.540s] writing explore_lite_msgs.egg-info/PKG-INFO
+[1.540s] writing dependency_links to explore_lite_msgs.egg-info/dependency_links.txt
+[1.541s] writing top-level names to explore_lite_msgs.egg-info/top_level.txt
+[1.541s] writing manifest file 'explore_lite_msgs.egg-info/SOURCES.txt'
+[1.542s] reading manifest file 'explore_lite_msgs.egg-info/SOURCES.txt'
+[1.543s] writing manifest file 'explore_lite_msgs.egg-info/SOURCES.txt'
+[1.558s] [  6%] Built target explore_lite_msgs__cpp
+[1.559s] [  9%] [32mBuilding C object CMakeFiles/explore_lite_msgs__rosidl_generator_c.dir/rosidl_generator_c/explore_lite_msgs/msg/detail/explore_status__functions.c.o[0m
+[1.569s] [ 16%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[1.569s] [ 16%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[1.569s] [ 16%] Built target ament_cmake_python_build_explore_lite_msgs_egg
+[1.569s] [ 19%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[1.600s] [ 22%] [32m[1mLinking C shared library libexplore_lite_msgs__rosidl_generator_c.so[0m
+[1.637s] [ 22%] Built target explore_lite_msgs__rosidl_generator_c
+[1.648s] [ 29%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[1.648s] [ 29%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[1.648s] [ 32%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[1.775s] [ 35%] [32mBuilding CXX object CMakeFiles/explore_lite_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/explore_lite_msgs/msg/explore_status__type_support.cpp.o[0m
+[1.790s] [ 38%] [32mBuilding CXX object CMakeFiles/explore_lite_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/explore_lite_msgs/msg/detail/explore_status__type_support.cpp.o[0m
+[1.792s] [ 41%] [32mBuilding CXX object CMakeFiles/explore_lite_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/explore_lite_msgs/msg/detail/dds_fastrtps/explore_status__type_support.cpp.o[0m
+[1.857s] [ 45%] [32mBuilding CXX object CMakeFiles/explore_lite_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/explore_lite_msgs/msg/explore_status__type_support.cpp.o[0m
+[1.874s] [ 51%] [32mBuilding CXX object CMakeFiles/explore_lite_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/explore_lite_msgs/msg/detail/explore_status__type_support_c.cpp.o[0m
+[1.875s] [ 51%] [32mBuilding C object CMakeFiles/explore_lite_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/explore_lite_msgs/msg/detail/explore_status__type_support.c.o[0m
+[1.888s] [ 54%] [32m[1mLinking CXX shared library libexplore_lite_msgs__rosidl_typesupport_c.so[0m
+[1.906s] [ 58%] [32m[1mLinking C shared library libexplore_lite_msgs__rosidl_typesupport_introspection_c.so[0m
+[1.926s] [ 58%] Built target explore_lite_msgs__rosidl_typesupport_c
+[1.937s] [ 58%] Built target explore_lite_msgs__rosidl_typesupport_introspection_c
+[1.981s] [ 61%] [32m[1mLinking CXX shared library libexplore_lite_msgs__rosidl_typesupport_cpp.so[0m
+[2.022s] [ 61%] Built target explore_lite_msgs__rosidl_typesupport_cpp
+[2.080s] [ 64%] [32m[1mLinking CXX shared library libexplore_lite_msgs__rosidl_typesupport_introspection_cpp.so[0m
+[2.088s] [ 67%] [32m[1mLinking CXX shared library libexplore_lite_msgs__rosidl_typesupport_fastrtps_cpp.so[0m
+[2.131s] [ 70%] [32m[1mLinking CXX shared library libexplore_lite_msgs__rosidl_typesupport_fastrtps_c.so[0m
+[2.139s] [ 70%] Built target explore_lite_msgs__rosidl_typesupport_introspection_cpp
+[2.155s] [ 70%] Built target explore_lite_msgs__rosidl_typesupport_fastrtps_cpp
+[2.196s] [ 70%] Built target explore_lite_msgs__rosidl_typesupport_fastrtps_c
+[2.218s] [ 70%] Built target explore_lite_msgs
+[2.241s] [ 74%] [34m[1mGenerating Python code for ROS interfaces[0m
+[2.509s] [ 74%] Built target explore_lite_msgs__py
+[2.531s] [ 77%] [32mBuilding C object CMakeFiles/explore_lite_msgs__rosidl_generator_py.dir/rosidl_generator_py/explore_lite_msgs/msg/_explore_status_s.c.o[0m
+[2.607s] [ 80%] [32m[1mLinking C shared library rosidl_generator_py/explore_lite_msgs/libexplore_lite_msgs__rosidl_generator_py.so[0m
+[2.649s] [ 80%] Built target explore_lite_msgs__rosidl_generator_py
+[2.670s] [ 90%] [32mBuilding C object CMakeFiles/explore_lite_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/explore_lite_msgs/_explore_lite_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[2.670s] [ 90%] [32mBuilding C object CMakeFiles/explore_lite_msgs__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/explore_lite_msgs/_explore_lite_msgs_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[2.671s] [ 90%] [32mBuilding C object CMakeFiles/explore_lite_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/explore_lite_msgs/_explore_lite_msgs_s.ep.rosidl_typesupport_c.c.o[0m
+[2.741s] [ 93%] [32m[1mLinking C shared library rosidl_generator_py/explore_lite_msgs/explore_lite_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so[0m
+[2.746s] [ 96%] [32m[1mLinking C shared library rosidl_generator_py/explore_lite_msgs/explore_lite_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so[0m
+[2.746s] [100%] [32m[1mLinking C shared library rosidl_generator_py/explore_lite_msgs/explore_lite_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so[0m
+[2.775s] [100%] Built target explore_lite_msgs__rosidl_typesupport_c__pyext
+[2.780s] [100%] Built target explore_lite_msgs__rosidl_typesupport_fastrtps_c__pyext
+[2.780s] [100%] Built target explore_lite_msgs__rosidl_typesupport_introspection_c__pyext
+[2.792s] Invoked command in '/home/kky/cde2310_ws/build/explore_lite_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kky/colcon_ws/install/py_pubsub:/home/kky/colcon_ws/install/cde2310_e2:/home/kky/colcon_ws/install/auto_nav:/home/kky/turtlebot3_ws/install/turtlebot3_teleop:/home/kky/turtlebot3_ws/install/turtlebot3_example:/opt/ros/humble /usr/bin/cmake --build /home/kky/cde2310_ws/build/explore_lite_msgs -- -j16 -l16
+[2.804s] Invoking command in '/home/kky/cde2310_ws/build/explore_lite_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kky/colcon_ws/install/py_pubsub:/home/kky/colcon_ws/install/cde2310_e2:/home/kky/colcon_ws/install/auto_nav:/home/kky/turtlebot3_ws/install/turtlebot3_teleop:/home/kky/turtlebot3_ws/install/turtlebot3_example:/opt/ros/humble /usr/bin/cmake --install /home/kky/cde2310_ws/build/explore_lite_msgs
+[2.813s] -- Install configuration: ""
+[2.813s] -- Installing: /home/kky/cde2310_ws/install/explore_lite_msgs/share/ament_index/resource_index/rosidl_interfaces/explore_lite_msgs
+[2.813s] -- Installing: /home/kky/cde2310_ws/install/explore_lite_msgs/include/explore_lite_msgs/explore_lite_msgs
+[2.814s] -- Installing: /home/kky/cde2310_ws/install/explore_lite_msgs/include/explore_lite_msgs/explore_lite_msgs/msg
+[2.814s] -- Installing: /home/kky/cde2310_ws/install/explore_lite_msgs/include/explore_lite_msgs/explore_lite_msgs/msg/detail
+[2.814s] -- Installing: /home/kky/cde2310_ws/install/explore_lite_msgs/include/explore_lite_msgs/explore_lite_msgs/msg/detail/explore_status__struct.h
+[2.814s] -- Installing: /home/kky/cde2310_ws/install/explore_lite_msgs/include/explore_lite_msgs/explore_lite_msgs/msg/detail/explore_status__functions.c
+[2.814s] -- Installing: /home/kky/cde2310_ws/install/explore_lite_msgs/include/explore_lite_msgs/explore_lite_msgs/msg/detail/explore_status__functions.h
+[2.814s] -- Installing: /home/kky/cde2310_ws/install/explore_lite_msgs/include/explore_lite_msgs/explore_lite_msgs/msg/detail/explore_status__type_support.h
+[2.814s] -- Installing: /home/kky/cde2310_ws/install/explore_lite_msgs/include/explore_lite_msgs/explore_lite_msgs/msg/rosidl_generator_c__visibility_control.h
+[2.814s] -- Installing: /home/kky/cde2310_ws/install/explore_lite_msgs/include/explore_lite_msgs/explore_lite_msgs/msg/explore_status.h
+[2.814s] -- Installing: /home/kky/cde2310_ws/install/explore_lite_msgs/share/explore_lite_msgs/environment/library_path.sh
+[2.815s] -- Installing: /home/kky/cde2310_ws/install/explore_lite_msgs/share/explore_lite_msgs/environment/library_path.dsv
+[2.815s] -- Installing: /home/kky/cde2310_ws/install/explore_lite_msgs/lib/libexplore_lite_msgs__rosidl_generator_c.so
+[2.815s] -- Set runtime path of "/home/kky/cde2310_ws/install/explore_lite_msgs/lib/libexplore_lite_msgs__rosidl_generator_c.so" to ""
+[2.815s] -- Up-to-date: /home/kky/cde2310_ws/install/explore_lite_msgs/include/explore_lite_msgs/explore_lite_msgs
+[2.815s] -- Up-to-date: /home/kky/cde2310_ws/install/explore_lite_msgs/include/explore_lite_msgs/explore_lite_msgs/msg
+[2.815s] -- Up-to-date: /home/kky/cde2310_ws/install/explore_lite_msgs/include/explore_lite_msgs/explore_lite_msgs/msg/detail
+[2.815s] -- Installing: /home/kky/cde2310_ws/install/explore_lite_msgs/include/explore_lite_msgs/explore_lite_msgs/msg/detail/explore_status__rosidl_typesupport_fastrtps_c.h
+[2.815s] -- Installing: /home/kky/cde2310_ws/install/explore_lite_msgs/include/explore_lite_msgs/explore_lite_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[2.815s] -- Installing: /home/kky/cde2310_ws/install/explore_lite_msgs/lib/libexplore_lite_msgs__rosidl_typesupport_fastrtps_c.so
+[2.816s] -- Set runtime path of "/home/kky/cde2310_ws/install/explore_lite_msgs/lib/libexplore_lite_msgs__rosidl_typesupport_fastrtps_c.so" to ""
+[2.816s] -- Up-to-date: /home/kky/cde2310_ws/install/explore_lite_msgs/include/explore_lite_msgs/explore_lite_msgs
+[2.816s] -- Up-to-date: /home/kky/cde2310_ws/install/explore_lite_msgs/include/explore_lite_msgs/explore_lite_msgs/msg
+[2.816s] -- Up-to-date: /home/kky/cde2310_ws/install/explore_lite_msgs/include/explore_lite_msgs/explore_lite_msgs/msg/detail
+[2.816s] -- Installing: /home/kky/cde2310_ws/install/explore_lite_msgs/include/explore_lite_msgs/explore_lite_msgs/msg/detail/explore_status__type_support.c
+[2.816s] -- Installing: /home/kky/cde2310_ws/install/explore_lite_msgs/include/explore_lite_msgs/explore_lite_msgs/msg/detail/explore_status__rosidl_typesupport_introspection_c.h
+[2.816s] -- Installing: /home/kky/cde2310_ws/install/explore_lite_msgs/include/explore_lite_msgs/explore_lite_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[2.816s] -- Installing: /home/kky/cde2310_ws/install/explore_lite_msgs/lib/libexplore_lite_msgs__rosidl_typesupport_introspection_c.so
+[2.816s] -- Set runtime path of "/home/kky/cde2310_ws/install/explore_lite_msgs/lib/libexplore_lite_msgs__rosidl_typesupport_introspection_c.so" to ""
+[2.816s] -- Installing: /home/kky/cde2310_ws/install/explore_lite_msgs/lib/libexplore_lite_msgs__rosidl_typesupport_c.so
+[2.817s] -- Set runtime path of "/home/kky/cde2310_ws/install/explore_lite_msgs/lib/libexplore_lite_msgs__rosidl_typesupport_c.so" to ""
+[2.817s] -- Up-to-date: /home/kky/cde2310_ws/install/explore_lite_msgs/include/explore_lite_msgs/explore_lite_msgs
+[2.817s] -- Up-to-date: /home/kky/cde2310_ws/install/explore_lite_msgs/include/explore_lite_msgs/explore_lite_msgs/msg
+[2.817s] -- Installing: /home/kky/cde2310_ws/install/explore_lite_msgs/include/explore_lite_msgs/explore_lite_msgs/msg/rosidl_generator_cpp__visibility_control.hpp
+[2.817s] -- Up-to-date: /home/kky/cde2310_ws/install/explore_lite_msgs/include/explore_lite_msgs/explore_lite_msgs/msg/detail
+[2.817s] -- Installing: /home/kky/cde2310_ws/install/explore_lite_msgs/include/explore_lite_msgs/explore_lite_msgs/msg/detail/explore_status__type_support.hpp
+[2.817s] -- Installing: /home/kky/cde2310_ws/install/explore_lite_msgs/include/explore_lite_msgs/explore_lite_msgs/msg/detail/explore_status__traits.hpp
+[2.817s] -- Installing: /home/kky/cde2310_ws/install/explore_lite_msgs/include/explore_lite_msgs/explore_lite_msgs/msg/detail/explore_status__builder.hpp
+[2.817s] -- Installing: /home/kky/cde2310_ws/install/explore_lite_msgs/include/explore_lite_msgs/explore_lite_msgs/msg/detail/explore_status__struct.hpp
+[2.817s] -- Installing: /home/kky/cde2310_ws/install/explore_lite_msgs/include/explore_lite_msgs/explore_lite_msgs/msg/explore_status.hpp
+[2.817s] -- Up-to-date: /home/kky/cde2310_ws/install/explore_lite_msgs/include/explore_lite_msgs/explore_lite_msgs
+[2.817s] -- Up-to-date: /home/kky/cde2310_ws/install/explore_lite_msgs/include/explore_lite_msgs/explore_lite_msgs/msg
+[2.818s] -- Up-to-date: /home/kky/cde2310_ws/install/explore_lite_msgs/include/explore_lite_msgs/explore_lite_msgs/msg/detail
+[2.818s] -- Installing: /home/kky/cde2310_ws/install/explore_lite_msgs/include/explore_lite_msgs/explore_lite_msgs/msg/detail/explore_status__rosidl_typesupport_fastrtps_cpp.hpp
+[2.818s] -- Installing: /home/kky/cde2310_ws/install/explore_lite_msgs/include/explore_lite_msgs/explore_lite_msgs/msg/detail/dds_fastrtps
+[2.818s] -- Installing: /home/kky/cde2310_ws/install/explore_lite_msgs/include/explore_lite_msgs/explore_lite_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[2.818s] -- Installing: /home/kky/cde2310_ws/install/explore_lite_msgs/lib/libexplore_lite_msgs__rosidl_typesupport_fastrtps_cpp.so
+[2.818s] -- Set runtime path of "/home/kky/cde2310_ws/install/explore_lite_msgs/lib/libexplore_lite_msgs__rosidl_typesupport_fastrtps_cpp.so" to ""
+[2.818s] -- Up-to-date: /home/kky/cde2310_ws/install/explore_lite_msgs/include/explore_lite_msgs/explore_lite_msgs
+[2.818s] -- Up-to-date: /home/kky/cde2310_ws/install/explore_lite_msgs/include/explore_lite_msgs/explore_lite_msgs/msg
+[2.818s] -- Up-to-date: /home/kky/cde2310_ws/install/explore_lite_msgs/include/explore_lite_msgs/explore_lite_msgs/msg/detail
+[2.818s] -- Installing: /home/kky/cde2310_ws/install/explore_lite_msgs/include/explore_lite_msgs/explore_lite_msgs/msg/detail/explore_status__type_support.cpp
+[2.818s] -- Installing: /home/kky/cde2310_ws/install/explore_lite_msgs/include/explore_lite_msgs/explore_lite_msgs/msg/detail/explore_status__rosidl_typesupport_introspection_cpp.hpp
+[2.818s] -- Installing: /home/kky/cde2310_ws/install/explore_lite_msgs/lib/libexplore_lite_msgs__rosidl_typesupport_introspection_cpp.so
+[2.819s] -- Set runtime path of "/home/kky/cde2310_ws/install/explore_lite_msgs/lib/libexplore_lite_msgs__rosidl_typesupport_introspection_cpp.so" to ""
+[2.819s] -- Installing: /home/kky/cde2310_ws/install/explore_lite_msgs/lib/libexplore_lite_msgs__rosidl_typesupport_cpp.so
+[2.819s] -- Set runtime path of "/home/kky/cde2310_ws/install/explore_lite_msgs/lib/libexplore_lite_msgs__rosidl_typesupport_cpp.so" to ""
+[2.819s] -- Installing: /home/kky/cde2310_ws/install/explore_lite_msgs/share/explore_lite_msgs/environment/pythonpath.sh
+[2.819s] -- Installing: /home/kky/cde2310_ws/install/explore_lite_msgs/share/explore_lite_msgs/environment/pythonpath.dsv
+[2.819s] -- Installing: /home/kky/cde2310_ws/install/explore_lite_msgs/local/lib/python3.10/dist-packages/explore_lite_msgs-1.0.0-py3.10.egg-info
+[2.819s] -- Installing: /home/kky/cde2310_ws/install/explore_lite_msgs/local/lib/python3.10/dist-packages/explore_lite_msgs-1.0.0-py3.10.egg-info/PKG-INFO
+[2.820s] -- Installing: /home/kky/cde2310_ws/install/explore_lite_msgs/local/lib/python3.10/dist-packages/explore_lite_msgs-1.0.0-py3.10.egg-info/top_level.txt
+[2.820s] -- Installing: /home/kky/cde2310_ws/install/explore_lite_msgs/local/lib/python3.10/dist-packages/explore_lite_msgs-1.0.0-py3.10.egg-info/dependency_links.txt
+[2.820s] -- Installing: /home/kky/cde2310_ws/install/explore_lite_msgs/local/lib/python3.10/dist-packages/explore_lite_msgs-1.0.0-py3.10.egg-info/SOURCES.txt
+[2.820s] -- Installing: /home/kky/cde2310_ws/install/explore_lite_msgs/local/lib/python3.10/dist-packages/explore_lite_msgs
+[2.820s] -- Installing: /home/kky/cde2310_ws/install/explore_lite_msgs/local/lib/python3.10/dist-packages/explore_lite_msgs/explore_lite_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[2.820s] -- Installing: /home/kky/cde2310_ws/install/explore_lite_msgs/local/lib/python3.10/dist-packages/explore_lite_msgs/msg
+[2.820s] -- Installing: /home/kky/cde2310_ws/install/explore_lite_msgs/local/lib/python3.10/dist-packages/explore_lite_msgs/msg/__init__.py
+[2.820s] -- Installing: /home/kky/cde2310_ws/install/explore_lite_msgs/local/lib/python3.10/dist-packages/explore_lite_msgs/msg/_explore_status_s.c
+[2.820s] -- Installing: /home/kky/cde2310_ws/install/explore_lite_msgs/local/lib/python3.10/dist-packages/explore_lite_msgs/msg/_explore_status.py
+[2.820s] -- Installing: /home/kky/cde2310_ws/install/explore_lite_msgs/local/lib/python3.10/dist-packages/explore_lite_msgs/libexplore_lite_msgs__rosidl_generator_py.so
+[2.821s] -- Installing: /home/kky/cde2310_ws/install/explore_lite_msgs/local/lib/python3.10/dist-packages/explore_lite_msgs/__init__.py
+[2.821s] -- Installing: /home/kky/cde2310_ws/install/explore_lite_msgs/local/lib/python3.10/dist-packages/explore_lite_msgs/_explore_lite_msgs_s.ep.rosidl_typesupport_introspection_c.c
+[2.821s] -- Installing: /home/kky/cde2310_ws/install/explore_lite_msgs/local/lib/python3.10/dist-packages/explore_lite_msgs/_explore_lite_msgs_s.ep.rosidl_typesupport_c.c
+[2.821s] -- Installing: /home/kky/cde2310_ws/install/explore_lite_msgs/local/lib/python3.10/dist-packages/explore_lite_msgs/_explore_lite_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+[2.821s] -- Installing: /home/kky/cde2310_ws/install/explore_lite_msgs/local/lib/python3.10/dist-packages/explore_lite_msgs/explore_lite_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[2.821s] -- Installing: /home/kky/cde2310_ws/install/explore_lite_msgs/local/lib/python3.10/dist-packages/explore_lite_msgs/explore_lite_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[2.850s] Listing '/home/kky/cde2310_ws/install/explore_lite_msgs/local/lib/python3.10/dist-packages/explore_lite_msgs'...
+[2.850s] Compiling '/home/kky/cde2310_ws/install/explore_lite_msgs/local/lib/python3.10/dist-packages/explore_lite_msgs/__init__.py'...
+[2.850s] Listing '/home/kky/cde2310_ws/install/explore_lite_msgs/local/lib/python3.10/dist-packages/explore_lite_msgs/msg'...
+[2.851s] Compiling '/home/kky/cde2310_ws/install/explore_lite_msgs/local/lib/python3.10/dist-packages/explore_lite_msgs/msg/__init__.py'...
+[2.851s] Compiling '/home/kky/cde2310_ws/install/explore_lite_msgs/local/lib/python3.10/dist-packages/explore_lite_msgs/msg/_explore_status.py'...
+[2.854s] -- Installing: /home/kky/cde2310_ws/install/explore_lite_msgs/local/lib/python3.10/dist-packages/explore_lite_msgs/explore_lite_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[2.854s] -- Set runtime path of "/home/kky/cde2310_ws/install/explore_lite_msgs/local/lib/python3.10/dist-packages/explore_lite_msgs/explore_lite_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" to ""
+[2.854s] -- Installing: /home/kky/cde2310_ws/install/explore_lite_msgs/local/lib/python3.10/dist-packages/explore_lite_msgs/explore_lite_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[2.855s] -- Set runtime path of "/home/kky/cde2310_ws/install/explore_lite_msgs/local/lib/python3.10/dist-packages/explore_lite_msgs/explore_lite_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" to ""
+[2.855s] -- Installing: /home/kky/cde2310_ws/install/explore_lite_msgs/local/lib/python3.10/dist-packages/explore_lite_msgs/explore_lite_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[2.855s] -- Set runtime path of "/home/kky/cde2310_ws/install/explore_lite_msgs/local/lib/python3.10/dist-packages/explore_lite_msgs/explore_lite_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" to ""
+[2.855s] -- Installing: /home/kky/cde2310_ws/install/explore_lite_msgs/lib/libexplore_lite_msgs__rosidl_generator_py.so
+[2.855s] -- Set runtime path of "/home/kky/cde2310_ws/install/explore_lite_msgs/lib/libexplore_lite_msgs__rosidl_generator_py.so" to ""
+[2.855s] -- Installing: /home/kky/cde2310_ws/install/explore_lite_msgs/share/explore_lite_msgs/msg/ExploreStatus.idl
+[2.856s] -- Installing: /home/kky/cde2310_ws/install/explore_lite_msgs/share/explore_lite_msgs/msg/ExploreStatus.msg
+[2.856s] -- Installing: /home/kky/cde2310_ws/install/explore_lite_msgs/share/ament_index/resource_index/package_run_dependencies/explore_lite_msgs
+[2.856s] -- Installing: /home/kky/cde2310_ws/install/explore_lite_msgs/share/ament_index/resource_index/parent_prefix_path/explore_lite_msgs
+[2.856s] -- Installing: /home/kky/cde2310_ws/install/explore_lite_msgs/share/explore_lite_msgs/environment/ament_prefix_path.sh
+[2.857s] -- Installing: /home/kky/cde2310_ws/install/explore_lite_msgs/share/explore_lite_msgs/environment/ament_prefix_path.dsv
+[2.857s] -- Installing: /home/kky/cde2310_ws/install/explore_lite_msgs/share/explore_lite_msgs/environment/path.sh
+[2.857s] -- Installing: /home/kky/cde2310_ws/install/explore_lite_msgs/share/explore_lite_msgs/environment/path.dsv
+[2.857s] -- Installing: /home/kky/cde2310_ws/install/explore_lite_msgs/share/explore_lite_msgs/local_setup.bash
+[2.857s] -- Installing: /home/kky/cde2310_ws/install/explore_lite_msgs/share/explore_lite_msgs/local_setup.sh
+[2.857s] -- Installing: /home/kky/cde2310_ws/install/explore_lite_msgs/share/explore_lite_msgs/local_setup.zsh
+[2.857s] -- Installing: /home/kky/cde2310_ws/install/explore_lite_msgs/share/explore_lite_msgs/local_setup.dsv
+[2.857s] -- Installing: /home/kky/cde2310_ws/install/explore_lite_msgs/share/explore_lite_msgs/package.dsv
+[2.857s] -- Installing: /home/kky/cde2310_ws/install/explore_lite_msgs/share/ament_index/resource_index/packages/explore_lite_msgs
+[2.857s] -- Installing: /home/kky/cde2310_ws/install/explore_lite_msgs/share/explore_lite_msgs/cmake/export_explore_lite_msgs__rosidl_generator_cExport.cmake
+[2.858s] -- Installing: /home/kky/cde2310_ws/install/explore_lite_msgs/share/explore_lite_msgs/cmake/export_explore_lite_msgs__rosidl_generator_cExport-noconfig.cmake
+[2.858s] -- Installing: /home/kky/cde2310_ws/install/explore_lite_msgs/share/explore_lite_msgs/cmake/export_explore_lite_msgs__rosidl_typesupport_fastrtps_cExport.cmake
+[2.858s] -- Installing: /home/kky/cde2310_ws/install/explore_lite_msgs/share/explore_lite_msgs/cmake/export_explore_lite_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[2.858s] -- Installing: /home/kky/cde2310_ws/install/explore_lite_msgs/share/explore_lite_msgs/cmake/explore_lite_msgs__rosidl_typesupport_introspection_cExport.cmake
+[2.858s] -- Installing: /home/kky/cde2310_ws/install/explore_lite_msgs/share/explore_lite_msgs/cmake/explore_lite_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[2.858s] -- Installing: /home/kky/cde2310_ws/install/explore_lite_msgs/share/explore_lite_msgs/cmake/explore_lite_msgs__rosidl_typesupport_cExport.cmake
+[2.858s] -- Installing: /home/kky/cde2310_ws/install/explore_lite_msgs/share/explore_lite_msgs/cmake/explore_lite_msgs__rosidl_typesupport_cExport-noconfig.cmake
+[2.858s] -- Installing: /home/kky/cde2310_ws/install/explore_lite_msgs/share/explore_lite_msgs/cmake/export_explore_lite_msgs__rosidl_generator_cppExport.cmake
+[2.859s] -- Installing: /home/kky/cde2310_ws/install/explore_lite_msgs/share/explore_lite_msgs/cmake/export_explore_lite_msgs__rosidl_typesupport_fastrtps_cppExport.cmake
+[2.859s] -- Installing: /home/kky/cde2310_ws/install/explore_lite_msgs/share/explore_lite_msgs/cmake/export_explore_lite_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[2.859s] -- Installing: /home/kky/cde2310_ws/install/explore_lite_msgs/share/explore_lite_msgs/cmake/explore_lite_msgs__rosidl_typesupport_introspection_cppExport.cmake
+[2.859s] -- Installing: /home/kky/cde2310_ws/install/explore_lite_msgs/share/explore_lite_msgs/cmake/explore_lite_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[2.859s] -- Installing: /home/kky/cde2310_ws/install/explore_lite_msgs/share/explore_lite_msgs/cmake/explore_lite_msgs__rosidl_typesupport_cppExport.cmake
+[2.859s] -- Installing: /home/kky/cde2310_ws/install/explore_lite_msgs/share/explore_lite_msgs/cmake/explore_lite_msgs__rosidl_typesupport_cppExport-noconfig.cmake
+[2.859s] -- Installing: /home/kky/cde2310_ws/install/explore_lite_msgs/share/explore_lite_msgs/cmake/export_explore_lite_msgs__rosidl_generator_pyExport.cmake
+[2.860s] -- Installing: /home/kky/cde2310_ws/install/explore_lite_msgs/share/explore_lite_msgs/cmake/export_explore_lite_msgs__rosidl_generator_pyExport-noconfig.cmake
+[2.860s] -- Installing: /home/kky/cde2310_ws/install/explore_lite_msgs/share/explore_lite_msgs/cmake/rosidl_cmake-extras.cmake
+[2.860s] -- Installing: /home/kky/cde2310_ws/install/explore_lite_msgs/share/explore_lite_msgs/cmake/ament_cmake_export_include_directories-extras.cmake
+[2.860s] -- Installing: /home/kky/cde2310_ws/install/explore_lite_msgs/share/explore_lite_msgs/cmake/ament_cmake_export_libraries-extras.cmake
+[2.860s] -- Installing: /home/kky/cde2310_ws/install/explore_lite_msgs/share/explore_lite_msgs/cmake/ament_cmake_export_targets-extras.cmake
+[2.860s] -- Installing: /home/kky/cde2310_ws/install/explore_lite_msgs/share/explore_lite_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[2.860s] -- Installing: /home/kky/cde2310_ws/install/explore_lite_msgs/share/explore_lite_msgs/cmake/ament_cmake_export_dependencies-extras.cmake
+[2.860s] -- Installing: /home/kky/cde2310_ws/install/explore_lite_msgs/share/explore_lite_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[2.861s] -- Installing: /home/kky/cde2310_ws/install/explore_lite_msgs/share/explore_lite_msgs/cmake/explore_lite_msgsConfig.cmake
+[2.861s] -- Installing: /home/kky/cde2310_ws/install/explore_lite_msgs/share/explore_lite_msgs/cmake/explore_lite_msgsConfig-version.cmake
+[2.861s] -- Installing: /home/kky/cde2310_ws/install/explore_lite_msgs/share/explore_lite_msgs/package.xml
+[2.863s] Invoked command in '/home/kky/cde2310_ws/build/explore_lite_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kky/colcon_ws/install/py_pubsub:/home/kky/colcon_ws/install/cde2310_e2:/home/kky/colcon_ws/install/auto_nav:/home/kky/turtlebot3_ws/install/turtlebot3_teleop:/home/kky/turtlebot3_ws/install/turtlebot3_example:/opt/ros/humble /usr/bin/cmake --install /home/kky/cde2310_ws/build/explore_lite_msgs

@@ -1,0 +1,6 @@
+{
+  "package_name": "explore_lite_msgs",
+  "non_idl_tuples": [
+    "/home/kky/cde2310_ws/src/m-explore-ros2-main/explore_lite_msgs:msg/ExploreStatus.msg"
+  ]
+}

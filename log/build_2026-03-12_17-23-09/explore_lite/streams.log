@@ -1,0 +1,107 @@
+[0.012s] Invoking command in '/home/kky/cde2310_ws/build/explore_lite': AMENT_PREFIX_PATH=/home/kky/cde2310_ws/install/explore_lite_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/kky/cde2310_ws/install/explore_lite_msgs:/home/kky/colcon_ws/install/turtlebot3_simulations:/home/kky/colcon_ws/install/turtlebot3_gazebo:/home/kky/colcon_ws/install/turtlebot3_fake_node:/home/kky/colcon_ws/install/multirobot_map_merge:/home/kky/colcon_ws/install/explore_lite:/home/kky/turtlebot3_ws/install/turtlebot3:/home/kky/turtlebot3_ws/install/turtlebot3_bringup:/home/kky/turtlebot3_ws/install/turtlebot3_node:/home/kky/turtlebot3_ws/install/turtlebot3_navigation2:/home/kky/turtlebot3_ws/install/turtlebot3_msgs:/home/kky/turtlebot3_ws/install/turtlebot3_description:/home/kky/turtlebot3_ws/install/turtlebot3_cartographer:/home/kky/turtlebot3_ws/install/dynamixel_sdk_examples:/home/kky/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces:/home/kky/turtlebot3_ws/install/dynamixel_sdk:/home/kky/colcon_ws/install/py_pubsub:/home/kky/colcon_ws/install/cde2310_e2:/home/kky/colcon_ws/install/auto_nav:/home/kky/turtlebot3_ws/install/turtlebot3_teleop:/home/kky/turtlebot3_ws/install/turtlebot3_example:/opt/ros/humble LD_LIBRARY_PATH=/home/kky/cde2310_ws/install/explore_lite_msgs/lib:/home/kky/colcon_ws/install/multirobot_map_merge/lib:/home/kky/turtlebot3_ws/install/turtlebot3_msgs/lib:/home/kky/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces/lib:/home/kky/turtlebot3_ws/install/dynamixel_sdk/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins PYTHONPATH=/home/kky/cde2310_ws/install/explore_lite_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/kky/cde2310_ws/src/m-explore-ros2-main/explore -DCMAKE_INSTALL_PREFIX=/home/kky/cde2310_ws/install/explore_lite
+[0.066s] -- The C compiler identification is GNU 11.4.0
+[0.116s] -- The CXX compiler identification is GNU 11.4.0
+[0.123s] -- Detecting C compiler ABI info
+[0.192s] -- Detecting C compiler ABI info - done
+[0.198s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.198s] -- Detecting C compile features
+[0.198s] -- Detecting C compile features - done
+[0.200s] -- Detecting CXX compiler ABI info
+[0.276s] -- Detecting CXX compiler ABI info - done
+[0.282s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.283s] -- Detecting CXX compile features
+[0.283s] -- Detecting CXX compile features - done
+[0.283s] -- BuilD for ROS2: humble
+[0.287s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.410s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.509s] -- Found rclcpp: 16.0.17 (/opt/ros/humble/share/rclcpp/cmake)
+[0.562s] -- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.570s] -- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.580s] -- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.593s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.610s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.662s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.666s] -- Found rmw_fastrtps_cpp: 6.2.9 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.774s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[0.803s] -- Found FastRTPS: /opt/ros/humble/include  
+[0.848s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.860s] -- Looking for pthread.h
+[0.933s] -- Looking for pthread.h - found
+[0.933s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.009s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[1.010s] -- Found Threads: TRUE  
+[1.058s] -- Found sensor_msgs: 4.9.0 (/opt/ros/humble/share/sensor_msgs/cmake)
+[1.085s] -- Found tf2_ros: 0.25.18 (/opt/ros/humble/share/tf2_ros/cmake)
+[1.181s] -- Found tf2_geometry_msgs: 0.25.18 (/opt/ros/humble/share/tf2_geometry_msgs/cmake)
+[1.201s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+[1.202s] -- Found Eigen3: TRUE (found version "3.4.0") 
+[1.202s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[1.206s] -- Found nav2_msgs: 1.1.20 (/opt/ros/humble/share/nav2_msgs/cmake)
+[1.241s] -- Found map_msgs: 2.1.0 (/opt/ros/humble/share/map_msgs/cmake)
+[1.257s] -- Found visualization_msgs: 4.9.0 (/opt/ros/humble/share/visualization_msgs/cmake)
+[1.273s] -- Found nav2_costmap_2d: 1.1.20 (/opt/ros/humble/share/nav2_costmap_2d/cmake)
+[1.394s] -- Found explore_lite_msgs: 1.0.0 (/home/kky/cde2310_ws/install/explore_lite_msgs/share/explore_lite_msgs/cmake)
+[1.404s] -- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[1.504s] -- Found ament_cmake_gtest: 1.3.12 (/opt/ros/humble/share/ament_cmake_gtest/cmake)
+[1.507s] -- Found gtest sources under '/opt/ros/humble/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[1.514s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[1.515s] -- Configured cppcheck include dirs: /home/kky/cde2310_ws/src/m-explore-ros2-main/explore/include;$<BUILD_INTERFACE:/home/kky/cde2310_ws/src/m-explore-ros2-main/explore/include>
+[1.515s] -- Configured cppcheck exclude dirs and/or files: 
+[1.515s] -- Added test 'flake8' to check Python code syntax and style conventions
+[1.516s] -- Added test 'lint_cmake' to check CMake code style
+[1.517s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[1.518s] -- Added test 'uncrustify' to check C / C++ code style
+[1.518s] -- Configured uncrustify additional arguments: 
+[1.519s] -- Added test 'xmllint' to check XML markup files
+[1.522s] -- Configuring done
+[1.556s] -- Generating done
+[1.562s] -- Build files have been written to: /home/kky/cde2310_ws/build/explore_lite
+[1.574s] Invoked command in '/home/kky/cde2310_ws/build/explore_lite' returned '0': AMENT_PREFIX_PATH=/home/kky/cde2310_ws/install/explore_lite_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/kky/cde2310_ws/install/explore_lite_msgs:/home/kky/colcon_ws/install/turtlebot3_simulations:/home/kky/colcon_ws/install/turtlebot3_gazebo:/home/kky/colcon_ws/install/turtlebot3_fake_node:/home/kky/colcon_ws/install/multirobot_map_merge:/home/kky/colcon_ws/install/explore_lite:/home/kky/turtlebot3_ws/install/turtlebot3:/home/kky/turtlebot3_ws/install/turtlebot3_bringup:/home/kky/turtlebot3_ws/install/turtlebot3_node:/home/kky/turtlebot3_ws/install/turtlebot3_navigation2:/home/kky/turtlebot3_ws/install/turtlebot3_msgs:/home/kky/turtlebot3_ws/install/turtlebot3_description:/home/kky/turtlebot3_ws/install/turtlebot3_cartographer:/home/kky/turtlebot3_ws/install/dynamixel_sdk_examples:/home/kky/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces:/home/kky/turtlebot3_ws/install/dynamixel_sdk:/home/kky/colcon_ws/install/py_pubsub:/home/kky/colcon_ws/install/cde2310_e2:/home/kky/colcon_ws/install/auto_nav:/home/kky/turtlebot3_ws/install/turtlebot3_teleop:/home/kky/turtlebot3_ws/install/turtlebot3_example:/opt/ros/humble LD_LIBRARY_PATH=/home/kky/cde2310_ws/install/explore_lite_msgs/lib:/home/kky/colcon_ws/install/multirobot_map_merge/lib:/home/kky/turtlebot3_ws/install/turtlebot3_msgs/lib:/home/kky/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces/lib:/home/kky/turtlebot3_ws/install/dynamixel_sdk/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins PYTHONPATH=/home/kky/cde2310_ws/install/explore_lite_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/kky/cde2310_ws/src/m-explore-ros2-main/explore -DCMAKE_INSTALL_PREFIX=/home/kky/cde2310_ws/install/explore_lite
+[1.575s] Invoking command in '/home/kky/cde2310_ws/build/explore_lite': AMENT_PREFIX_PATH=/home/kky/cde2310_ws/install/explore_lite_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/kky/cde2310_ws/install/explore_lite_msgs:/home/kky/colcon_ws/install/turtlebot3_simulations:/home/kky/colcon_ws/install/turtlebot3_gazebo:/home/kky/colcon_ws/install/turtlebot3_fake_node:/home/kky/colcon_ws/install/multirobot_map_merge:/home/kky/colcon_ws/install/explore_lite:/home/kky/turtlebot3_ws/install/turtlebot3:/home/kky/turtlebot3_ws/install/turtlebot3_bringup:/home/kky/turtlebot3_ws/install/turtlebot3_node:/home/kky/turtlebot3_ws/install/turtlebot3_navigation2:/home/kky/turtlebot3_ws/install/turtlebot3_msgs:/home/kky/turtlebot3_ws/install/turtlebot3_description:/home/kky/turtlebot3_ws/install/turtlebot3_cartographer:/home/kky/turtlebot3_ws/install/dynamixel_sdk_examples:/home/kky/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces:/home/kky/turtlebot3_ws/install/dynamixel_sdk:/home/kky/colcon_ws/install/py_pubsub:/home/kky/colcon_ws/install/cde2310_e2:/home/kky/colcon_ws/install/auto_nav:/home/kky/turtlebot3_ws/install/turtlebot3_teleop:/home/kky/turtlebot3_ws/install/turtlebot3_example:/opt/ros/humble LD_LIBRARY_PATH=/home/kky/cde2310_ws/install/explore_lite_msgs/lib:/home/kky/colcon_ws/install/multirobot_map_merge/lib:/home/kky/turtlebot3_ws/install/turtlebot3_msgs/lib:/home/kky/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces/lib:/home/kky/turtlebot3_ws/install/dynamixel_sdk/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins PYTHONPATH=/home/kky/cde2310_ws/install/explore_lite_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/kky/cde2310_ws/build/explore_lite -- -j16 -l16
+[1.628s] [ 30%] [32mBuilding CXX object CMakeFiles/explore.dir/src/costmap_client.cpp.o[0m
+[1.628s] [ 30%] [32mBuilding CXX object gtest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o[0m
+[1.628s] [ 30%] [32mBuilding CXX object gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.o[0m
+[1.628s] [ 40%] [32mBuilding CXX object CMakeFiles/explore.dir/src/explore.cpp.o[0m
+[1.629s] [ 50%] [32mBuilding CXX object CMakeFiles/explore.dir/src/frontier_search.cpp.o[0m
+[2.109s] [ 60%] [32m[1mLinking CXX static library libgtest_main.a[0m
+[2.147s] [ 60%] Built target gtest_main
+[3.803s] [ 70%] [32m[1mLinking CXX static library libgtest.a[0m
+[3.862s] [ 70%] Built target gtest
+[3.887s] [ 80%] [32mBuilding CXX object CMakeFiles/test_explore.dir/test/test_explore.cpp.o[0m
+[4.462s] [ 90%] [32m[1mLinking CXX executable test_explore[0m
+[4.591s] [ 90%] Built target test_explore
+[11.732s] [100%] [32m[1mLinking CXX executable explore[0m
+[12.681s] [100%] Built target explore
+[12.692s] Invoked command in '/home/kky/cde2310_ws/build/explore_lite' returned '0': AMENT_PREFIX_PATH=/home/kky/cde2310_ws/install/explore_lite_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/kky/cde2310_ws/install/explore_lite_msgs:/home/kky/colcon_ws/install/turtlebot3_simulations:/home/kky/colcon_ws/install/turtlebot3_gazebo:/home/kky/colcon_ws/install/turtlebot3_fake_node:/home/kky/colcon_ws/install/multirobot_map_merge:/home/kky/colcon_ws/install/explore_lite:/home/kky/turtlebot3_ws/install/turtlebot3:/home/kky/turtlebot3_ws/install/turtlebot3_bringup:/home/kky/turtlebot3_ws/install/turtlebot3_node:/home/kky/turtlebot3_ws/install/turtlebot3_navigation2:/home/kky/turtlebot3_ws/install/turtlebot3_msgs:/home/kky/turtlebot3_ws/install/turtlebot3_description:/home/kky/turtlebot3_ws/install/turtlebot3_cartographer:/home/kky/turtlebot3_ws/install/dynamixel_sdk_examples:/home/kky/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces:/home/kky/turtlebot3_ws/install/dynamixel_sdk:/home/kky/colcon_ws/install/py_pubsub:/home/kky/colcon_ws/install/cde2310_e2:/home/kky/colcon_ws/install/auto_nav:/home/kky/turtlebot3_ws/install/turtlebot3_teleop:/home/kky/turtlebot3_ws/install/turtlebot3_example:/opt/ros/humble LD_LIBRARY_PATH=/home/kky/cde2310_ws/install/explore_lite_msgs/lib:/home/kky/colcon_ws/install/multirobot_map_merge/lib:/home/kky/turtlebot3_ws/install/turtlebot3_msgs/lib:/home/kky/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces/lib:/home/kky/turtlebot3_ws/install/dynamixel_sdk/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins PYTHONPATH=/home/kky/cde2310_ws/install/explore_lite_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/kky/cde2310_ws/build/explore_lite -- -j16 -l16
+[12.693s] Invoking command in '/home/kky/cde2310_ws/build/explore_lite': AMENT_PREFIX_PATH=/home/kky/cde2310_ws/install/explore_lite_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/kky/cde2310_ws/install/explore_lite_msgs:/home/kky/colcon_ws/install/turtlebot3_simulations:/home/kky/colcon_ws/install/turtlebot3_gazebo:/home/kky/colcon_ws/install/turtlebot3_fake_node:/home/kky/colcon_ws/install/multirobot_map_merge:/home/kky/colcon_ws/install/explore_lite:/home/kky/turtlebot3_ws/install/turtlebot3:/home/kky/turtlebot3_ws/install/turtlebot3_bringup:/home/kky/turtlebot3_ws/install/turtlebot3_node:/home/kky/turtlebot3_ws/install/turtlebot3_navigation2:/home/kky/turtlebot3_ws/install/turtlebot3_msgs:/home/kky/turtlebot3_ws/install/turtlebot3_description:/home/kky/turtlebot3_ws/install/turtlebot3_cartographer:/home/kky/turtlebot3_ws/install/dynamixel_sdk_examples:/home/kky/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces:/home/kky/turtlebot3_ws/install/dynamixel_sdk:/home/kky/colcon_ws/install/py_pubsub:/home/kky/colcon_ws/install/cde2310_e2:/home/kky/colcon_ws/install/auto_nav:/home/kky/turtlebot3_ws/install/turtlebot3_teleop:/home/kky/turtlebot3_ws/install/turtlebot3_example:/opt/ros/humble LD_LIBRARY_PATH=/home/kky/cde2310_ws/install/explore_lite_msgs/lib:/home/kky/colcon_ws/install/multirobot_map_merge/lib:/home/kky/turtlebot3_ws/install/turtlebot3_msgs/lib:/home/kky/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces/lib:/home/kky/turtlebot3_ws/install/dynamixel_sdk/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins PYTHONPATH=/home/kky/cde2310_ws/install/explore_lite_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/kky/cde2310_ws/build/explore_lite
+[12.700s] -- Install configuration: ""
+[12.700s] -- Installing: /home/kky/cde2310_ws/install/explore_lite/include/explore/
+[12.701s] -- Installing: /home/kky/cde2310_ws/install/explore_lite/include/explore//explore.h
+[12.701s] -- Installing: /home/kky/cde2310_ws/install/explore_lite/include/explore//costmap_tools.h
+[12.701s] -- Installing: /home/kky/cde2310_ws/install/explore_lite/include/explore//costmap_client.h
+[12.701s] -- Installing: /home/kky/cde2310_ws/install/explore_lite/include/explore//frontier_search.h
+[12.701s] -- Installing: /home/kky/cde2310_ws/install/explore_lite/share/explore_lite/config
+[12.701s] -- Installing: /home/kky/cde2310_ws/install/explore_lite/share/explore_lite/config/params.yaml
+[12.701s] -- Installing: /home/kky/cde2310_ws/install/explore_lite/share/explore_lite/config/params_costmap.yaml
+[12.701s] -- Installing: /home/kky/cde2310_ws/install/explore_lite/share/explore_lite/launch
+[12.702s] -- Installing: /home/kky/cde2310_ws/install/explore_lite/share/explore_lite/launch/explore.launch.py
+[12.702s] -- Installing: /home/kky/cde2310_ws/install/explore_lite/lib/explore_lite/explore
+[12.709s] -- Set runtime path of "/home/kky/cde2310_ws/install/explore_lite/lib/explore_lite/explore" to ""
+[12.709s] -- Installing: /home/kky/cde2310_ws/install/explore_lite/share/ament_index/resource_index/package_run_dependencies/explore_lite
+[12.709s] -- Installing: /home/kky/cde2310_ws/install/explore_lite/share/ament_index/resource_index/parent_prefix_path/explore_lite
+[12.710s] -- Installing: /home/kky/cde2310_ws/install/explore_lite/share/explore_lite/environment/ament_prefix_path.sh
+[12.710s] -- Installing: /home/kky/cde2310_ws/install/explore_lite/share/explore_lite/environment/ament_prefix_path.dsv
+[12.710s] -- Installing: /home/kky/cde2310_ws/install/explore_lite/share/explore_lite/environment/path.sh
+[12.710s] -- Installing: /home/kky/cde2310_ws/install/explore_lite/share/explore_lite/environment/path.dsv
+[12.710s] -- Installing: /home/kky/cde2310_ws/install/explore_lite/share/explore_lite/local_setup.bash
+[12.710s] -- Installing: /home/kky/cde2310_ws/install/explore_lite/share/explore_lite/local_setup.sh
+[12.710s] -- Installing: /home/kky/cde2310_ws/install/explore_lite/share/explore_lite/local_setup.zsh
+[12.710s] -- Installing: /home/kky/cde2310_ws/install/explore_lite/share/explore_lite/local_setup.dsv
+[12.710s] -- Installing: /home/kky/cde2310_ws/install/explore_lite/share/explore_lite/package.dsv
+[12.711s] -- Installing: /home/kky/cde2310_ws/install/explore_lite/share/ament_index/resource_index/packages/explore_lite
+[12.711s] -- Installing: /home/kky/cde2310_ws/install/explore_lite/share/explore_lite/cmake/ament_cmake_export_dependencies-extras.cmake
+[12.711s] -- Installing: /home/kky/cde2310_ws/install/explore_lite/share/explore_lite/cmake/ament_cmake_export_include_directories-extras.cmake
+[12.711s] -- Installing: /home/kky/cde2310_ws/install/explore_lite/share/explore_lite/cmake/explore_liteConfig.cmake
+[12.711s] -- Installing: /home/kky/cde2310_ws/install/explore_lite/share/explore_lite/cmake/explore_liteConfig-version.cmake
+[12.711s] -- Installing: /home/kky/cde2310_ws/install/explore_lite/share/explore_lite/package.xml
+[12.714s] Invoked command in '/home/kky/cde2310_ws/build/explore_lite' returned '0': AMENT_PREFIX_PATH=/home/kky/cde2310_ws/install/explore_lite_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/kky/cde2310_ws/install/explore_lite_msgs:/home/kky/colcon_ws/install/turtlebot3_simulations:/home/kky/colcon_ws/install/turtlebot3_gazebo:/home/kky/colcon_ws/install/turtlebot3_fake_node:/home/kky/colcon_ws/install/multirobot_map_merge:/home/kky/colcon_ws/install/explore_lite:/home/kky/turtlebot3_ws/install/turtlebot3:/home/kky/turtlebot3_ws/install/turtlebot3_bringup:/home/kky/turtlebot3_ws/install/turtlebot3_node:/home/kky/turtlebot3_ws/install/turtlebot3_navigation2:/home/kky/turtlebot3_ws/install/turtlebot3_msgs:/home/kky/turtlebot3_ws/install/turtlebot3_description:/home/kky/turtlebot3_ws/install/turtlebot3_cartographer:/home/kky/turtlebot3_ws/install/dynamixel_sdk_examples:/home/kky/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces:/home/kky/turtlebot3_ws/install/dynamixel_sdk:/home/kky/colcon_ws/install/py_pubsub:/home/kky/colcon_ws/install/cde2310_e2:/home/kky/colcon_ws/install/auto_nav:/home/kky/turtlebot3_ws/install/turtlebot3_teleop:/home/kky/turtlebot3_ws/install/turtlebot3_example:/opt/ros/humble LD_LIBRARY_PATH=/home/kky/cde2310_ws/install/explore_lite_msgs/lib:/home/kky/colcon_ws/install/multirobot_map_merge/lib:/home/kky/turtlebot3_ws/install/turtlebot3_msgs/lib:/home/kky/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces/lib:/home/kky/turtlebot3_ws/install/dynamixel_sdk/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins PYTHONPATH=/home/kky/cde2310_ws/install/explore_lite_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/kky/cde2310_ws/build/explore_lite
