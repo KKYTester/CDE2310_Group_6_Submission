@@ -56,11 +56,19 @@ def generate_launch_description():
     )
 
     # Frontier Exploration
-    frontier_launch = IncludeLaunchDescription(
-        PythonLaunchDescriptionSource(
-            os.path.join(explore_dir, 'launch', 'explore.launch.py')
-        )
-    )
+    frontier_launch = TimerAction(
+        period=15.0,  # seconds delay
+        actions=[
+            IncludeLaunchDescription(
+                PythonLaunchDescriptionSource(
+                    os.path.join(explore_dir, 'launch', 'explore.launch.py')
+                )
+            )
+        ]
+    ) 
+    
+    
+    
 
     return LaunchDescription([
         nav2_launch,
