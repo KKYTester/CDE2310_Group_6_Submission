@@ -1,0 +1,3 @@
+[console_scripts]
+mission_fsm = mission_fsm.mission_fsm:main
+

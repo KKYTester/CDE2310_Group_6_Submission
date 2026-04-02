@@ -1,0 +1,35 @@
+running egg_info
+creating ../../build/mission_fsm/mission_fsm.egg-info
+writing ../../build/mission_fsm/mission_fsm.egg-info/PKG-INFO
+writing dependency_links to ../../build/mission_fsm/mission_fsm.egg-info/dependency_links.txt
+writing entry points to ../../build/mission_fsm/mission_fsm.egg-info/entry_points.txt
+writing requirements to ../../build/mission_fsm/mission_fsm.egg-info/requires.txt
+writing top-level names to ../../build/mission_fsm/mission_fsm.egg-info/top_level.txt
+writing manifest file '../../build/mission_fsm/mission_fsm.egg-info/SOURCES.txt'
+reading manifest file '../../build/mission_fsm/mission_fsm.egg-info/SOURCES.txt'
+writing manifest file '../../build/mission_fsm/mission_fsm.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/kky/cde2310_ws/build/mission_fsm/build
+creating /home/kky/cde2310_ws/build/mission_fsm/build/lib
+creating /home/kky/cde2310_ws/build/mission_fsm/build/lib/mission_fsm
+copying mission_fsm/mission_fsm.py -> /home/kky/cde2310_ws/build/mission_fsm/build/lib/mission_fsm
+copying mission_fsm/__init__.py -> /home/kky/cde2310_ws/build/mission_fsm/build/lib/mission_fsm
+running install
+running install_lib
+creating /home/kky/cde2310_ws/install/mission_fsm/lib/python3.10/site-packages/mission_fsm
+copying /home/kky/cde2310_ws/build/mission_fsm/build/lib/mission_fsm/mission_fsm.py -> /home/kky/cde2310_ws/install/mission_fsm/lib/python3.10/site-packages/mission_fsm
+copying /home/kky/cde2310_ws/build/mission_fsm/build/lib/mission_fsm/__init__.py -> /home/kky/cde2310_ws/install/mission_fsm/lib/python3.10/site-packages/mission_fsm
+byte-compiling /home/kky/cde2310_ws/install/mission_fsm/lib/python3.10/site-packages/mission_fsm/mission_fsm.py to mission_fsm.cpython-310.pyc
+byte-compiling /home/kky/cde2310_ws/install/mission_fsm/lib/python3.10/site-packages/mission_fsm/__init__.py to __init__.cpython-310.pyc
+running install_data
+creating /home/kky/cde2310_ws/install/mission_fsm/share/ament_index
+creating /home/kky/cde2310_ws/install/mission_fsm/share/ament_index/resource_index
+creating /home/kky/cde2310_ws/install/mission_fsm/share/ament_index/resource_index/packages
+copying resource/mission_fsm -> /home/kky/cde2310_ws/install/mission_fsm/share/ament_index/resource_index/packages
+copying package.xml -> /home/kky/cde2310_ws/install/mission_fsm/share/mission_fsm
+running install_egg_info
+Copying ../../build/mission_fsm/mission_fsm.egg-info to /home/kky/cde2310_ws/install/mission_fsm/lib/python3.10/site-packages/mission_fsm-0.0.0-py3.10.egg-info
+running install_scripts
+Installing mission_fsm script to /home/kky/cde2310_ws/install/mission_fsm/lib/mission_fsm
+writing list of installed files to '/home/kky/cde2310_ws/build/mission_fsm/install.log'
