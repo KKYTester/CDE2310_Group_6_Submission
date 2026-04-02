@@ -1,0 +1,385 @@
+[0.079s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.079s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=16, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7f40d5f31c60>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7f40d602b130>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7f40d602b130>>)
+[0.198s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.198s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.198s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.198s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.198s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.199s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.199s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/kky/cde2310_ws'
+[0.199s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.199s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.199s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.199s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.199s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.199s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.199s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.199s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.199s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.226s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.226s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.226s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.226s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.226s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.226s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.226s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.226s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.226s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.226s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.226s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.226s] Level 1:colcon.colcon_core.package_identification:_identify(launch) by extensions ['ignore', 'ignore_ament_install']
+[0.226s] Level 1:colcon.colcon_core.package_identification:_identify(launch) by extension 'ignore'
+[0.226s] Level 1:colcon.colcon_core.package_identification:_identify(launch) by extension 'ignore_ament_install'
+[0.226s] Level 1:colcon.colcon_core.package_identification:_identify(launch) by extensions ['colcon_pkg']
+[0.226s] Level 1:colcon.colcon_core.package_identification:_identify(launch) by extension 'colcon_pkg'
+[0.227s] Level 1:colcon.colcon_core.package_identification:_identify(launch) by extensions ['colcon_meta']
+[0.227s] Level 1:colcon.colcon_core.package_identification:_identify(launch) by extension 'colcon_meta'
+[0.227s] Level 1:colcon.colcon_core.package_identification:_identify(launch) by extensions ['ros']
+[0.227s] Level 1:colcon.colcon_core.package_identification:_identify(launch) by extension 'ros'
+[0.227s] Level 1:colcon.colcon_core.package_identification:_identify(launch) by extensions ['cmake', 'python']
+[0.227s] Level 1:colcon.colcon_core.package_identification:_identify(launch) by extension 'cmake'
+[0.227s] Level 1:colcon.colcon_core.package_identification:_identify(launch) by extension 'python'
+[0.227s] Level 1:colcon.colcon_core.package_identification:_identify(launch) by extensions ['python_setup_py']
+[0.227s] Level 1:colcon.colcon_core.package_identification:_identify(launch) by extension 'python_setup_py'
+[0.227s] Level 1:colcon.colcon_core.package_identification:_identify(launch/__pycache__) by extensions ['ignore', 'ignore_ament_install']
+[0.227s] Level 1:colcon.colcon_core.package_identification:_identify(launch/__pycache__) by extension 'ignore'
+[0.227s] Level 1:colcon.colcon_core.package_identification:_identify(launch/__pycache__) by extension 'ignore_ament_install'
+[0.227s] Level 1:colcon.colcon_core.package_identification:_identify(launch/__pycache__) by extensions ['colcon_pkg']
+[0.227s] Level 1:colcon.colcon_core.package_identification:_identify(launch/__pycache__) by extension 'colcon_pkg'
+[0.227s] Level 1:colcon.colcon_core.package_identification:_identify(launch/__pycache__) by extensions ['colcon_meta']
+[0.227s] Level 1:colcon.colcon_core.package_identification:_identify(launch/__pycache__) by extension 'colcon_meta'
+[0.227s] Level 1:colcon.colcon_core.package_identification:_identify(launch/__pycache__) by extensions ['ros']
+[0.227s] Level 1:colcon.colcon_core.package_identification:_identify(launch/__pycache__) by extension 'ros'
+[0.227s] Level 1:colcon.colcon_core.package_identification:_identify(launch/__pycache__) by extensions ['cmake', 'python']
+[0.227s] Level 1:colcon.colcon_core.package_identification:_identify(launch/__pycache__) by extension 'cmake'
+[0.227s] Level 1:colcon.colcon_core.package_identification:_identify(launch/__pycache__) by extension 'python'
+[0.227s] Level 1:colcon.colcon_core.package_identification:_identify(launch/__pycache__) by extensions ['python_setup_py']
+[0.227s] Level 1:colcon.colcon_core.package_identification:_identify(launch/__pycache__) by extension 'python_setup_py'
+[0.227s] Level 1:colcon.colcon_core.package_identification:_identify(launch/param_files) by extensions ['ignore', 'ignore_ament_install']
+[0.227s] Level 1:colcon.colcon_core.package_identification:_identify(launch/param_files) by extension 'ignore'
+[0.227s] Level 1:colcon.colcon_core.package_identification:_identify(launch/param_files) by extension 'ignore_ament_install'
+[0.227s] Level 1:colcon.colcon_core.package_identification:_identify(launch/param_files) by extensions ['colcon_pkg']
+[0.228s] Level 1:colcon.colcon_core.package_identification:_identify(launch/param_files) by extension 'colcon_pkg'
+[0.228s] Level 1:colcon.colcon_core.package_identification:_identify(launch/param_files) by extensions ['colcon_meta']
+[0.228s] Level 1:colcon.colcon_core.package_identification:_identify(launch/param_files) by extension 'colcon_meta'
+[0.228s] Level 1:colcon.colcon_core.package_identification:_identify(launch/param_files) by extensions ['ros']
+[0.228s] Level 1:colcon.colcon_core.package_identification:_identify(launch/param_files) by extension 'ros'
+[0.228s] Level 1:colcon.colcon_core.package_identification:_identify(launch/param_files) by extensions ['cmake', 'python']
+[0.228s] Level 1:colcon.colcon_core.package_identification:_identify(launch/param_files) by extension 'cmake'
+[0.228s] Level 1:colcon.colcon_core.package_identification:_identify(launch/param_files) by extension 'python'
+[0.228s] Level 1:colcon.colcon_core.package_identification:_identify(launch/param_files) by extensions ['python_setup_py']
+[0.228s] Level 1:colcon.colcon_core.package_identification:_identify(launch/param_files) by extension 'python_setup_py'
+[0.228s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.228s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.228s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.228s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.228s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.228s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.228s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.228s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.228s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.228s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.228s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.228s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.228s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.228s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.228s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.228s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.228s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.229s] Level 1:colcon.colcon_core.package_identification:_identify(src/m-explore-ros2-main) by extensions ['ignore', 'ignore_ament_install']
+[0.229s] Level 1:colcon.colcon_core.package_identification:_identify(src/m-explore-ros2-main) by extension 'ignore'
+[0.229s] Level 1:colcon.colcon_core.package_identification:_identify(src/m-explore-ros2-main) by extension 'ignore_ament_install'
+[0.229s] Level 1:colcon.colcon_core.package_identification:_identify(src/m-explore-ros2-main) by extensions ['colcon_pkg']
+[0.229s] Level 1:colcon.colcon_core.package_identification:_identify(src/m-explore-ros2-main) by extension 'colcon_pkg'
+[0.229s] Level 1:colcon.colcon_core.package_identification:_identify(src/m-explore-ros2-main) by extensions ['colcon_meta']
+[0.229s] Level 1:colcon.colcon_core.package_identification:_identify(src/m-explore-ros2-main) by extension 'colcon_meta'
+[0.229s] Level 1:colcon.colcon_core.package_identification:_identify(src/m-explore-ros2-main) by extensions ['ros']
+[0.229s] Level 1:colcon.colcon_core.package_identification:_identify(src/m-explore-ros2-main) by extension 'ros'
+[0.229s] Level 1:colcon.colcon_core.package_identification:_identify(src/m-explore-ros2-main) by extensions ['cmake', 'python']
+[0.229s] Level 1:colcon.colcon_core.package_identification:_identify(src/m-explore-ros2-main) by extension 'cmake'
+[0.229s] Level 1:colcon.colcon_core.package_identification:_identify(src/m-explore-ros2-main) by extension 'python'
+[0.229s] Level 1:colcon.colcon_core.package_identification:_identify(src/m-explore-ros2-main) by extensions ['python_setup_py']
+[0.229s] Level 1:colcon.colcon_core.package_identification:_identify(src/m-explore-ros2-main) by extension 'python_setup_py'
+[0.229s] Level 1:colcon.colcon_core.package_identification:_identify(src/m-explore-ros2-main/explore) by extensions ['ignore', 'ignore_ament_install']
+[0.229s] Level 1:colcon.colcon_core.package_identification:_identify(src/m-explore-ros2-main/explore) by extension 'ignore'
+[0.229s] Level 1:colcon.colcon_core.package_identification:_identify(src/m-explore-ros2-main/explore) by extension 'ignore_ament_install'
+[0.229s] Level 1:colcon.colcon_core.package_identification:_identify(src/m-explore-ros2-main/explore) by extensions ['colcon_pkg']
+[0.229s] Level 1:colcon.colcon_core.package_identification:_identify(src/m-explore-ros2-main/explore) by extension 'colcon_pkg'
+[0.229s] Level 1:colcon.colcon_core.package_identification:_identify(src/m-explore-ros2-main/explore) by extensions ['colcon_meta']
+[0.229s] Level 1:colcon.colcon_core.package_identification:_identify(src/m-explore-ros2-main/explore) by extension 'colcon_meta'
+[0.229s] Level 1:colcon.colcon_core.package_identification:_identify(src/m-explore-ros2-main/explore) by extensions ['ros']
+[0.229s] Level 1:colcon.colcon_core.package_identification:_identify(src/m-explore-ros2-main/explore) by extension 'ros'
+[0.232s] DEBUG:colcon.colcon_core.package_identification:Package 'src/m-explore-ros2-main/explore' with type 'ros.ament_cmake' and name 'explore_lite'
+[0.232s] Level 1:colcon.colcon_core.package_identification:_identify(src/m-explore-ros2-main/explore_lite_msgs) by extensions ['ignore', 'ignore_ament_install']
+[0.232s] Level 1:colcon.colcon_core.package_identification:_identify(src/m-explore-ros2-main/explore_lite_msgs) by extension 'ignore'
+[0.232s] Level 1:colcon.colcon_core.package_identification:_identify(src/m-explore-ros2-main/explore_lite_msgs) by extension 'ignore_ament_install'
+[0.232s] Level 1:colcon.colcon_core.package_identification:_identify(src/m-explore-ros2-main/explore_lite_msgs) by extensions ['colcon_pkg']
+[0.232s] Level 1:colcon.colcon_core.package_identification:_identify(src/m-explore-ros2-main/explore_lite_msgs) by extension 'colcon_pkg'
+[0.232s] Level 1:colcon.colcon_core.package_identification:_identify(src/m-explore-ros2-main/explore_lite_msgs) by extensions ['colcon_meta']
+[0.232s] Level 1:colcon.colcon_core.package_identification:_identify(src/m-explore-ros2-main/explore_lite_msgs) by extension 'colcon_meta'
+[0.232s] Level 1:colcon.colcon_core.package_identification:_identify(src/m-explore-ros2-main/explore_lite_msgs) by extensions ['ros']
+[0.232s] Level 1:colcon.colcon_core.package_identification:_identify(src/m-explore-ros2-main/explore_lite_msgs) by extension 'ros'
+[0.232s] DEBUG:colcon.colcon_core.package_identification:Package 'src/m-explore-ros2-main/explore_lite_msgs' with type 'ros.ament_cmake' and name 'explore_lite_msgs'
+[0.232s] Level 1:colcon.colcon_core.package_identification:_identify(src/m-explore-ros2-main/map_merge) by extensions ['ignore', 'ignore_ament_install']
+[0.232s] Level 1:colcon.colcon_core.package_identification:_identify(src/m-explore-ros2-main/map_merge) by extension 'ignore'
+[0.232s] Level 1:colcon.colcon_core.package_identification:_identify(src/m-explore-ros2-main/map_merge) by extension 'ignore_ament_install'
+[0.233s] Level 1:colcon.colcon_core.package_identification:_identify(src/m-explore-ros2-main/map_merge) by extensions ['colcon_pkg']
+[0.233s] Level 1:colcon.colcon_core.package_identification:_identify(src/m-explore-ros2-main/map_merge) by extension 'colcon_pkg'
+[0.233s] Level 1:colcon.colcon_core.package_identification:_identify(src/m-explore-ros2-main/map_merge) by extensions ['colcon_meta']
+[0.233s] Level 1:colcon.colcon_core.package_identification:_identify(src/m-explore-ros2-main/map_merge) by extension 'colcon_meta'
+[0.233s] Level 1:colcon.colcon_core.package_identification:_identify(src/m-explore-ros2-main/map_merge) by extensions ['ros']
+[0.233s] Level 1:colcon.colcon_core.package_identification:_identify(src/m-explore-ros2-main/map_merge) by extension 'ros'
+[0.233s] DEBUG:colcon.colcon_core.package_identification:Package 'src/m-explore-ros2-main/map_merge' with type 'ros.ament_cmake' and name 'multirobot_map_merge'
+[0.233s] Level 1:colcon.colcon_core.package_identification:_identify(src/mission_fsm) by extensions ['ignore', 'ignore_ament_install']
+[0.234s] Level 1:colcon.colcon_core.package_identification:_identify(src/mission_fsm) by extension 'ignore'
+[0.234s] Level 1:colcon.colcon_core.package_identification:_identify(src/mission_fsm) by extension 'ignore_ament_install'
+[0.234s] Level 1:colcon.colcon_core.package_identification:_identify(src/mission_fsm) by extensions ['colcon_pkg']
+[0.234s] Level 1:colcon.colcon_core.package_identification:_identify(src/mission_fsm) by extension 'colcon_pkg'
+[0.234s] Level 1:colcon.colcon_core.package_identification:_identify(src/mission_fsm) by extensions ['colcon_meta']
+[0.234s] Level 1:colcon.colcon_core.package_identification:_identify(src/mission_fsm) by extension 'colcon_meta'
+[0.234s] Level 1:colcon.colcon_core.package_identification:_identify(src/mission_fsm) by extensions ['ros']
+[0.234s] Level 1:colcon.colcon_core.package_identification:_identify(src/mission_fsm) by extension 'ros'
+[0.234s] DEBUG:colcon.colcon_core.package_identification:Package 'src/mission_fsm' with type 'ros.ament_python' and name 'mission_fsm'
+[0.234s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.234s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.234s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.234s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.234s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.249s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.249s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.251s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 4 installed packages in /home/kky/cde2310_ws/install
+[0.251s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 8 installed packages in /home/kky/colcon_ws/install
+[0.252s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 12 installed packages in /home/kky/turtlebot3_ws/install
+[0.253s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 336 installed packages in /opt/ros/humble
+[0.254s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.284s] Level 5:colcon.colcon_core.verb:set package 'explore_lite_msgs' build argument 'cmake_args' from command line to 'None'
+[0.284s] Level 5:colcon.colcon_core.verb:set package 'explore_lite_msgs' build argument 'cmake_target' from command line to 'None'
+[0.284s] Level 5:colcon.colcon_core.verb:set package 'explore_lite_msgs' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.284s] Level 5:colcon.colcon_core.verb:set package 'explore_lite_msgs' build argument 'cmake_clean_cache' from command line to 'False'
+[0.284s] Level 5:colcon.colcon_core.verb:set package 'explore_lite_msgs' build argument 'cmake_clean_first' from command line to 'False'
+[0.284s] Level 5:colcon.colcon_core.verb:set package 'explore_lite_msgs' build argument 'cmake_force_configure' from command line to 'False'
+[0.284s] Level 5:colcon.colcon_core.verb:set package 'explore_lite_msgs' build argument 'ament_cmake_args' from command line to 'None'
+[0.284s] Level 5:colcon.colcon_core.verb:set package 'explore_lite_msgs' build argument 'catkin_cmake_args' from command line to 'None'
+[0.284s] Level 5:colcon.colcon_core.verb:set package 'explore_lite_msgs' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.284s] DEBUG:colcon.colcon_core.verb:Building package 'explore_lite_msgs' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/kky/cde2310_ws/build/explore_lite_msgs', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/kky/cde2310_ws/install/explore_lite_msgs', 'merge_install': False, 'path': '/home/kky/cde2310_ws/src/m-explore-ros2-main/explore_lite_msgs', 'symlink_install': False, 'test_result_base': None}
+[0.284s] Level 5:colcon.colcon_core.verb:set package 'mission_fsm' build argument 'cmake_args' from command line to 'None'
+[0.284s] Level 5:colcon.colcon_core.verb:set package 'mission_fsm' build argument 'cmake_target' from command line to 'None'
+[0.284s] Level 5:colcon.colcon_core.verb:set package 'mission_fsm' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.284s] Level 5:colcon.colcon_core.verb:set package 'mission_fsm' build argument 'cmake_clean_cache' from command line to 'False'
+[0.284s] Level 5:colcon.colcon_core.verb:set package 'mission_fsm' build argument 'cmake_clean_first' from command line to 'False'
+[0.284s] Level 5:colcon.colcon_core.verb:set package 'mission_fsm' build argument 'cmake_force_configure' from command line to 'False'
+[0.284s] Level 5:colcon.colcon_core.verb:set package 'mission_fsm' build argument 'ament_cmake_args' from command line to 'None'
+[0.284s] Level 5:colcon.colcon_core.verb:set package 'mission_fsm' build argument 'catkin_cmake_args' from command line to 'None'
+[0.284s] Level 5:colcon.colcon_core.verb:set package 'mission_fsm' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.284s] DEBUG:colcon.colcon_core.verb:Building package 'mission_fsm' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/kky/cde2310_ws/build/mission_fsm', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/kky/cde2310_ws/install/mission_fsm', 'merge_install': False, 'path': '/home/kky/cde2310_ws/src/mission_fsm', 'symlink_install': False, 'test_result_base': None}
+[0.285s] Level 5:colcon.colcon_core.verb:set package 'multirobot_map_merge' build argument 'cmake_args' from command line to 'None'
+[0.285s] Level 5:colcon.colcon_core.verb:set package 'multirobot_map_merge' build argument 'cmake_target' from command line to 'None'
+[0.285s] Level 5:colcon.colcon_core.verb:set package 'multirobot_map_merge' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.285s] Level 5:colcon.colcon_core.verb:set package 'multirobot_map_merge' build argument 'cmake_clean_cache' from command line to 'False'
+[0.285s] Level 5:colcon.colcon_core.verb:set package 'multirobot_map_merge' build argument 'cmake_clean_first' from command line to 'False'
+[0.285s] Level 5:colcon.colcon_core.verb:set package 'multirobot_map_merge' build argument 'cmake_force_configure' from command line to 'False'
+[0.285s] Level 5:colcon.colcon_core.verb:set package 'multirobot_map_merge' build argument 'ament_cmake_args' from command line to 'None'
+[0.285s] Level 5:colcon.colcon_core.verb:set package 'multirobot_map_merge' build argument 'catkin_cmake_args' from command line to 'None'
+[0.285s] Level 5:colcon.colcon_core.verb:set package 'multirobot_map_merge' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.285s] DEBUG:colcon.colcon_core.verb:Building package 'multirobot_map_merge' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/kky/cde2310_ws/build/multirobot_map_merge', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/kky/cde2310_ws/install/multirobot_map_merge', 'merge_install': False, 'path': '/home/kky/cde2310_ws/src/m-explore-ros2-main/map_merge', 'symlink_install': False, 'test_result_base': None}
+[0.285s] Level 5:colcon.colcon_core.verb:set package 'explore_lite' build argument 'cmake_args' from command line to 'None'
+[0.285s] Level 5:colcon.colcon_core.verb:set package 'explore_lite' build argument 'cmake_target' from command line to 'None'
+[0.285s] Level 5:colcon.colcon_core.verb:set package 'explore_lite' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.285s] Level 5:colcon.colcon_core.verb:set package 'explore_lite' build argument 'cmake_clean_cache' from command line to 'False'
+[0.285s] Level 5:colcon.colcon_core.verb:set package 'explore_lite' build argument 'cmake_clean_first' from command line to 'False'
+[0.285s] Level 5:colcon.colcon_core.verb:set package 'explore_lite' build argument 'cmake_force_configure' from command line to 'False'
+[0.285s] Level 5:colcon.colcon_core.verb:set package 'explore_lite' build argument 'ament_cmake_args' from command line to 'None'
+[0.285s] Level 5:colcon.colcon_core.verb:set package 'explore_lite' build argument 'catkin_cmake_args' from command line to 'None'
+[0.285s] Level 5:colcon.colcon_core.verb:set package 'explore_lite' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.285s] DEBUG:colcon.colcon_core.verb:Building package 'explore_lite' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/kky/cde2310_ws/build/explore_lite', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/kky/cde2310_ws/install/explore_lite', 'merge_install': False, 'path': '/home/kky/cde2310_ws/src/m-explore-ros2-main/explore', 'symlink_install': False, 'test_result_base': None}
+[0.285s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.286s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.286s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/kky/cde2310_ws/src/m-explore-ros2-main/explore_lite_msgs' with build type 'ament_cmake'
+[0.286s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/kky/cde2310_ws/src/m-explore-ros2-main/explore_lite_msgs'
+[0.288s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.288s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.288s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.293s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/kky/cde2310_ws/src/mission_fsm' with build type 'ament_python'
+[0.293s] Level 1:colcon.colcon_core.shell:create_environment_hook('mission_fsm', 'ament_prefix_path')
+[0.293s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kky/cde2310_ws/install/mission_fsm/share/mission_fsm/hook/ament_prefix_path.ps1'
+[0.293s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kky/cde2310_ws/install/mission_fsm/share/mission_fsm/hook/ament_prefix_path.dsv'
+[0.294s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kky/cde2310_ws/install/mission_fsm/share/mission_fsm/hook/ament_prefix_path.sh'
+[0.294s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.294s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.298s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/kky/cde2310_ws/src/m-explore-ros2-main/map_merge' with build type 'ament_cmake'
+[0.298s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/kky/cde2310_ws/src/m-explore-ros2-main/map_merge'
+[0.298s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.298s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.306s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/kky/cde2310_ws/build/explore_lite_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kky/cde2310_ws/install/mission_fsm:/home/kky/colcon_ws/install/py_pubsub:/home/kky/colcon_ws/install/cde2310_e2:/home/kky/colcon_ws/install/auto_nav:/home/kky/turtlebot3_ws/install/turtlebot3_teleop:/home/kky/turtlebot3_ws/install/turtlebot3_example:/opt/ros/humble /usr/bin/cmake --build /home/kky/cde2310_ws/build/explore_lite_msgs -- -j16 -l16
+[0.501s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/kky/cde2310_ws/src/mission_fsm'
+[0.501s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.501s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.510s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/kky/cde2310_ws/build/multirobot_map_merge': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kky/cde2310_ws/install/mission_fsm:/home/kky/colcon_ws/install/py_pubsub:/home/kky/colcon_ws/install/cde2310_e2:/home/kky/colcon_ws/install/auto_nav:/home/kky/turtlebot3_ws/install/turtlebot3_teleop:/home/kky/turtlebot3_ws/install/turtlebot3_example:/opt/ros/humble /usr/bin/cmake --build /home/kky/cde2310_ws/build/multirobot_map_merge -- -j16 -l16
+[0.597s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/kky/cde2310_ws/build/explore_lite_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kky/cde2310_ws/install/mission_fsm:/home/kky/colcon_ws/install/py_pubsub:/home/kky/colcon_ws/install/cde2310_e2:/home/kky/colcon_ws/install/auto_nav:/home/kky/turtlebot3_ws/install/turtlebot3_teleop:/home/kky/turtlebot3_ws/install/turtlebot3_example:/opt/ros/humble /usr/bin/cmake --build /home/kky/cde2310_ws/build/explore_lite_msgs -- -j16 -l16
+[0.606s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/kky/cde2310_ws/build/explore_lite_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kky/cde2310_ws/install/mission_fsm:/home/kky/colcon_ws/install/py_pubsub:/home/kky/colcon_ws/install/cde2310_e2:/home/kky/colcon_ws/install/auto_nav:/home/kky/turtlebot3_ws/install/turtlebot3_teleop:/home/kky/turtlebot3_ws/install/turtlebot3_example:/opt/ros/humble /usr/bin/cmake --install /home/kky/cde2310_ws/build/explore_lite_msgs
+[0.615s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/kky/cde2310_ws/build/multirobot_map_merge' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kky/cde2310_ws/install/mission_fsm:/home/kky/colcon_ws/install/py_pubsub:/home/kky/colcon_ws/install/cde2310_e2:/home/kky/colcon_ws/install/auto_nav:/home/kky/turtlebot3_ws/install/turtlebot3_teleop:/home/kky/turtlebot3_ws/install/turtlebot3_example:/opt/ros/humble /usr/bin/cmake --build /home/kky/cde2310_ws/build/multirobot_map_merge -- -j16 -l16
+[0.618s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/kky/cde2310_ws/build/multirobot_map_merge': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kky/cde2310_ws/install/mission_fsm:/home/kky/colcon_ws/install/py_pubsub:/home/kky/colcon_ws/install/cde2310_e2:/home/kky/colcon_ws/install/auto_nav:/home/kky/turtlebot3_ws/install/turtlebot3_teleop:/home/kky/turtlebot3_ws/install/turtlebot3_example:/opt/ros/humble /usr/bin/cmake --install /home/kky/cde2310_ws/build/multirobot_map_merge
+[0.628s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(multirobot_map_merge)
+[0.628s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/kky/cde2310_ws/build/multirobot_map_merge' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kky/cde2310_ws/install/mission_fsm:/home/kky/colcon_ws/install/py_pubsub:/home/kky/colcon_ws/install/cde2310_e2:/home/kky/colcon_ws/install/auto_nav:/home/kky/turtlebot3_ws/install/turtlebot3_teleop:/home/kky/turtlebot3_ws/install/turtlebot3_example:/opt/ros/humble /usr/bin/cmake --install /home/kky/cde2310_ws/build/multirobot_map_merge
+[0.630s] Level 1:colcon.colcon_core.environment:checking '/home/kky/cde2310_ws/install/multirobot_map_merge' for CMake module files
+[0.630s] Level 1:colcon.colcon_core.environment:checking '/home/kky/cde2310_ws/install/multirobot_map_merge' for CMake config files
+[0.630s] Level 1:colcon.colcon_core.shell:create_environment_hook('multirobot_map_merge', 'cmake_prefix_path')
+[0.631s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kky/cde2310_ws/install/multirobot_map_merge/share/multirobot_map_merge/hook/cmake_prefix_path.ps1'
+[0.631s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kky/cde2310_ws/install/multirobot_map_merge/share/multirobot_map_merge/hook/cmake_prefix_path.dsv'
+[0.631s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kky/cde2310_ws/install/multirobot_map_merge/share/multirobot_map_merge/hook/cmake_prefix_path.sh'
+[0.632s] Level 1:colcon.colcon_core.environment:checking '/home/kky/cde2310_ws/install/multirobot_map_merge/lib'
+[0.632s] Level 1:colcon.colcon_core.environment:checking '/home/kky/cde2310_ws/install/multirobot_map_merge/bin'
+[0.632s] Level 1:colcon.colcon_core.environment:checking '/home/kky/cde2310_ws/install/multirobot_map_merge/lib/pkgconfig/multirobot_map_merge.pc'
+[0.632s] Level 1:colcon.colcon_core.environment:checking '/home/kky/cde2310_ws/install/multirobot_map_merge/lib/python3.10/site-packages'
+[0.632s] Level 1:colcon.colcon_core.environment:checking '/home/kky/cde2310_ws/install/multirobot_map_merge/bin'
+[0.632s] INFO:colcon.colcon_core.shell:Creating package script '/home/kky/cde2310_ws/install/multirobot_map_merge/share/multirobot_map_merge/package.ps1'
+[0.633s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/kky/cde2310_ws/install/multirobot_map_merge/share/multirobot_map_merge/package.dsv'
+[0.633s] INFO:colcon.colcon_core.shell:Creating package script '/home/kky/cde2310_ws/install/multirobot_map_merge/share/multirobot_map_merge/package.sh'
+[0.634s] INFO:colcon.colcon_core.shell:Creating package script '/home/kky/cde2310_ws/install/multirobot_map_merge/share/multirobot_map_merge/package.bash'
+[0.634s] INFO:colcon.colcon_core.shell:Creating package script '/home/kky/cde2310_ws/install/multirobot_map_merge/share/multirobot_map_merge/package.zsh'
+[0.635s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/kky/cde2310_ws/install/multirobot_map_merge/share/colcon-core/packages/multirobot_map_merge)
+[0.635s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(multirobot_map_merge)
+[0.635s] Level 1:colcon.colcon_core.environment:checking '/home/kky/cde2310_ws/install/multirobot_map_merge' for CMake module files
+[0.636s] Level 1:colcon.colcon_core.environment:checking '/home/kky/cde2310_ws/install/multirobot_map_merge' for CMake config files
+[0.636s] Level 1:colcon.colcon_core.shell:create_environment_hook('multirobot_map_merge', 'cmake_prefix_path')
+[0.636s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kky/cde2310_ws/install/multirobot_map_merge/share/multirobot_map_merge/hook/cmake_prefix_path.ps1'
+[0.637s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kky/cde2310_ws/install/multirobot_map_merge/share/multirobot_map_merge/hook/cmake_prefix_path.dsv'
+[0.637s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kky/cde2310_ws/install/multirobot_map_merge/share/multirobot_map_merge/hook/cmake_prefix_path.sh'
+[0.637s] Level 1:colcon.colcon_core.environment:checking '/home/kky/cde2310_ws/install/multirobot_map_merge/lib'
+[0.637s] Level 1:colcon.colcon_core.environment:checking '/home/kky/cde2310_ws/install/multirobot_map_merge/bin'
+[0.637s] Level 1:colcon.colcon_core.environment:checking '/home/kky/cde2310_ws/install/multirobot_map_merge/lib/pkgconfig/multirobot_map_merge.pc'
+[0.637s] Level 1:colcon.colcon_core.environment:checking '/home/kky/cde2310_ws/install/multirobot_map_merge/lib/python3.10/site-packages'
+[0.638s] Level 1:colcon.colcon_core.environment:checking '/home/kky/cde2310_ws/install/multirobot_map_merge/bin'
+[0.638s] INFO:colcon.colcon_core.shell:Creating package script '/home/kky/cde2310_ws/install/multirobot_map_merge/share/multirobot_map_merge/package.ps1'
+[0.638s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/kky/cde2310_ws/install/multirobot_map_merge/share/multirobot_map_merge/package.dsv'
+[0.639s] INFO:colcon.colcon_core.shell:Creating package script '/home/kky/cde2310_ws/install/multirobot_map_merge/share/multirobot_map_merge/package.sh'
+[0.639s] INFO:colcon.colcon_core.shell:Creating package script '/home/kky/cde2310_ws/install/multirobot_map_merge/share/multirobot_map_merge/package.bash'
+[0.639s] INFO:colcon.colcon_core.shell:Creating package script '/home/kky/cde2310_ws/install/multirobot_map_merge/share/multirobot_map_merge/package.zsh'
+[0.639s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/kky/cde2310_ws/install/multirobot_map_merge/share/colcon-core/packages/multirobot_map_merge)
+[0.653s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(explore_lite_msgs)
+[0.654s] Level 1:colcon.colcon_core.environment:checking '/home/kky/cde2310_ws/install/explore_lite_msgs' for CMake module files
+[0.654s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/kky/cde2310_ws/build/explore_lite_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kky/cde2310_ws/install/mission_fsm:/home/kky/colcon_ws/install/py_pubsub:/home/kky/colcon_ws/install/cde2310_e2:/home/kky/colcon_ws/install/auto_nav:/home/kky/turtlebot3_ws/install/turtlebot3_teleop:/home/kky/turtlebot3_ws/install/turtlebot3_example:/opt/ros/humble /usr/bin/cmake --install /home/kky/cde2310_ws/build/explore_lite_msgs
+[0.655s] Level 1:colcon.colcon_core.environment:checking '/home/kky/cde2310_ws/install/explore_lite_msgs' for CMake config files
+[0.655s] Level 1:colcon.colcon_core.shell:create_environment_hook('explore_lite_msgs', 'cmake_prefix_path')
+[0.655s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kky/cde2310_ws/install/explore_lite_msgs/share/explore_lite_msgs/hook/cmake_prefix_path.ps1'
+[0.655s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kky/cde2310_ws/install/explore_lite_msgs/share/explore_lite_msgs/hook/cmake_prefix_path.dsv'
+[0.656s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kky/cde2310_ws/install/explore_lite_msgs/share/explore_lite_msgs/hook/cmake_prefix_path.sh'
+[0.656s] Level 1:colcon.colcon_core.environment:checking '/home/kky/cde2310_ws/install/explore_lite_msgs/lib'
+[0.656s] Level 1:colcon.colcon_core.shell:create_environment_hook('explore_lite_msgs', 'ld_library_path_lib')
+[0.656s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kky/cde2310_ws/install/explore_lite_msgs/share/explore_lite_msgs/hook/ld_library_path_lib.ps1'
+[0.657s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kky/cde2310_ws/install/explore_lite_msgs/share/explore_lite_msgs/hook/ld_library_path_lib.dsv'
+[0.657s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kky/cde2310_ws/install/explore_lite_msgs/share/explore_lite_msgs/hook/ld_library_path_lib.sh'
+[0.657s] Level 1:colcon.colcon_core.environment:checking '/home/kky/cde2310_ws/install/explore_lite_msgs/bin'
+[0.657s] Level 1:colcon.colcon_core.environment:checking '/home/kky/cde2310_ws/install/explore_lite_msgs/lib/pkgconfig/explore_lite_msgs.pc'
+[0.657s] Level 1:colcon.colcon_core.environment:checking '/home/kky/cde2310_ws/install/explore_lite_msgs/lib/python3.10/site-packages'
+[0.658s] Level 1:colcon.colcon_core.environment:checking '/home/kky/cde2310_ws/install/explore_lite_msgs/bin'
+[0.658s] INFO:colcon.colcon_core.shell:Creating package script '/home/kky/cde2310_ws/install/explore_lite_msgs/share/explore_lite_msgs/package.ps1'
+[0.658s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/kky/cde2310_ws/install/explore_lite_msgs/share/explore_lite_msgs/package.dsv'
+[0.658s] INFO:colcon.colcon_core.shell:Creating package script '/home/kky/cde2310_ws/install/explore_lite_msgs/share/explore_lite_msgs/package.sh'
+[0.659s] INFO:colcon.colcon_core.shell:Creating package script '/home/kky/cde2310_ws/install/explore_lite_msgs/share/explore_lite_msgs/package.bash'
+[0.659s] INFO:colcon.colcon_core.shell:Creating package script '/home/kky/cde2310_ws/install/explore_lite_msgs/share/explore_lite_msgs/package.zsh'
+[0.659s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/kky/cde2310_ws/install/explore_lite_msgs/share/colcon-core/packages/explore_lite_msgs)
+[0.660s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(explore_lite_msgs)
+[0.660s] Level 1:colcon.colcon_core.environment:checking '/home/kky/cde2310_ws/install/explore_lite_msgs' for CMake module files
+[0.660s] Level 1:colcon.colcon_core.environment:checking '/home/kky/cde2310_ws/install/explore_lite_msgs' for CMake config files
+[0.661s] Level 1:colcon.colcon_core.shell:create_environment_hook('explore_lite_msgs', 'cmake_prefix_path')
+[0.661s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kky/cde2310_ws/install/explore_lite_msgs/share/explore_lite_msgs/hook/cmake_prefix_path.ps1'
+[0.661s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kky/cde2310_ws/install/explore_lite_msgs/share/explore_lite_msgs/hook/cmake_prefix_path.dsv'
+[0.661s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kky/cde2310_ws/install/explore_lite_msgs/share/explore_lite_msgs/hook/cmake_prefix_path.sh'
+[0.662s] Level 1:colcon.colcon_core.environment:checking '/home/kky/cde2310_ws/install/explore_lite_msgs/lib'
+[0.662s] Level 1:colcon.colcon_core.shell:create_environment_hook('explore_lite_msgs', 'ld_library_path_lib')
+[0.662s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kky/cde2310_ws/install/explore_lite_msgs/share/explore_lite_msgs/hook/ld_library_path_lib.ps1'
+[0.662s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kky/cde2310_ws/install/explore_lite_msgs/share/explore_lite_msgs/hook/ld_library_path_lib.dsv'
+[0.662s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kky/cde2310_ws/install/explore_lite_msgs/share/explore_lite_msgs/hook/ld_library_path_lib.sh'
+[0.663s] Level 1:colcon.colcon_core.environment:checking '/home/kky/cde2310_ws/install/explore_lite_msgs/bin'
+[0.663s] Level 1:colcon.colcon_core.environment:checking '/home/kky/cde2310_ws/install/explore_lite_msgs/lib/pkgconfig/explore_lite_msgs.pc'
+[0.663s] Level 1:colcon.colcon_core.environment:checking '/home/kky/cde2310_ws/install/explore_lite_msgs/lib/python3.10/site-packages'
+[0.663s] Level 1:colcon.colcon_core.environment:checking '/home/kky/cde2310_ws/install/explore_lite_msgs/bin'
+[0.664s] INFO:colcon.colcon_core.shell:Creating package script '/home/kky/cde2310_ws/install/explore_lite_msgs/share/explore_lite_msgs/package.ps1'
+[0.664s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/kky/cde2310_ws/install/explore_lite_msgs/share/explore_lite_msgs/package.dsv'
+[0.665s] INFO:colcon.colcon_core.shell:Creating package script '/home/kky/cde2310_ws/install/explore_lite_msgs/share/explore_lite_msgs/package.sh'
+[0.665s] INFO:colcon.colcon_core.shell:Creating package script '/home/kky/cde2310_ws/install/explore_lite_msgs/share/explore_lite_msgs/package.bash'
+[0.666s] INFO:colcon.colcon_core.shell:Creating package script '/home/kky/cde2310_ws/install/explore_lite_msgs/share/explore_lite_msgs/package.zsh'
+[0.666s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/kky/cde2310_ws/install/explore_lite_msgs/share/colcon-core/packages/explore_lite_msgs)
+[0.666s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/kky/cde2310_ws/src/m-explore-ros2-main/explore' with build type 'ament_cmake'
+[0.666s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/kky/cde2310_ws/src/m-explore-ros2-main/explore'
+[0.667s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.667s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.679s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/kky/cde2310_ws/build/explore_lite': CMAKE_PREFIX_PATH=/home/kky/cde2310_ws/install/explore_lite_msgs:/home/kky/cde2310_ws/install/multirobot_map_merge:/home/kky/cde2310_ws/install/explore_lite:/home/kky/colcon_ws/install/turtlebot3_simulations:/home/kky/colcon_ws/install/turtlebot3_gazebo:/home/kky/colcon_ws/install/turtlebot3_fake_node:/home/kky/colcon_ws/install/multirobot_map_merge:/home/kky/colcon_ws/install/explore_lite:/home/kky/turtlebot3_ws/install/turtlebot3:/home/kky/turtlebot3_ws/install/turtlebot3_bringup:/home/kky/turtlebot3_ws/install/turtlebot3_node:/home/kky/turtlebot3_ws/install/turtlebot3_navigation2:/home/kky/turtlebot3_ws/install/turtlebot3_msgs:/home/kky/turtlebot3_ws/install/turtlebot3_description:/home/kky/turtlebot3_ws/install/turtlebot3_cartographer:/home/kky/turtlebot3_ws/install/dynamixel_sdk_examples:/home/kky/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces:/home/kky/turtlebot3_ws/install/dynamixel_sdk:/home/kky/cde2310_ws/install/mission_fsm:/home/kky/colcon_ws/install/py_pubsub:/home/kky/colcon_ws/install/cde2310_e2:/home/kky/colcon_ws/install/auto_nav:/home/kky/turtlebot3_ws/install/turtlebot3_teleop:/home/kky/turtlebot3_ws/install/turtlebot3_example:/opt/ros/humble LD_LIBRARY_PATH=/home/kky/cde2310_ws/install/explore_lite_msgs/lib:/home/kky/cde2310_ws/install/multirobot_map_merge/lib:/home/kky/colcon_ws/install/multirobot_map_merge/lib:/home/kky/turtlebot3_ws/install/turtlebot3_msgs/lib:/home/kky/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces/lib:/home/kky/turtlebot3_ws/install/dynamixel_sdk/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins /usr/bin/cmake --build /home/kky/cde2310_ws/build/explore_lite -- -j16 -l16
+[0.773s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/kky/cde2310_ws/src/mission_fsm': PYTHONPATH=/home/kky/cde2310_ws/build/mission_fsm/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/kky/cde2310_ws/install/mission_fsm/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/mission_fsm build --build-base /home/kky/cde2310_ws/build/mission_fsm/build install --record /home/kky/cde2310_ws/build/mission_fsm/install.log --single-version-externally-managed install_data
+[0.774s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/kky/cde2310_ws/build/explore_lite' returned '0': CMAKE_PREFIX_PATH=/home/kky/cde2310_ws/install/explore_lite_msgs:/home/kky/cde2310_ws/install/multirobot_map_merge:/home/kky/cde2310_ws/install/explore_lite:/home/kky/colcon_ws/install/turtlebot3_simulations:/home/kky/colcon_ws/install/turtlebot3_gazebo:/home/kky/colcon_ws/install/turtlebot3_fake_node:/home/kky/colcon_ws/install/multirobot_map_merge:/home/kky/colcon_ws/install/explore_lite:/home/kky/turtlebot3_ws/install/turtlebot3:/home/kky/turtlebot3_ws/install/turtlebot3_bringup:/home/kky/turtlebot3_ws/install/turtlebot3_node:/home/kky/turtlebot3_ws/install/turtlebot3_navigation2:/home/kky/turtlebot3_ws/install/turtlebot3_msgs:/home/kky/turtlebot3_ws/install/turtlebot3_description:/home/kky/turtlebot3_ws/install/turtlebot3_cartographer:/home/kky/turtlebot3_ws/install/dynamixel_sdk_examples:/home/kky/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces:/home/kky/turtlebot3_ws/install/dynamixel_sdk:/home/kky/cde2310_ws/install/mission_fsm:/home/kky/colcon_ws/install/py_pubsub:/home/kky/colcon_ws/install/cde2310_e2:/home/kky/colcon_ws/install/auto_nav:/home/kky/turtlebot3_ws/install/turtlebot3_teleop:/home/kky/turtlebot3_ws/install/turtlebot3_example:/opt/ros/humble LD_LIBRARY_PATH=/home/kky/cde2310_ws/install/explore_lite_msgs/lib:/home/kky/cde2310_ws/install/multirobot_map_merge/lib:/home/kky/colcon_ws/install/multirobot_map_merge/lib:/home/kky/turtlebot3_ws/install/turtlebot3_msgs/lib:/home/kky/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces/lib:/home/kky/turtlebot3_ws/install/dynamixel_sdk/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins /usr/bin/cmake --build /home/kky/cde2310_ws/build/explore_lite -- -j16 -l16
+[0.774s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/kky/cde2310_ws/build/explore_lite': CMAKE_PREFIX_PATH=/home/kky/cde2310_ws/install/explore_lite_msgs:/home/kky/cde2310_ws/install/multirobot_map_merge:/home/kky/cde2310_ws/install/explore_lite:/home/kky/colcon_ws/install/turtlebot3_simulations:/home/kky/colcon_ws/install/turtlebot3_gazebo:/home/kky/colcon_ws/install/turtlebot3_fake_node:/home/kky/colcon_ws/install/multirobot_map_merge:/home/kky/colcon_ws/install/explore_lite:/home/kky/turtlebot3_ws/install/turtlebot3:/home/kky/turtlebot3_ws/install/turtlebot3_bringup:/home/kky/turtlebot3_ws/install/turtlebot3_node:/home/kky/turtlebot3_ws/install/turtlebot3_navigation2:/home/kky/turtlebot3_ws/install/turtlebot3_msgs:/home/kky/turtlebot3_ws/install/turtlebot3_description:/home/kky/turtlebot3_ws/install/turtlebot3_cartographer:/home/kky/turtlebot3_ws/install/dynamixel_sdk_examples:/home/kky/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces:/home/kky/turtlebot3_ws/install/dynamixel_sdk:/home/kky/cde2310_ws/install/mission_fsm:/home/kky/colcon_ws/install/py_pubsub:/home/kky/colcon_ws/install/cde2310_e2:/home/kky/colcon_ws/install/auto_nav:/home/kky/turtlebot3_ws/install/turtlebot3_teleop:/home/kky/turtlebot3_ws/install/turtlebot3_example:/opt/ros/humble LD_LIBRARY_PATH=/home/kky/cde2310_ws/install/explore_lite_msgs/lib:/home/kky/cde2310_ws/install/multirobot_map_merge/lib:/home/kky/colcon_ws/install/multirobot_map_merge/lib:/home/kky/turtlebot3_ws/install/turtlebot3_msgs/lib:/home/kky/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces/lib:/home/kky/turtlebot3_ws/install/dynamixel_sdk/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins /usr/bin/cmake --install /home/kky/cde2310_ws/build/explore_lite
+[0.785s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(explore_lite)
+[0.785s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/kky/cde2310_ws/build/explore_lite' returned '0': CMAKE_PREFIX_PATH=/home/kky/cde2310_ws/install/explore_lite_msgs:/home/kky/cde2310_ws/install/multirobot_map_merge:/home/kky/cde2310_ws/install/explore_lite:/home/kky/colcon_ws/install/turtlebot3_simulations:/home/kky/colcon_ws/install/turtlebot3_gazebo:/home/kky/colcon_ws/install/turtlebot3_fake_node:/home/kky/colcon_ws/install/multirobot_map_merge:/home/kky/colcon_ws/install/explore_lite:/home/kky/turtlebot3_ws/install/turtlebot3:/home/kky/turtlebot3_ws/install/turtlebot3_bringup:/home/kky/turtlebot3_ws/install/turtlebot3_node:/home/kky/turtlebot3_ws/install/turtlebot3_navigation2:/home/kky/turtlebot3_ws/install/turtlebot3_msgs:/home/kky/turtlebot3_ws/install/turtlebot3_description:/home/kky/turtlebot3_ws/install/turtlebot3_cartographer:/home/kky/turtlebot3_ws/install/dynamixel_sdk_examples:/home/kky/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces:/home/kky/turtlebot3_ws/install/dynamixel_sdk:/home/kky/cde2310_ws/install/mission_fsm:/home/kky/colcon_ws/install/py_pubsub:/home/kky/colcon_ws/install/cde2310_e2:/home/kky/colcon_ws/install/auto_nav:/home/kky/turtlebot3_ws/install/turtlebot3_teleop:/home/kky/turtlebot3_ws/install/turtlebot3_example:/opt/ros/humble LD_LIBRARY_PATH=/home/kky/cde2310_ws/install/explore_lite_msgs/lib:/home/kky/cde2310_ws/install/multirobot_map_merge/lib:/home/kky/colcon_ws/install/multirobot_map_merge/lib:/home/kky/turtlebot3_ws/install/turtlebot3_msgs/lib:/home/kky/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces/lib:/home/kky/turtlebot3_ws/install/dynamixel_sdk/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins /usr/bin/cmake --install /home/kky/cde2310_ws/build/explore_lite
+[0.785s] Level 1:colcon.colcon_core.environment:checking '/home/kky/cde2310_ws/install/explore_lite' for CMake module files
+[0.786s] Level 1:colcon.colcon_core.environment:checking '/home/kky/cde2310_ws/install/explore_lite' for CMake config files
+[0.786s] Level 1:colcon.colcon_core.shell:create_environment_hook('explore_lite', 'cmake_prefix_path')
+[0.786s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kky/cde2310_ws/install/explore_lite/share/explore_lite/hook/cmake_prefix_path.ps1'
+[0.786s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kky/cde2310_ws/install/explore_lite/share/explore_lite/hook/cmake_prefix_path.dsv'
+[0.787s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kky/cde2310_ws/install/explore_lite/share/explore_lite/hook/cmake_prefix_path.sh'
+[0.787s] Level 1:colcon.colcon_core.environment:checking '/home/kky/cde2310_ws/install/explore_lite/lib'
+[0.787s] Level 1:colcon.colcon_core.environment:checking '/home/kky/cde2310_ws/install/explore_lite/bin'
+[0.788s] Level 1:colcon.colcon_core.environment:checking '/home/kky/cde2310_ws/install/explore_lite/lib/pkgconfig/explore_lite.pc'
+[0.788s] Level 1:colcon.colcon_core.environment:checking '/home/kky/cde2310_ws/install/explore_lite/lib/python3.10/site-packages'
+[0.788s] Level 1:colcon.colcon_core.environment:checking '/home/kky/cde2310_ws/install/explore_lite/bin'
+[0.789s] INFO:colcon.colcon_core.shell:Creating package script '/home/kky/cde2310_ws/install/explore_lite/share/explore_lite/package.ps1'
+[0.789s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/kky/cde2310_ws/install/explore_lite/share/explore_lite/package.dsv'
+[0.789s] INFO:colcon.colcon_core.shell:Creating package script '/home/kky/cde2310_ws/install/explore_lite/share/explore_lite/package.sh'
+[0.789s] INFO:colcon.colcon_core.shell:Creating package script '/home/kky/cde2310_ws/install/explore_lite/share/explore_lite/package.bash'
+[0.790s] INFO:colcon.colcon_core.shell:Creating package script '/home/kky/cde2310_ws/install/explore_lite/share/explore_lite/package.zsh'
+[0.790s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/kky/cde2310_ws/install/explore_lite/share/colcon-core/packages/explore_lite)
+[0.790s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(explore_lite)
+[0.791s] Level 1:colcon.colcon_core.environment:checking '/home/kky/cde2310_ws/install/explore_lite' for CMake module files
+[0.791s] Level 1:colcon.colcon_core.environment:checking '/home/kky/cde2310_ws/install/explore_lite' for CMake config files
+[0.791s] Level 1:colcon.colcon_core.shell:create_environment_hook('explore_lite', 'cmake_prefix_path')
+[0.791s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kky/cde2310_ws/install/explore_lite/share/explore_lite/hook/cmake_prefix_path.ps1'
+[0.792s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kky/cde2310_ws/install/explore_lite/share/explore_lite/hook/cmake_prefix_path.dsv'
+[0.792s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kky/cde2310_ws/install/explore_lite/share/explore_lite/hook/cmake_prefix_path.sh'
+[0.792s] Level 1:colcon.colcon_core.environment:checking '/home/kky/cde2310_ws/install/explore_lite/lib'
+[0.792s] Level 1:colcon.colcon_core.environment:checking '/home/kky/cde2310_ws/install/explore_lite/bin'
+[0.792s] Level 1:colcon.colcon_core.environment:checking '/home/kky/cde2310_ws/install/explore_lite/lib/pkgconfig/explore_lite.pc'
+[0.792s] Level 1:colcon.colcon_core.environment:checking '/home/kky/cde2310_ws/install/explore_lite/lib/python3.10/site-packages'
+[0.793s] Level 1:colcon.colcon_core.environment:checking '/home/kky/cde2310_ws/install/explore_lite/bin'
+[0.793s] INFO:colcon.colcon_core.shell:Creating package script '/home/kky/cde2310_ws/install/explore_lite/share/explore_lite/package.ps1'
+[0.793s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/kky/cde2310_ws/install/explore_lite/share/explore_lite/package.dsv'
+[0.794s] INFO:colcon.colcon_core.shell:Creating package script '/home/kky/cde2310_ws/install/explore_lite/share/explore_lite/package.sh'
+[0.794s] INFO:colcon.colcon_core.shell:Creating package script '/home/kky/cde2310_ws/install/explore_lite/share/explore_lite/package.bash'
+[0.794s] INFO:colcon.colcon_core.shell:Creating package script '/home/kky/cde2310_ws/install/explore_lite/share/explore_lite/package.zsh'
+[0.794s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/kky/cde2310_ws/install/explore_lite/share/colcon-core/packages/explore_lite)
+[0.991s] Level 1:colcon.colcon_core.environment:checking '/home/kky/cde2310_ws/install/mission_fsm' for CMake module files
+[0.991s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/kky/cde2310_ws/src/mission_fsm' returned '0': PYTHONPATH=/home/kky/cde2310_ws/build/mission_fsm/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/kky/cde2310_ws/install/mission_fsm/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/mission_fsm build --build-base /home/kky/cde2310_ws/build/mission_fsm/build install --record /home/kky/cde2310_ws/build/mission_fsm/install.log --single-version-externally-managed install_data
+[0.992s] Level 1:colcon.colcon_core.environment:checking '/home/kky/cde2310_ws/install/mission_fsm' for CMake config files
+[0.992s] Level 1:colcon.colcon_core.environment:checking '/home/kky/cde2310_ws/install/mission_fsm/lib'
+[0.992s] Level 1:colcon.colcon_core.environment:checking '/home/kky/cde2310_ws/install/mission_fsm/bin'
+[0.992s] Level 1:colcon.colcon_core.environment:checking '/home/kky/cde2310_ws/install/mission_fsm/lib/pkgconfig/mission_fsm.pc'
+[0.992s] Level 1:colcon.colcon_core.environment:checking '/home/kky/cde2310_ws/install/mission_fsm/lib/python3.10/site-packages'
+[0.993s] Level 1:colcon.colcon_core.shell:create_environment_hook('mission_fsm', 'pythonpath')
+[0.993s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kky/cde2310_ws/install/mission_fsm/share/mission_fsm/hook/pythonpath.ps1'
+[0.993s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kky/cde2310_ws/install/mission_fsm/share/mission_fsm/hook/pythonpath.dsv'
+[0.993s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kky/cde2310_ws/install/mission_fsm/share/mission_fsm/hook/pythonpath.sh'
+[0.994s] Level 1:colcon.colcon_core.environment:checking '/home/kky/cde2310_ws/install/mission_fsm/bin'
+[0.994s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(mission_fsm)
+[0.994s] INFO:colcon.colcon_core.shell:Creating package script '/home/kky/cde2310_ws/install/mission_fsm/share/mission_fsm/package.ps1'
+[0.994s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/kky/cde2310_ws/install/mission_fsm/share/mission_fsm/package.dsv'
+[0.995s] INFO:colcon.colcon_core.shell:Creating package script '/home/kky/cde2310_ws/install/mission_fsm/share/mission_fsm/package.sh'
+[0.995s] INFO:colcon.colcon_core.shell:Creating package script '/home/kky/cde2310_ws/install/mission_fsm/share/mission_fsm/package.bash'
+[0.995s] INFO:colcon.colcon_core.shell:Creating package script '/home/kky/cde2310_ws/install/mission_fsm/share/mission_fsm/package.zsh'
+[0.996s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/kky/cde2310_ws/install/mission_fsm/share/colcon-core/packages/mission_fsm)
+[0.996s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[0.996s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[0.996s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[0.996s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[1.001s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[1.001s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[1.001s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[1.013s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[1.014s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/kky/cde2310_ws/install/local_setup.ps1'
+[1.015s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/kky/cde2310_ws/install/_local_setup_util_ps1.py'
+[1.016s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/kky/cde2310_ws/install/setup.ps1'
+[1.017s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/kky/cde2310_ws/install/local_setup.sh'
+[1.018s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/kky/cde2310_ws/install/_local_setup_util_sh.py'
+[1.018s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/kky/cde2310_ws/install/setup.sh'
+[1.019s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/kky/cde2310_ws/install/local_setup.bash'
+[1.020s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/kky/cde2310_ws/install/setup.bash'
+[1.021s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/kky/cde2310_ws/install/local_setup.zsh'
+[1.022s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/kky/cde2310_ws/install/setup.zsh'
