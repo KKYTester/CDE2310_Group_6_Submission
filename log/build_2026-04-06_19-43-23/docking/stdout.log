@@ -1,0 +1,35 @@
+running egg_info
+creating ../../build/docking/docking.egg-info
+writing ../../build/docking/docking.egg-info/PKG-INFO
+writing dependency_links to ../../build/docking/docking.egg-info/dependency_links.txt
+writing entry points to ../../build/docking/docking.egg-info/entry_points.txt
+writing requirements to ../../build/docking/docking.egg-info/requires.txt
+writing top-level names to ../../build/docking/docking.egg-info/top_level.txt
+writing manifest file '../../build/docking/docking.egg-info/SOURCES.txt'
+reading manifest file '../../build/docking/docking.egg-info/SOURCES.txt'
+writing manifest file '../../build/docking/docking.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/kky/cde2310_ws/build/docking/build
+creating /home/kky/cde2310_ws/build/docking/build/lib
+creating /home/kky/cde2310_ws/build/docking/build/lib/docking
+copying docking/__init__.py -> /home/kky/cde2310_ws/build/docking/build/lib/docking
+copying docking/docking.py -> /home/kky/cde2310_ws/build/docking/build/lib/docking
+running install
+running install_lib
+creating /home/kky/cde2310_ws/install/docking/lib/python3.10/site-packages/docking
+copying /home/kky/cde2310_ws/build/docking/build/lib/docking/__init__.py -> /home/kky/cde2310_ws/install/docking/lib/python3.10/site-packages/docking
+copying /home/kky/cde2310_ws/build/docking/build/lib/docking/docking.py -> /home/kky/cde2310_ws/install/docking/lib/python3.10/site-packages/docking
+byte-compiling /home/kky/cde2310_ws/install/docking/lib/python3.10/site-packages/docking/__init__.py to __init__.cpython-310.pyc
+byte-compiling /home/kky/cde2310_ws/install/docking/lib/python3.10/site-packages/docking/docking.py to docking.cpython-310.pyc
+running install_data
+creating /home/kky/cde2310_ws/install/docking/share/ament_index
+creating /home/kky/cde2310_ws/install/docking/share/ament_index/resource_index
+creating /home/kky/cde2310_ws/install/docking/share/ament_index/resource_index/packages
+copying resource/docking -> /home/kky/cde2310_ws/install/docking/share/ament_index/resource_index/packages
+copying package.xml -> /home/kky/cde2310_ws/install/docking/share/docking
+running install_egg_info
+Copying ../../build/docking/docking.egg-info to /home/kky/cde2310_ws/install/docking/lib/python3.10/site-packages/docking-0.0.0-py3.10.egg-info
+running install_scripts
+Installing docking script to /home/kky/cde2310_ws/install/docking/lib/docking
+writing list of installed files to '/home/kky/cde2310_ws/build/docking/install.log'
