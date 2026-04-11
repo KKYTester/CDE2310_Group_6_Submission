@@ -1,0 +1,3 @@
+[console_scripts]
+scan_resampler = scan_filter.scan_resampler:main
+

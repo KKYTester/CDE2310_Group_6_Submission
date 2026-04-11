@@ -12,8 +12,9 @@ def generate_launch_description():
     nav2_dir = get_package_share_directory('nav2_bringup')
     slam_dir = get_package_share_directory('slam_toolbox')
     explore_dir = get_package_share_directory('explore_lite')
-    nav2_params = './param_files/nav2_params.yaml'
-    slam_toolbox_params = './param_files/mapper_params_online_async.yaml'
+    frontier_launch_dir = os.path.dirname(__file__)
+    nav2_params = os.path.join(frontier_launch_dir, 'param_files', 'nav2_params.yaml')
+    slam_toolbox_params = os.path.join(frontier_launch_dir, 'param_files', 'mapper_params_online_async.yaml')
 
     rviz_config = os.path.join(
         nav2_dir,
@@ -21,15 +22,25 @@ def generate_launch_description():
         'nav2_default_view.rviz'
     )
 
+    # Scan filterer node (AdaptiveScanResampler)
+    scan_resampler_node = Node(
+        package='scan_filter',
+        executable='scan_resampler',
+        name='scan_resampler',
+        output='screen',
+    )
+
     # Slam_Toolbox launch
-    slam_launch = IncludeLaunchDescription(
-        PythonLaunchDescriptionSource(
-            os.path.join(slam_dir, 'launch', 'online_async_launch.py')
-        ),
-        launch_arguments={
-            'use_sim_time': 'false',
-            'params_file': slam_toolbox_params,
-        }.items()
+    slam_node = Node(
+        package='slam_toolbox',
+        executable='async_slam_toolbox_node',
+        name='slam_toolbox',
+        output='screen',
+        parameters=[
+            slam_toolbox_params,
+            {'use_sim_time': False,
+             'scan_topic': '/scan_filtered'}
+        ]
     )
 
     # Nav2 bringup launch
@@ -76,7 +87,8 @@ def generate_launch_description():
     ) 
     
     return LaunchDescription([
-        slam_launch,
+        scan_resampler_node,
+        slam_node,
         nav2_launch,
         rviz_node,
         frontier_launch,
