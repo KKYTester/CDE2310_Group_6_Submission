@@ -8,11 +8,13 @@ import os
 
 
 def generate_launch_description():
-
+    # Get package directories
     nav2_dir = get_package_share_directory('nav2_bringup')
-    slam_dir = get_package_share_directory('slam_toolbox')
+    slam_dir = get_package_share_directory('slam_toolbox') # Not used directly here, but could be useful for future expansions
     explore_dir = get_package_share_directory('explore_lite')
+    # Froniter launch directory (for param files)
     frontier_launch_dir = os.path.dirname(__file__)
+    # Param file paths
     nav2_params = os.path.join(frontier_launch_dir, 'param_files', 'nav2_params.yaml')
     slam_toolbox_params = os.path.join(frontier_launch_dir, 'param_files', 'mapper_params_online_async.yaml')
 
@@ -30,7 +32,7 @@ def generate_launch_description():
         output='screen',
     )
 
-    # Slam_Toolbox launch
+    # Slam_Toolbox node
     slam_node = Node(
         package='slam_toolbox',
         executable='async_slam_toolbox_node',
