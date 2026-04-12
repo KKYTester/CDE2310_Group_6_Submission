@@ -1,0 +1,37 @@
+[0.471s] Invoking command in '/home/kky/cde2310_ws/src/nav2aruco': PYTHONPATH=/home/kky/cde2310_ws/build/nav2aruco/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/kky/cde2310_ws/install/nav2aruco/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/nav2aruco build --build-base /home/kky/cde2310_ws/build/nav2aruco/build install --record /home/kky/cde2310_ws/build/nav2aruco/install.log --single-version-externally-managed install_data
+[0.651s] running egg_info
+[0.651s] creating ../../build/nav2aruco/nav2aruco.egg-info
+[0.652s] writing ../../build/nav2aruco/nav2aruco.egg-info/PKG-INFO
+[0.652s] writing dependency_links to ../../build/nav2aruco/nav2aruco.egg-info/dependency_links.txt
+[0.652s] writing entry points to ../../build/nav2aruco/nav2aruco.egg-info/entry_points.txt
+[0.652s] writing requirements to ../../build/nav2aruco/nav2aruco.egg-info/requires.txt
+[0.652s] writing top-level names to ../../build/nav2aruco/nav2aruco.egg-info/top_level.txt
+[0.652s] writing manifest file '../../build/nav2aruco/nav2aruco.egg-info/SOURCES.txt'
+[0.653s] reading manifest file '../../build/nav2aruco/nav2aruco.egg-info/SOURCES.txt'
+[0.653s] writing manifest file '../../build/nav2aruco/nav2aruco.egg-info/SOURCES.txt'
+[0.653s] running build
+[0.654s] running build_py
+[0.654s] creating /home/kky/cde2310_ws/build/nav2aruco/build
+[0.654s] creating /home/kky/cde2310_ws/build/nav2aruco/build/lib
+[0.654s] creating /home/kky/cde2310_ws/build/nav2aruco/build/lib/nav2aruco
+[0.654s] copying nav2aruco/nav2aruco.py -> /home/kky/cde2310_ws/build/nav2aruco/build/lib/nav2aruco
+[0.654s] copying nav2aruco/__init__.py -> /home/kky/cde2310_ws/build/nav2aruco/build/lib/nav2aruco
+[0.654s] running install
+[0.654s] running install_lib
+[0.655s] creating /home/kky/cde2310_ws/install/nav2aruco/lib/python3.10/site-packages/nav2aruco
+[0.655s] copying /home/kky/cde2310_ws/build/nav2aruco/build/lib/nav2aruco/nav2aruco.py -> /home/kky/cde2310_ws/install/nav2aruco/lib/python3.10/site-packages/nav2aruco
+[0.655s] copying /home/kky/cde2310_ws/build/nav2aruco/build/lib/nav2aruco/__init__.py -> /home/kky/cde2310_ws/install/nav2aruco/lib/python3.10/site-packages/nav2aruco
+[0.656s] byte-compiling /home/kky/cde2310_ws/install/nav2aruco/lib/python3.10/site-packages/nav2aruco/nav2aruco.py to nav2aruco.cpython-310.pyc
+[0.657s] byte-compiling /home/kky/cde2310_ws/install/nav2aruco/lib/python3.10/site-packages/nav2aruco/__init__.py to __init__.cpython-310.pyc
+[0.657s] running install_data
+[0.657s] creating /home/kky/cde2310_ws/install/nav2aruco/share/ament_index
+[0.657s] creating /home/kky/cde2310_ws/install/nav2aruco/share/ament_index/resource_index
+[0.657s] creating /home/kky/cde2310_ws/install/nav2aruco/share/ament_index/resource_index/packages
+[0.657s] copying resource/nav2aruco -> /home/kky/cde2310_ws/install/nav2aruco/share/ament_index/resource_index/packages
+[0.657s] copying package.xml -> /home/kky/cde2310_ws/install/nav2aruco/share/nav2aruco
+[0.657s] running install_egg_info
+[0.659s] Copying ../../build/nav2aruco/nav2aruco.egg-info to /home/kky/cde2310_ws/install/nav2aruco/lib/python3.10/site-packages/nav2aruco-0.0.0-py3.10.egg-info
+[0.659s] running install_scripts
+[0.675s] Installing nav2aruco script to /home/kky/cde2310_ws/install/nav2aruco/lib/nav2aruco
+[0.675s] writing list of installed files to '/home/kky/cde2310_ws/build/nav2aruco/install.log'
+[0.701s] Invoked command in '/home/kky/cde2310_ws/src/nav2aruco' returned '0': PYTHONPATH=/home/kky/cde2310_ws/build/nav2aruco/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/kky/cde2310_ws/install/nav2aruco/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/nav2aruco build --build-base /home/kky/cde2310_ws/build/nav2aruco/build install --record /home/kky/cde2310_ws/build/nav2aruco/install.log --single-version-externally-managed install_data
