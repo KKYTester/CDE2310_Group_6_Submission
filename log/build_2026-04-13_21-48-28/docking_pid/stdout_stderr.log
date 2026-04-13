@@ -1,0 +1,40 @@
+running egg_info
+creating ../../build/docking_pid/docking_pid.egg-info
+writing ../../build/docking_pid/docking_pid.egg-info/PKG-INFO
+writing dependency_links to ../../build/docking_pid/docking_pid.egg-info/dependency_links.txt
+writing entry points to ../../build/docking_pid/docking_pid.egg-info/entry_points.txt
+writing requirements to ../../build/docking_pid/docking_pid.egg-info/requires.txt
+writing top-level names to ../../build/docking_pid/docking_pid.egg-info/top_level.txt
+writing manifest file '../../build/docking_pid/docking_pid.egg-info/SOURCES.txt'
+reading manifest file '../../build/docking_pid/docking_pid.egg-info/SOURCES.txt'
+writing manifest file '../../build/docking_pid/docking_pid.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/kky/cde2310_ws/build/docking_pid/build
+creating /home/kky/cde2310_ws/build/docking_pid/build/lib
+creating /home/kky/cde2310_ws/build/docking_pid/build/lib/docking_pid
+copying docking_pid/__init__.py -> /home/kky/cde2310_ws/build/docking_pid/build/lib/docking_pid
+copying docking_pid/docking_pid.py -> /home/kky/cde2310_ws/build/docking_pid/build/lib/docking_pid
+running install
+running install_lib
+creating /home/kky/cde2310_ws/install/docking_pid/lib/python3.10/site-packages/docking_pid
+copying /home/kky/cde2310_ws/build/docking_pid/build/lib/docking_pid/__init__.py -> /home/kky/cde2310_ws/install/docking_pid/lib/python3.10/site-packages/docking_pid
+copying /home/kky/cde2310_ws/build/docking_pid/build/lib/docking_pid/docking_pid.py -> /home/kky/cde2310_ws/install/docking_pid/lib/python3.10/site-packages/docking_pid
+byte-compiling /home/kky/cde2310_ws/install/docking_pid/lib/python3.10/site-packages/docking_pid/__init__.py to __init__.cpython-310.pyc
+byte-compiling /home/kky/cde2310_ws/install/docking_pid/lib/python3.10/site-packages/docking_pid/docking_pid.py to docking_pid.cpython-310.pyc
+running install_data
+  File "/home/kky/cde2310_ws/install/docking_pid/lib/python3.10/site-packages/docking_pid/docking_pid.py", line 117
+    import rclpy
+    ^^^^^^
+SyntaxError: invalid syntax
+
+creating /home/kky/cde2310_ws/install/docking_pid/share/ament_index
+creating /home/kky/cde2310_ws/install/docking_pid/share/ament_index/resource_index
+creating /home/kky/cde2310_ws/install/docking_pid/share/ament_index/resource_index/packages
+copying resource/docking_pid -> /home/kky/cde2310_ws/install/docking_pid/share/ament_index/resource_index/packages
+copying package.xml -> /home/kky/cde2310_ws/install/docking_pid/share/docking_pid
+running install_egg_info
+Copying ../../build/docking_pid/docking_pid.egg-info to /home/kky/cde2310_ws/install/docking_pid/lib/python3.10/site-packages/docking_pid-0.0.0-py3.10.egg-info
+running install_scripts
+Installing docking_pid script to /home/kky/cde2310_ws/install/docking_pid/lib/docking_pid
+writing list of installed files to '/home/kky/cde2310_ws/build/docking_pid/install.log'

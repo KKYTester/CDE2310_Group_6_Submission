@@ -129,7 +129,7 @@ class Turtlebot3FSM(Node):
     # --------------------------------------------------------------------------
     def aruco_callback(self, msg: Int32):
         marker_id = msg.data
-        self.get_logger().info(f'ArUco marker detected, ID = {marker_id}')
+        # self.get_logger().info(f'ArUco marker detected, ID = {marker_id}')
         # Navigation is triggered by nav2aruco node; no state change here.
 
     def nav_started_callback(self, msg: Bool):
