@@ -6,6 +6,7 @@ from rclpy.action import ActionClient
 from rclpy.qos import qos_profile_sensor_data
 from nav_msgs.msg import OccupancyGrid
 from geometry_msgs.msg import PoseStamped
+from std_msgs.msg import Bool
 from nav2_msgs.action import NavigateToPose
 import random
 import math
@@ -43,13 +44,31 @@ class RandomGoalNoAMCL(Node):
         while self.costmap is None and rclpy.ok():
             rclpy.spin_once(self, timeout_sec=0.1)
         self.get_logger().info('Global costmap received.')
-        
+        self.resume = False  # Start in pause mode by default
+        self.resume_sub = self.create_subscription(
+            Bool,
+            'random_nav/resume',   # topic name – adjust if needed
+            self.resume_callback,
+            10
+        )
+        self.get_logger().info('Subscribed to random_nav/resume. Set False to pause, True to resume.')
         # State flag to prevent overlapping goals
         self.navigating = False
         
         # Start the first goal
         self.send_random_goal()
     
+    def resume_callback(self, msg: Bool):
+        was_resume = self.resume
+        self.resume = msg.data
+        if self.resume and not was_resume:
+            self.get_logger().info('Resumed: will start sending new goals.')
+            # If we're not currently navigating, trigger a new goal
+            if not self.navigating:
+                self.send_random_goal()
+        elif not self.resume and was_resume:
+            self.get_logger().info('Paused: will not send new goals.')
+
     def costmap_callback(self, msg):
         self.costmap = msg
     
@@ -96,6 +115,10 @@ class RandomGoalNoAMCL(Node):
         return None
     
     def send_random_goal(self):
+        # Prevent sending if paused
+        if not self.resume:
+            self.get_logger().debug('Paused – ignoring goal request')
+            return
         # Prevent sending a new goal while one is already in progress
         if self.navigating:
             self.get_logger().debug('Already navigating, ignoring new goal request')

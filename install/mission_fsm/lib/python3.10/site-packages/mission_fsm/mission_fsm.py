@@ -3,12 +3,14 @@
 import rclpy
 from rclpy.node import Node
 from std_msgs.msg import Bool, Empty, Int32, String
+from explore_lite_msgs.msg import ExploreStatus   # <-- NEW import
 
 class Turtlebot3FSM(Node):
     """
     Finite State Machine for a real TurtleBot3.
     States:
-        0: EXPLORING          - publishes True to 'explore/resume', listens for ArUco markers.
+        0: EXPLORING          - publishes True to 'explore/resume' (or later 'random_nav/resume'),
+                                listens for ArUco markers.
         1: NAVIGATING         - frontier paused, waiting for nav2aruco to reach goal.
         2: DOCKING            - docking in progress.
     """
@@ -26,25 +28,30 @@ class Turtlebot3FSM(Node):
 
         # Flags to avoid repeated publications
         self.docking_started = False
+        self.exploration_complete = False   # <-- NEW: flag to switch topic
 
-        # Publishers
+        # Publishers (two separate)
         self.explore_resume_pub = self.create_publisher(Bool, 'explore/resume', 10)
+        self.random_nav_resume_pub = self.create_publisher(Bool, 'random_nav/resume', 10)
+
+        # Docking publisher (unchanged)
         self.docking_begin_pub = self.create_publisher(Bool, 'docking/begin', 10)
 
-        # NEW: Publish station completion status for nav2aruco
+        # Station completion publishers (for nav2aruco)
         self.static_complete_pub = self.create_publisher(Bool, '/station/static_complete', 10)
         self.dynamic_complete_pub = self.create_publisher(Bool, '/station/dynamic_complete', 10)
 
         # Subscribers
         self.aruco_sub = self.create_subscription(Int32, 'aruco/marker_id', self.aruco_callback, 10)
         self.docking_status_sub = self.create_subscription(String, '/docking/status', self.docking_status_callback, 10)
-
-        # NEW: Subscribers from nav2aruco
         self.nav_started_sub = self.create_subscription(Bool, 'nav2aruco/started', self.nav_started_callback, 10)
         self.nav_goal_reached_sub = self.create_subscription(Bool, 'nav2aruco/goal_reached', self.nav_goal_callback, 10)
 
-        # Publish initial resume command
-        self.publish_explore_resume(True)
+        # NEW: Subscribe to exploration status
+        self.explore_status_sub = self.create_subscription(ExploreStatus, '/explore/status', self.explore_status_callback, 10)
+
+        # Publish initial resume command (using explore/resume)
+        self.publish_resume(True)
         self.publish_completion_status()   # initial publish
 
         self.get_logger().info('FSM started in EXPLORING state')
@@ -53,11 +60,19 @@ class Turtlebot3FSM(Node):
     # --------------------------------------------------------------------------
     # Helper methods
     # --------------------------------------------------------------------------
-    def publish_explore_resume(self, resume: bool):
+    def publish_resume(self, resume: bool):
+        """
+        Publish True to resume the active node (exploration or random_nav),
+        False to pause it. Switches topic when exploration_complete is True.
+        """
         msg = Bool()
         msg.data = resume
-        self.explore_resume_pub.publish(msg)
-        self.get_logger().info(f'Published explore/resume = {resume}')
+        if self.exploration_complete:
+            self.random_nav_resume_pub.publish(msg)
+            self.get_logger().info(f'Published random_nav/resume = {resume}')
+        else:
+            self.explore_resume_pub.publish(msg)
+            self.get_logger().info(f'Published explore/resume = {resume}')
 
     def publish_docking_begin(self, begin: bool):
         msg = Bool()
@@ -74,14 +89,14 @@ class Turtlebot3FSM(Node):
     # State entry actions
     # --------------------------------------------------------------------------
     def on_enter_state0(self):
-        """EXPLORING: resume frontier, reset docking flag."""
-        self.publish_explore_resume(True)
+        """EXPLORING: resume the active node (explore or random_nav), reset docking flag."""
+        self.publish_resume(True)
         self.docking_started = False
         self.get_logger().info('Entered EXPLORING state (State 0)')
 
     def on_enter_state1(self):
-        """NAVIGATING: pause frontier, wait for nav2aruco."""
-        self.publish_explore_resume(False)
+        """NAVIGATING: pause the active node, wait for nav2aruco."""
+        self.publish_resume(False)
         self.get_logger().info('Entered NAVIGATING state (State 1) - waiting for goal_reached')
 
     def on_enter_state2(self):
@@ -113,28 +128,31 @@ class Turtlebot3FSM(Node):
     # Callbacks
     # --------------------------------------------------------------------------
     def aruco_callback(self, msg: Int32):
-        """
-        Called when an ArUco marker is detected.
-        We no longer transition directly to docking; nav2aruco handles navigation.
-        However, we still track which markers are seen for potential future use.
-        For now, this callback only logs.
-        """
         marker_id = msg.data
         self.get_logger().info(f'ArUco marker detected, ID = {marker_id}')
-        # The actual navigation is triggered by nav2aruco node, which subscribes to the same topic.
-        # No state change here.
+        # Navigation is triggered by nav2aruco node; no state change here.
 
     def nav_started_callback(self, msg: Bool):
-        """nav2aruco has started navigating to a marker -> pause exploration."""
         if msg.data and self.state == 0:
             self.get_logger().info('nav2aruco started navigation -> transitioning to NAVIGATING')
             self.transition_to_state1()
 
     def nav_goal_callback(self, msg: Bool):
-        """nav2aruco reached the goal -> start docking."""
         if msg.data and self.state == 1:
             self.get_logger().info('nav2aruco goal reached -> transitioning to DOCKING')
             self.transition_to_state2()
+
+    def explore_status_callback(self, msg: ExploreStatus):
+        status_str = msg.status   # Use the correct field name
+        self.get_logger().info(f'Exploration status: {status_str}')
+        if status_str == "exploration_complete" and not self.exploration_complete:
+            self.exploration_complete = True
+            self.get_logger().info('Exploration complete. Switching to random_nav/resume.')
+            # Immediately publish the correct resume value based on current state
+            if self.state == 0:
+                self.publish_resume(True)
+            else:
+                self.publish_resume(False)
 
     def docking_status_callback(self, msg: String):
         if self.state != 2:
