@@ -1,0 +1,8 @@
+[0.000000] (-) TimerEvent: {}
+[0.000749] (-) JobUnselected: {'identifier': 'explore_lite'}
+[0.000824] (-) JobUnselected: {'identifier': 'explore_lite_msgs'}
+[0.000840] (-) JobUnselected: {'identifier': 'mission_fsm'}
+[0.000854] (-) JobUnselected: {'identifier': 'multirobot_map_merge'}
+[0.000865] (-) JobUnselected: {'identifier': 'nav2aruco'}
+[0.000877] (-) JobUnselected: {'identifier': 'scan_filter'}
+[0.001186] (-) EventReactorShutdown: {}
