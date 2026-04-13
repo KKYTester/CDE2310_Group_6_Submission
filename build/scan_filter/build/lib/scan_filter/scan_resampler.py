@@ -32,6 +32,11 @@ class AdaptiveScanResampler(Node):
         # Set the target based on the first scan we receive
         if self.target_n is None:
             self.target_n = original_n
+            # Recompute angle increment for the target number of readings as occasionally might
+            # be off by +1 due to minor difference in how the lidar driver computes it. This ensures consistency in the output scan. 
+            total_angle = msg.angle_max - msg.angle_min
+            msg.angle_increment = total_angle / (original_n - 1)
+            
             self.get_logger().info(f'Target number of readings set to: {self.target_n}')
             # If first scan already matches its own length, just republish
             self.pub.publish(msg)
@@ -39,6 +44,8 @@ class AdaptiveScanResampler(Node):
         
         # If it already matches, republish as is
         if original_n == self.target_n:
+            total_angle = msg.angle_max - msg.angle_min
+            msg.angle_increment = total_angle / (original_n - 1)
             self.pub.publish(msg)
             return
         
