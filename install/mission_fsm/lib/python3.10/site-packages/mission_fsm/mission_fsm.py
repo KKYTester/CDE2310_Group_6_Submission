@@ -8,22 +8,21 @@ class Turtlebot3FSM(Node):
     """
     Finite State Machine for a real TurtleBot3.
     States:
-        0: EXPLORING   - publishes True to 'explore/resume', listens for ArUco markers.
-        1: ARUCO_DETECTED - pauses frontier node, prepares for docking.
-        2: DOCKING     - starts docking, listens for completion events.
+        0: EXPLORING          - publishes True to 'explore/resume', listens for ArUco markers.
+        1: NAVIGATING         - frontier paused, waiting for nav2aruco to reach goal.
+        2: DOCKING            - docking in progress.
     """
 
     def __init__(self):
         super().__init__('turtlebot3_fsm')
 
-        # Global flags (station completion status)
-        self.station_a_complete = False
-        self.station_b_complete = False
-        self.station_a_in_progress = False
-        self.station_b_in_progress = False
+        # Station completion flags
+        self.static_complete = False      # marker 0
+        self.dynamic_complete = False     # marker 1
+        self.lift_complete = False        # marker 3 (only after both 0 and 1)
 
         # FSM state
-        self.state = 0  # Start in EXPLORING
+        self.state = 0  # EXPLORING
 
         # Flags to avoid repeated publications
         self.docking_started = False
@@ -32,135 +31,140 @@ class Turtlebot3FSM(Node):
         self.explore_resume_pub = self.create_publisher(Bool, 'explore/resume', 10)
         self.docking_begin_pub = self.create_publisher(Bool, 'docking/begin', 10)
 
+        # NEW: Publish station completion status for nav2aruco
+        self.static_complete_pub = self.create_publisher(Bool, '/station/static_complete', 10)
+        self.dynamic_complete_pub = self.create_publisher(Bool, '/station/dynamic_complete', 10)
+
         # Subscribers
-        self.aruco_sub = self.create_subscription(
-            Int32, 'aruco/marker_id', self.aruco_callback, 10)
+        self.aruco_sub = self.create_subscription(Int32, 'aruco/marker_id', self.aruco_callback, 10)
         self.docking_status_sub = self.create_subscription(String, '/docking/status', self.docking_status_callback, 10)
 
-        # Publish initial resume command (State 0 entry)
+        # NEW: Subscribers from nav2aruco
+        self.nav_started_sub = self.create_subscription(Bool, 'nav2aruco/started', self.nav_started_callback, 10)
+        self.nav_goal_reached_sub = self.create_subscription(Bool, 'nav2aruco/goal_reached', self.nav_goal_callback, 10)
+
+        # Publish initial resume command
         self.publish_explore_resume(True)
+        self.publish_completion_status()   # initial publish
 
         self.get_logger().info('FSM started in EXPLORING state')
-        self.get_logger().info(f'Station A complete: {self.station_a_complete}, Station B complete: {self.station_b_complete}')
+        self.get_logger().info(f'Static complete: {self.static_complete}, Dynamic complete: {self.dynamic_complete}')
 
     # --------------------------------------------------------------------------
     # Helper methods
     # --------------------------------------------------------------------------
     def publish_explore_resume(self, resume: bool):
-        """Publish True to resume frontier node, False to pause it."""
         msg = Bool()
         msg.data = resume
         self.explore_resume_pub.publish(msg)
         self.get_logger().info(f'Published explore/resume = {resume}')
 
     def publish_docking_begin(self, begin: bool):
-        """Send signal to start the docking procedure."""
         msg = Bool()
         msg.data = begin
         self.docking_begin_pub.publish(msg)
         self.get_logger().info(f'Published docking/begin = {begin}')
 
+    def publish_completion_status(self):
+        self.static_complete_pub.publish(Bool(data=self.static_complete))
+        self.dynamic_complete_pub.publish(Bool(data=self.dynamic_complete))
+        self.get_logger().debug(f'Published completion status: static={self.static_complete}, dynamic={self.dynamic_complete}')
+
     # --------------------------------------------------------------------------
-    # State callbacks (state-specific logic)
+    # State entry actions
     # --------------------------------------------------------------------------
     def on_enter_state0(self):
-        """Actions performed when entering EXPLORING state."""
-        self.publish_explore_resume(True)      # Resume frontier exploration
-        self.docking_started = False           # Reset docking flag for next time
+        """EXPLORING: resume frontier, reset docking flag."""
+        self.publish_explore_resume(True)
+        self.docking_started = False
         self.get_logger().info('Entered EXPLORING state (State 0)')
 
     def on_enter_state1(self):
-        """Actions performed when entering ARUCO_DETECTED state."""
-        self.publish_explore_resume(False)     # Pause frontier exploration
-        self.get_logger().info('Entered ARUCO_DETECTED state (State 1)')
+        """NAVIGATING: pause frontier, wait for nav2aruco."""
+        self.publish_explore_resume(False)
+        self.get_logger().info('Entered NAVIGATING state (State 1) - waiting for goal_reached')
 
     def on_enter_state2(self):
-        """Actions performed when entering DOCKING state."""
+        """DOCKING: start docking procedure."""
         if not self.docking_started:
             self.publish_docking_begin(True)
             self.docking_started = True
         self.get_logger().info('Entered DOCKING state (State 2)')
 
     # --------------------------------------------------------------------------
-    # FSM transition logic (called from callbacks)
+    # FSM transitions
     # --------------------------------------------------------------------------
     def transition_to_state1(self):
-        """Transition from EXPLORING to ARUCO_DETECTED."""
         if self.state == 0:
             self.state = 1
             self.on_enter_state1()
-            self.transition_to_state2()   # Immediately go to docking
 
     def transition_to_state2(self):
-        """Transition from ARUCO_DETECTED to DOCKING."""
         if self.state == 1:
             self.state = 2
             self.on_enter_state2()
 
     def transition_to_state0(self):
-        """Transition from DOCKING back to EXPLORING."""
         if self.state == 2:
             self.state = 0
             self.on_enter_state0()
 
     # --------------------------------------------------------------------------
-    # ROS2 callbacks
+    # Callbacks
     # --------------------------------------------------------------------------
     def aruco_callback(self, msg: Int32):
         """
         Called when an ArUco marker is detected.
-        Only triggers if we are in EXPLORING state and at least one station is incomplete.
+        We no longer transition directly to docking; nav2aruco handles navigation.
+        However, we still track which markers are seen for potential future use.
+        For now, this callback only logs.
         """
-        marker_id = msg.data   # <-- get the integer ID
+        marker_id = msg.data
         self.get_logger().info(f'ArUco marker detected, ID = {marker_id}')
+        # The actual navigation is triggered by nav2aruco node, which subscribes to the same topic.
+        # No state change here.
 
-        # Station A handler
-        if self.state == 0 and marker_id == 0:
+    def nav_started_callback(self, msg: Bool):
+        """nav2aruco has started navigating to a marker -> pause exploration."""
+        if msg.data and self.state == 0:
+            self.get_logger().info('nav2aruco started navigation -> transitioning to NAVIGATING')
+            self.transition_to_state1()
 
-            if not self.station_a_complete:
-                if self.station_a_in_progress:
-                    self.get_logger().info('ArUco detected and station A already in progress → ignoring')
-                    return
-                self.get_logger().info('ArUco detected and station A incomplete → transitioning to docking')
-                self.station_a_in_progress = True
-                self.transition_to_state1()
-            else:
-                self.get_logger().info('Station A detected but already complete → ignoring')
-        # Station B handler
-        if self.state == 0 and marker_id == 1:    
-            if not self.station_b_complete:
-                if self.station_b_in_progress:
-                    self.get_logger().info('ArUco detected and station B already in progress → ignoring')
-                    return
-                self.get_logger().info('ArUco detected and station B incomplete → transitioning to docking')
-                self.station_a_in_progress = True
-                self.transition_to_state1()
-            else:
-                self.get_logger().info('Station B detected but already complete → ignoring')
+    def nav_goal_callback(self, msg: Bool):
+        """nav2aruco reached the goal -> start docking."""
+        if msg.data and self.state == 1:
+            self.get_logger().info('nav2aruco goal reached -> transitioning to DOCKING')
+            self.transition_to_state2()
 
     def docking_status_callback(self, msg: String):
-            if self.state != 2:
-                return
-            status = msg.data.strip().lower()
-            self.get_logger().info(f'Docking status: {status}')
-            if status == "static docking is done":
-                if not self.station_a_complete:
-                    # set progress flags
-                    self.station_a_complete = True
-                    self.station_a_in_progress = False
-                    # Reset docking flag so next time we can start docking again
-                    self.publish_docking_begin(False)
-                    self.transition_to_state0()
-            elif status == "dynamic docking is done":
-                if not self.station_b_complete:
-                    # set progress flags
-                    self.station_b_complete = True
-                    self.station_b_in_progress = False
-                    # Reset docking flag so next time we can start docking again
-                    self.publish_docking_begin(False)
-                    self.transition_to_state0()
+        if self.state != 2:
+            return
+        status = msg.data.strip().lower()
+        self.get_logger().info(f'Docking status: {status}')
+        if status == "static docking is done":
+            if not self.static_complete:
+                self.static_complete = True
+                self.publish_completion_status()
+                self.publish_docking_begin(False)
+                self.get_logger().info('Static docking complete. Returning to EXPLORING.')
+                self.transition_to_state0()
+        elif status == "dynamic docking is done":
+            if not self.dynamic_complete:
+                self.dynamic_complete = True
+                self.publish_completion_status()
+                self.publish_docking_begin(False)
+                self.get_logger().info('Dynamic docking complete. Returning to EXPLORING.')
+                self.transition_to_state0()
+        elif status == "lift docking is done":
+            if not self.lift_complete and self.static_complete and self.dynamic_complete:
+                self.lift_complete = True
+                self.publish_docking_begin(False)
+                self.get_logger().info('Lift docking complete. Returning to EXPLORING.')
+                self.transition_to_state0()
             else:
-                self.get_logger().warn(f'Unknown status: {msg.data}')
+                self.get_logger().warn('Lift docking done but conditions not met (static/dynamic not both complete).')
+        else:
+            self.get_logger().warn(f'Unknown status: {msg.data}')
 
 # ------------------------------------------------------------------------------
 # Main entry point
