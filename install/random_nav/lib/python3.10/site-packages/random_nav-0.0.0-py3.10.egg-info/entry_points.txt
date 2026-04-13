@@ -1,0 +1,3 @@
+[console_scripts]
+random_nav = random_nav.random_nav:main
+
