@@ -44,6 +44,14 @@ def generate_launch_description():
         ]
     )
 
+    docking_node = Node(
+        package='docking_pid',
+        executable='docking_pid',
+        name='docking_pid',
+        output='screen',
+        prefix=['xterm -e'],
+    )
+
     # nav2aruco node
     nav2aruco_node = Node(
         package='nav2aruco',
@@ -126,6 +134,7 @@ def generate_launch_description():
     ) 
     
     return LaunchDescription([
+        docking_node,
         scan_resampler_node,
         slam_node,
         nav2aruco_node,

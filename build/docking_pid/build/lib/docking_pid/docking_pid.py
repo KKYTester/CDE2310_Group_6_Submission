@@ -33,44 +33,45 @@ class ArucoDockingPID(Node):
     def __init__(self):
         super().__init__('aruco_docking_pid')
 
-        # ==================== TARGET POSITION ====================
-        self.TARGET_DISTANCE = 0.25  # ✅ Changed from 0.30 to 0.25 (25cm)
-        self.TARGET_LATERAL = 0.0
+        # ==================== CAMERA-TO-LAUNCHER OFFSET ====================
+        self.LAUNCHER_OFFSET_X = -0.06  # Launcher is 12.5cm LEFT of camera; -16.0 was somewhat working
+        self.LAUNCHER_OFFSET_Z = 0.0     # Measure if there's a front/back offset
 
+        # ==================== TARGET   POSITION (adjusted for launcher) ====================
+        self.TARGET_DISTANCE = 0.25 + self.LAUNCHER_OFFSET_Z
+        self.TARGET_LATERAL = 0.0 + self.LAUNCHER_OFFSET_X  # = -0.125
         # ==================== DOCKING CONFIRMATION ====================
-        self.DOCKING_CONFIRM_TIME = 1.0  # ✅ Must stay docked for 1 second
-        self.docking_start_time = None    # ✅ Tracks when docking started
-        self.in_docking_position = False  # ✅ Flag for docking position
+        # Docks immediately when within tolerance
 
         # ==================== CONTROL GAINS ====================
         self.KP_DISTANCE = 0.8
         self.KI_DISTANCE = 0.0
-        self.KD_DISTANCE = 0.0
+        self.KD_DISTANCE = 0.1
 
         self.KP_ANGULAR = 2.0
         self.KI_ANGULAR = 0.0
-        self.KD_ANGULAR = 0.0
+        self.KD_ANGULAR = 0.3
 
         # ==================== ERROR DEAD ZONES ====================
-        self.LATERAL_ERROR_DEADZONE = 0.015  # Ignore errors < 1.5cm
+        self.LATERAL_ERROR_DEADZONE = 0.008 # Ignore errors < 1.5cm
         self.DISTANCE_ERROR_DEADZONE = 0.02  # Ignore errors < 2cm
 
         # ==================== ASYMMETRIC TUNING ====================
-        self.RIGHT_TURN_GAIN = 2.5
+        self.RIGHT_TURN_GAIN = 1.8
         self.LEFT_TURN_GAIN = 1.5
         
-        self.MIN_RIGHT_TURN = 0.12
-        self.MIN_LEFT_TURN = 0.08
+        self.MIN_RIGHT_TURN = 0.08
+        self.MIN_LEFT_TURN = 0.06
 
         # ==================== LIMITS ====================
         self.MAX_LINEAR_SPEED = 0.12
-        self.MAX_ANGULAR_SPEED = 0.6
+        self.MAX_ANGULAR_SPEED = 0.4
         self.MAX_ACCEL_LINEAR = 0.3
         self.MAX_ACCEL_ANGULAR = 1.0
 
         # ==================== TOLERANCES ====================
-        self.DISTANCE_TOLERANCE = 0.05
-        self.LATERAL_TOLERANCE = 0.03
+        self.DISTANCE_TOLERANCE = 0.03
+        self.LATERAL_TOLERANCE = 0.02
 
         # ==================== SAFETY ====================
         self.MIN_SAFE_DISTANCE = 0.20
@@ -131,7 +132,6 @@ class ArucoDockingPID(Node):
 
         self.get_logger().info("🎯 PID Docking Controller Started")
         self.get_logger().info(f"   Target distance: {self.TARGET_DISTANCE}m")
-        self.get_logger().info(f"   Docking confirmation: {self.DOCKING_CONFIRM_TIME}s")
         self.get_logger().info(f"   RIGHT: Gain={self.RIGHT_TURN_GAIN}, Min={self.MIN_RIGHT_TURN}")
         self.get_logger().info(f"   LEFT:  Gain={self.LEFT_TURN_GAIN}, Min={self.MIN_LEFT_TURN}")
 
@@ -144,8 +144,6 @@ class ArucoDockingPID(Node):
         self.docking_begin = msg.data
         if msg.data:
             self.is_docked = False
-            self.in_docking_position = False  # ✅ Reset confirmation
-            self.docking_start_time = None    # ✅ Reset timer
             self.detected_markers.clear()
             self.marker_last_seen.clear()
             self.prev_linear = 0.0
@@ -154,8 +152,6 @@ class ArucoDockingPID(Node):
             self.angular_pid.reset()
         else:
             self.stop_robot()
-            self.in_docking_position = False
-            self.docking_start_time = None
 
     def marker_id_callback(self, msg):
         self.current_marker_id = msg.data
@@ -171,8 +167,6 @@ class ArucoDockingPID(Node):
                 f"Done: {self.completed_markers}"
             )
         self.is_docked = False
-        self.in_docking_position = False
-        self.docking_start_time = None
 
     # ==================== MAIN CONTROL LOOP ====================
     def control_loop(self):
@@ -193,23 +187,21 @@ class ArucoDockingPID(Node):
         # Safety: No marker visible
         if self.last_pose is None:
             self.stop_robot()
-            self.in_docking_position = False  # ✅ Reset if marker lost
-            self.docking_start_time = None
             return
 
         # Safety: Marker timeout
         time_since_seen = current_time - self.last_seen_time
         if time_since_seen > self.MARKER_TIMEOUT:
             self.stop_robot()
-            self.in_docking_position = False  # ✅ Reset if timeout
-            self.docking_start_time = None
             return
 
         # Skip already-completed markers
         if self.current_marker_id in self.completed_markers:
             self.stop_robot()
             return
-
+        if self.current_marker_id not in (0, 1):
+            self.stop_robot()
+            return
         # ==================== EXTRACT MARKER POSITION ====================
         marker_x = self.last_pose.pose.position.x
         marker_z = self.last_pose.pose.position.z
@@ -231,49 +223,18 @@ class ArucoDockingPID(Node):
             abs(marker_x - self.TARGET_LATERAL) < self.LATERAL_TOLERANCE
         )
         
-        if within_tolerance:
-            # ✅ DOCKING CONFIRMATION LOGIC
-            if not self.in_docking_position:
-                # Just entered docking position
-                self.in_docking_position = True
-                self.docking_start_time = current_time
-                self.get_logger().info(f"⏳ Entered docking position, confirming...")
-                
+        if within_tolerance and not self.is_docked:
+            self.get_logger().info("✅ DOCKED!")
+            status_msg = String()
+            if self.current_marker_id == 0:
+                status_msg.data = "static"
             else:
-                # Already in position - check if enough time has passed
-                time_in_position = current_time - self.docking_start_time
-                
-                if time_in_position >= self.DOCKING_CONFIRM_TIME:
-                    # ✅ CONFIRMED DOCKED - publish launch command
-                    if not self.is_docked:
-                        self.get_logger().info(
-                            f"✅ DOCKED! (confirmed after {time_in_position:.1f}s)"
-                        )
-                        status_msg = String()
-                        if self.current_marker_id == 0:
-                            status_msg.data = "static"
-                        else:
-                            status_msg.data = "dynamic"
-                        self.launch_cmd_pub.publish(status_msg)
-                        self.is_docked = True
-                    
-                    self.stop_robot()
-                    return
-                else:
-                    # Still confirming - hold position but keep control active
-                    remaining = self.DOCKING_CONFIRM_TIME - time_in_position
-                    self.get_logger().info(
-                        f"⏳ Holding position... {remaining:.1f}s remaining",
-                        throttle_duration_sec=0.5
-                    )
-                    # Continue with control loop to maintain position
-        else:
-            # ✅ LEFT DOCKING POSITION - RESET CONFIRMATION
-            if self.in_docking_position:
-                self.get_logger().info("⚠️  Left docking position - resetting confirmation")
-            self.in_docking_position = False
-            self.docking_start_time = None
-            self.is_docked = False
+                status_msg.data = "dynamic"
+            self.launch_cmd_pub.publish(status_msg)
+            self.is_docked = True
+            self.docking_begin = False
+            self.stop_robot()
+            return
 
         # ==================== PID CONTROL ====================
         dt = current_time - self.prev_time
@@ -300,7 +261,7 @@ class ArucoDockingPID(Node):
                 if abs(angular_cmd) < self.MIN_LEFT_TURN:
                     angular_cmd = self.MIN_LEFT_TURN
                 direction = "LEFT"
-        
+
         # ==================== SAFETY ====================
         if marker_z < self.MIN_SAFE_DISTANCE and linear_cmd > 0:
             linear_cmd = 0.0
