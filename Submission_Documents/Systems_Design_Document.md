@@ -442,10 +442,12 @@ The operator must inspect and confirm all 9 ping-pong balls are correctly loaded
 - Custom **flywheel launcher**: R380 DC motor driven via L298N H-bridge (GPIO 23/24)
 - **Servo-actuated ball gate**: MG90S servo on GPIO 18, 50 Hz PWM
 - Spiral ball cache stores **9 ping-pong balls** (3 per station × 3 stations)
-![photo_2026-04-14_16-17-56](https://hackmd.io/_uploads/rJxvQ_za-l.jpg)
-![photo_2026-04-14_16-17-56 (2)](https://hackmd.io/_uploads/Syqw7uf6Zx.jpg)
-![photo_2026-04-14_16-17-56 (3)](https://hackmd.io/_uploads/rJ4u7OGaWe.jpg)
-![photo_2026-04-14_16-17-57](https://hackmd.io/_uploads/SJlYmdMpZx.jpg)
+
+<img width="794" height="732" alt="Left" src="https://github.com/user-attachments/assets/95412187-b349-4c1c-9d3e-7bcea80adb55" />
+<img width="853" height="619" alt="Top" src="https://github.com/user-attachments/assets/d3f22042-904f-4be3-a31d-7eb2ef1ab462" />
+<img width="775" height="675" alt="Front" src="https://github.com/user-attachments/assets/93359bb2-bb70-49b3-a01c-b7c350a269f0" />
+<img width="877" height="679" alt="Overall" src="https://github.com/user-attachments/assets/0aa01903-63c9-4f6b-93b3-9dc8ea0da540" />
+
 #### Electrical
 - Power source: **11.1 V, 1.8 Ah LiPo** (5C max, 9 A safe discharge limit)
 - Payload motors powered via a dedicated **DC-DC buck converter (11.1 V → 5 V, 6 A rated)**, electrically isolated from the RPi's own 5 V rail — prevents brownouts during motor spin-up
