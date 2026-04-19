@@ -1,0 +1,24 @@
+[0.476s] Invoking command in '/home/kky/cde2310_ws/src/docking_pid': PYTHONPATH=/home/kky/cde2310_ws/build/docking_pid/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/kky/cde2310_ws/install/docking_pid/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/docking_pid build --build-base /home/kky/cde2310_ws/build/docking_pid/build install --record /home/kky/cde2310_ws/build/docking_pid/install.log --single-version-externally-managed install_data
+[0.657s] running egg_info
+[0.658s] writing ../../build/docking_pid/docking_pid.egg-info/PKG-INFO
+[0.658s] writing dependency_links to ../../build/docking_pid/docking_pid.egg-info/dependency_links.txt
+[0.658s] writing entry points to ../../build/docking_pid/docking_pid.egg-info/entry_points.txt
+[0.658s] writing requirements to ../../build/docking_pid/docking_pid.egg-info/requires.txt
+[0.658s] writing top-level names to ../../build/docking_pid/docking_pid.egg-info/top_level.txt
+[0.659s] reading manifest file '../../build/docking_pid/docking_pid.egg-info/SOURCES.txt'
+[0.660s] writing manifest file '../../build/docking_pid/docking_pid.egg-info/SOURCES.txt'
+[0.661s] running build
+[0.661s] running build_py
+[0.661s] copying docking_pid/docking_pid.py -> /home/kky/cde2310_ws/build/docking_pid/build/lib/docking_pid
+[0.661s] running install
+[0.662s] running install_lib
+[0.662s] copying /home/kky/cde2310_ws/build/docking_pid/build/lib/docking_pid/docking_pid.py -> /home/kky/cde2310_ws/install/docking_pid/lib/python3.10/site-packages/docking_pid
+[0.663s] byte-compiling /home/kky/cde2310_ws/install/docking_pid/lib/python3.10/site-packages/docking_pid/docking_pid.py to docking_pid.cpython-310.pyc
+[0.664s] running install_data
+[0.664s] running install_egg_info
+[0.666s] removing '/home/kky/cde2310_ws/install/docking_pid/lib/python3.10/site-packages/docking_pid-0.0.0-py3.10.egg-info' (and everything under it)
+[0.666s] Copying ../../build/docking_pid/docking_pid.egg-info to /home/kky/cde2310_ws/install/docking_pid/lib/python3.10/site-packages/docking_pid-0.0.0-py3.10.egg-info
+[0.667s] running install_scripts
+[0.682s] Installing docking_pid script to /home/kky/cde2310_ws/install/docking_pid/lib/docking_pid
+[0.682s] writing list of installed files to '/home/kky/cde2310_ws/build/docking_pid/install.log'
+[0.698s] Invoked command in '/home/kky/cde2310_ws/src/docking_pid' returned '0': PYTHONPATH=/home/kky/cde2310_ws/build/docking_pid/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/kky/cde2310_ws/install/docking_pid/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/docking_pid build --build-base /home/kky/cde2310_ws/build/docking_pid/build install --record /home/kky/cde2310_ws/build/docking_pid/install.log --single-version-externally-managed install_data

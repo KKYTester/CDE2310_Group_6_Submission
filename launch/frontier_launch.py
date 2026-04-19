@@ -8,12 +8,14 @@ import os
 
 
 def generate_launch_description():
-
+    # Get package directories for nav2_bringup and explore_lite ros2 launch files
     nav2_dir = get_package_share_directory('nav2_bringup')
-    slam_dir = get_package_share_directory('slam_toolbox')
     explore_dir = get_package_share_directory('explore_lite')
-    nav2_params = './param_files/nav2_params.yaml'
-    slam_toolbox_params = './param_files/mapper_params_online_async.yaml'
+    # Frontier launch directory (for param files)
+    frontier_launch_dir = os.path.dirname(__file__)
+    # Param file paths
+    nav2_params = os.path.join(frontier_launch_dir, 'param_files', 'nav2_params.yaml')
+    slam_toolbox_params = os.path.join(frontier_launch_dir, 'param_files', 'mapper_params_online_async.yaml')
 
     rviz_config = os.path.join(
         nav2_dir,
@@ -21,16 +23,72 @@ def generate_launch_description():
         'nav2_default_view.rviz'
     )
 
-    # Slam_Toolbox launch
-    slam_launch = IncludeLaunchDescription(
-        PythonLaunchDescriptionSource(
-            os.path.join(slam_dir, 'launch', 'online_async_launch.py')
-        ),
-        launch_arguments={
-            'use_sim_time': 'false',
-            'params_file': slam_toolbox_params,
-        }.items()
+    # Scan filterer node
+    scan_resampler_node = Node(
+        package='scan_filter',
+        executable='scan_resampler',
+        name='scan_resampler',
+        output='screen',
     )
+
+    # Slam_Toolbox node
+    slam_node = Node(
+        package='slam_toolbox',
+        executable='async_slam_toolbox_node',
+        name='slam_toolbox',
+        output='screen',
+        parameters=[
+            slam_toolbox_params,
+            {'use_sim_time': False,
+             'scan_topic': '/scan_filtered'}
+        ]
+    )
+
+    docking_node = Node(
+        package='docking_pid',
+        executable='docking_pid',
+        name='docking_pid',
+        output='screen',
+        prefix=['xterm -e'],
+    )
+
+    # nav2aruco node
+    nav2aruco_node = Node(
+        package='nav2aruco',
+        executable='nav2aruco',
+        name='nav2aruco',
+        output='screen',
+        prefix=['xterm -e'],
+    )
+
+    # random_nav node launch
+    random_nav_node = Node(
+        package='random_nav',
+        executable='random_nav',
+        name='random_nav',
+        output='screen',
+        prefix=['xterm -e'],
+    )
+
+    delayed_random_nav = TimerAction(
+        period=10.0,  # seconds
+        actions=[random_nav_node]
+    )
+
+    # Mission FSM node launch
+    mission_fsm_node = Node(
+        package='mission_fsm',
+        executable='mission_fsm',
+        name='mission_fsm',
+        output='screen',
+        prefix=['xterm -e'], # Runs FSM node in separate terminal for easier debugging and monitoring
+    )
+
+    delayed_mission_fsm = TimerAction(
+        period=20.0,  # seconds
+        actions=[mission_fsm_node]
+    )
+
 
     # Nav2 bringup launch
     nav2_launch = TimerAction(
@@ -76,7 +134,12 @@ def generate_launch_description():
     ) 
     
     return LaunchDescription([
-        slam_launch,
+        docking_node,
+        scan_resampler_node,
+        slam_node,
+        nav2aruco_node,
+        delayed_random_nav,
+        delayed_mission_fsm,
         nav2_launch,
         rviz_node,
         frontier_launch,

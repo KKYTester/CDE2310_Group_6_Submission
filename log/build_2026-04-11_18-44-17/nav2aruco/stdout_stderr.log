@@ -1,0 +1,35 @@
+running egg_info
+creating ../../build/nav2aruco/nav2aruco.egg-info
+writing ../../build/nav2aruco/nav2aruco.egg-info/PKG-INFO
+writing dependency_links to ../../build/nav2aruco/nav2aruco.egg-info/dependency_links.txt
+writing entry points to ../../build/nav2aruco/nav2aruco.egg-info/entry_points.txt
+writing requirements to ../../build/nav2aruco/nav2aruco.egg-info/requires.txt
+writing top-level names to ../../build/nav2aruco/nav2aruco.egg-info/top_level.txt
+writing manifest file '../../build/nav2aruco/nav2aruco.egg-info/SOURCES.txt'
+reading manifest file '../../build/nav2aruco/nav2aruco.egg-info/SOURCES.txt'
+writing manifest file '../../build/nav2aruco/nav2aruco.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/kky/cde2310_ws/build/nav2aruco/build
+creating /home/kky/cde2310_ws/build/nav2aruco/build/lib
+creating /home/kky/cde2310_ws/build/nav2aruco/build/lib/nav2aruco
+copying nav2aruco/nav2aruco.py -> /home/kky/cde2310_ws/build/nav2aruco/build/lib/nav2aruco
+copying nav2aruco/__init__.py -> /home/kky/cde2310_ws/build/nav2aruco/build/lib/nav2aruco
+running install
+running install_lib
+creating /home/kky/cde2310_ws/install/nav2aruco/lib/python3.10/site-packages/nav2aruco
+copying /home/kky/cde2310_ws/build/nav2aruco/build/lib/nav2aruco/nav2aruco.py -> /home/kky/cde2310_ws/install/nav2aruco/lib/python3.10/site-packages/nav2aruco
+copying /home/kky/cde2310_ws/build/nav2aruco/build/lib/nav2aruco/__init__.py -> /home/kky/cde2310_ws/install/nav2aruco/lib/python3.10/site-packages/nav2aruco
+byte-compiling /home/kky/cde2310_ws/install/nav2aruco/lib/python3.10/site-packages/nav2aruco/nav2aruco.py to nav2aruco.cpython-310.pyc
+byte-compiling /home/kky/cde2310_ws/install/nav2aruco/lib/python3.10/site-packages/nav2aruco/__init__.py to __init__.cpython-310.pyc
+running install_data
+creating /home/kky/cde2310_ws/install/nav2aruco/share/ament_index
+creating /home/kky/cde2310_ws/install/nav2aruco/share/ament_index/resource_index
+creating /home/kky/cde2310_ws/install/nav2aruco/share/ament_index/resource_index/packages
+copying resource/nav2aruco -> /home/kky/cde2310_ws/install/nav2aruco/share/ament_index/resource_index/packages
+copying package.xml -> /home/kky/cde2310_ws/install/nav2aruco/share/nav2aruco
+running install_egg_info
+Copying ../../build/nav2aruco/nav2aruco.egg-info to /home/kky/cde2310_ws/install/nav2aruco/lib/python3.10/site-packages/nav2aruco-0.0.0-py3.10.egg-info
+running install_scripts
+Installing nav2aruco script to /home/kky/cde2310_ws/install/nav2aruco/lib/nav2aruco
+writing list of installed files to '/home/kky/cde2310_ws/build/nav2aruco/install.log'

@@ -1,0 +1,3 @@
+[console_scripts]
+nav2aruco = nav2aruco.nav2aruco:main
+

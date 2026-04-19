@@ -1,0 +1,20 @@
+[0.444s] Invoking command in '/home/kky/cde2310_ws/src/scan_filter': PYTHONPATH=/home/kky/cde2310_ws/build/scan_filter/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/kky/cde2310_ws/install/scan_filter/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/scan_filter build --build-base /home/kky/cde2310_ws/build/scan_filter/build install --record /home/kky/cde2310_ws/build/scan_filter/install.log --single-version-externally-managed install_data
+[0.613s] running egg_info
+[0.613s] writing ../../build/scan_filter/scan_filter.egg-info/PKG-INFO
+[0.613s] writing dependency_links to ../../build/scan_filter/scan_filter.egg-info/dependency_links.txt
+[0.613s] writing entry points to ../../build/scan_filter/scan_filter.egg-info/entry_points.txt
+[0.614s] writing requirements to ../../build/scan_filter/scan_filter.egg-info/requires.txt
+[0.614s] writing top-level names to ../../build/scan_filter/scan_filter.egg-info/top_level.txt
+[0.615s] reading manifest file '../../build/scan_filter/scan_filter.egg-info/SOURCES.txt'
+[0.615s] writing manifest file '../../build/scan_filter/scan_filter.egg-info/SOURCES.txt'
+[0.615s] running build
+[0.615s] running build_py
+[0.615s] running install
+[0.616s] running install_lib
+[0.617s] running install_data
+[0.617s] running install_egg_info
+[0.618s] removing '/home/kky/cde2310_ws/install/scan_filter/lib/python3.10/site-packages/scan_filter-0.0.0-py3.10.egg-info' (and everything under it)
+[0.619s] Copying ../../build/scan_filter/scan_filter.egg-info to /home/kky/cde2310_ws/install/scan_filter/lib/python3.10/site-packages/scan_filter-0.0.0-py3.10.egg-info
+[0.620s] running install_scripts
+[0.635s] writing list of installed files to '/home/kky/cde2310_ws/build/scan_filter/install.log'
+[0.655s] Invoked command in '/home/kky/cde2310_ws/src/scan_filter' returned '0': PYTHONPATH=/home/kky/cde2310_ws/build/scan_filter/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/kky/cde2310_ws/install/scan_filter/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/scan_filter build --build-base /home/kky/cde2310_ws/build/scan_filter/build install --record /home/kky/cde2310_ws/build/scan_filter/install.log --single-version-externally-managed install_data

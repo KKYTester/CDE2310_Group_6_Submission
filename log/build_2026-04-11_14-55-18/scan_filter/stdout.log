@@ -1,0 +1,18 @@
+running egg_info
+writing ../../build/scan_filter/scan_filter.egg-info/PKG-INFO
+writing dependency_links to ../../build/scan_filter/scan_filter.egg-info/dependency_links.txt
+writing entry points to ../../build/scan_filter/scan_filter.egg-info/entry_points.txt
+writing requirements to ../../build/scan_filter/scan_filter.egg-info/requires.txt
+writing top-level names to ../../build/scan_filter/scan_filter.egg-info/top_level.txt
+reading manifest file '../../build/scan_filter/scan_filter.egg-info/SOURCES.txt'
+writing manifest file '../../build/scan_filter/scan_filter.egg-info/SOURCES.txt'
+running build
+running build_py
+running install
+running install_lib
+running install_data
+running install_egg_info
+removing '/home/kky/cde2310_ws/install/scan_filter/lib/python3.10/site-packages/scan_filter-0.0.0-py3.10.egg-info' (and everything under it)
+Copying ../../build/scan_filter/scan_filter.egg-info to /home/kky/cde2310_ws/install/scan_filter/lib/python3.10/site-packages/scan_filter-0.0.0-py3.10.egg-info
+running install_scripts
+writing list of installed files to '/home/kky/cde2310_ws/build/scan_filter/install.log'

@@ -1,0 +1,130 @@
+[0.000000] (-) TimerEvent: {}
+[0.001068] (-) JobUnselected: {'identifier': 'explore_lite'}
+[0.001440] (-) JobUnselected: {'identifier': 'explore_lite_msgs'}
+[0.001593] (-) JobUnselected: {'identifier': 'mission_fsm'}
+[0.008659] (-) JobUnselected: {'identifier': 'multirobot_map_merge'}
+[0.009006] (-) JobUnselected: {'identifier': 'nav2aruco'}
+[0.009316] (-) JobUnselected: {'identifier': 'random_nav'}
+[0.009459] (-) JobUnselected: {'identifier': 'scan_filter'}
+[0.009668] (docking_pid) JobQueued: {'identifier': 'docking_pid', 'dependencies': OrderedDict()}
+[0.009856] (docking_pid) JobStarted: {'identifier': 'docking_pid'}
+[0.098045] (-) TimerEvent: {}
+[0.199318] (-) TimerEvent: {}
+[0.300543] (-) TimerEvent: {}
+[0.401833] (-) TimerEvent: {}
+[0.503299] (-) TimerEvent: {}
+[0.605267] (-) TimerEvent: {}
+[0.706721] (-) TimerEvent: {}
+[0.808030] (-) TimerEvent: {}
+[0.909617] (-) TimerEvent: {}
+[1.010980] (-) TimerEvent: {}
+[1.112491] (-) TimerEvent: {}
+[1.213700] (-) TimerEvent: {}
+[1.314958] (-) TimerEvent: {}
+[1.416102] (-) TimerEvent: {}
+[1.517299] (-) TimerEvent: {}
+[1.618533] (-) TimerEvent: {}
+[1.719731] (-) TimerEvent: {}
+[1.820970] (-) TimerEvent: {}
+[1.922198] (-) TimerEvent: {}
+[2.023339] (-) TimerEvent: {}
+[2.124454] (-) TimerEvent: {}
+[2.225606] (-) TimerEvent: {}
+[2.330026] (-) TimerEvent: {}
+[2.431085] (-) TimerEvent: {}
+[2.532188] (-) TimerEvent: {}
+[2.633337] (-) TimerEvent: {}
+[2.734503] (-) TimerEvent: {}
+[2.835904] (-) TimerEvent: {}
+[2.937367] (-) TimerEvent: {}
+[3.038606] (-) TimerEvent: {}
+[3.139889] (-) TimerEvent: {}
+[3.241006] (-) TimerEvent: {}
+[3.342304] (-) TimerEvent: {}
+[3.443495] (-) TimerEvent: {}
+[3.544962] (-) TimerEvent: {}
+[3.646293] (-) TimerEvent: {}
+[3.748000] (-) TimerEvent: {}
+[3.849079] (-) TimerEvent: {}
+[3.950280] (-) TimerEvent: {}
+[4.051410] (-) TimerEvent: {}
+[4.153350] (-) TimerEvent: {}
+[4.254657] (-) TimerEvent: {}
+[4.356009] (-) TimerEvent: {}
+[4.457099] (-) TimerEvent: {}
+[4.558242] (-) TimerEvent: {}
+[4.660425] (-) TimerEvent: {}
+[4.761974] (-) TimerEvent: {}
+[4.863032] (-) TimerEvent: {}
+[4.964218] (-) TimerEvent: {}
+[5.065620] (-) TimerEvent: {}
+[5.157978] (docking_pid) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/docking_pid', 'build', '--build-base', '/home/kky/cde2310_ws/build/docking_pid/build', 'install', '--record', '/home/kky/cde2310_ws/build/docking_pid/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/kky/cde2310_ws/src/docking_pid', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'kky', 'LC_TIME': 'en_GB.UTF-8', 'XDG_SESSION_TYPE': 'x11', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/kky/cde2310_ws/install/multirobot_map_merge/lib:/home/kky/cde2310_ws/install/explore_lite_msgs/lib:/home/kky/colcon_ws/install/multirobot_map_merge/lib:/home/kky/turtlebot3_ws/install/turtlebot3_msgs/lib:/home/kky/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces/lib:/home/kky/turtlebot3_ws/install/dynamixel_sdk/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:', 'HOME': '/home/kky', 'OLDPWD': '/home/kky/cde2310_ws/src/docking_pid/docking_pid', 'DESKTOP_SESSION': 'ubuntu', 'GAZEBO_MASTER_URI': 'http://localhost:11345', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'LC_MONETARY': 'en_GB.UTF-8', 'SYSTEMD_EXEC_PID': '2860', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'COLCON_PREFIX_PATH': '/home/kky/cde2310_ws/install:/home/kky/colcon_ws/install:/home/kky/turtlebot3_ws/install', 'ROS_DISTRO': 'humble', 'GTK_IM_MODULE': 'ibus', 'LOGNAME': 'kky', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'kky', 'TERM': 'xterm-256color', 'GAZEBO_MODEL_PATH': '/home/kky/colcon_ws/src/turtlebot3_simulations/turtlebot3_gazebo/models:/opt/ros/humble/share/turtlebot3_gazebo/models', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'WINDOWPATH': '2', 'OGRE_RESOURCE_PATH': '/usr/lib/x86_64-linux-gnu/OGRE-1.9.0', 'PATH': '/opt/ros/humble/bin:/home/kky/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/kky-ASUS-TUF-Gaming-A15-FA507NVR-FA507NVR:@/tmp/.ICE-unix/2230,unix/kky-ASUS-TUF-Gaming-A15-FA507NVR-FA507NVR:/tmp/.ICE-unix/2230', 'PAPERSIZE': 'a4', 'XDG_MENU_PREFIX': 'gnome-', 'LC_ADDRESS': 'en_GB.UTF-8', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/f3a2459c_cba4_42b0_a8e0_c2499d633b27', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':1', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'LC_TELEPHONE': 'en_GB.UTF-8', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'GNOME_TERMINAL_SERVICE': ':1.89', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'ROS_DOMAIN_ID': '35', 'AMENT_PREFIX_PATH': '/home/kky/cde2310_ws/install/scan_filter:/home/kky/cde2310_ws/install/random_nav:/home/kky/cde2310_ws/install/nav2aruco:/home/kky/cde2310_ws/install/multirobot_map_merge:/home/kky/cde2310_ws/install/mission_fsm:/home/kky/cde2310_ws/install/explore_lite:/home/kky/cde2310_ws/install/explore_lite_msgs:/home/kky/colcon_ws/install/turtlebot3_simulations:/home/kky/colcon_ws/install/turtlebot3_gazebo:/home/kky/colcon_ws/install/turtlebot3_fake_node:/home/kky/colcon_ws/install/py_pubsub:/home/kky/colcon_ws/install/multirobot_map_merge:/home/kky/colcon_ws/install/explore_lite:/home/kky/colcon_ws/install/cde2310_e2:/home/kky/colcon_ws/install/auto_nav:/home/kky/turtlebot3_ws/install/turtlebot3:/home/kky/turtlebot3_ws/install/turtlebot3_teleop:/home/kky/turtlebot3_ws/install/turtlebot3_bringup:/home/kky/turtlebot3_ws/install/turtlebot3_node:/home/kky/turtlebot3_ws/install/turtlebot3_navigation2:/home/kky/turtlebot3_ws/install/turtlebot3_example:/home/kky/turtlebot3_ws/install/turtlebot3_msgs:/home/kky/turtlebot3_ws/install/turtlebot3_description:/home/kky/turtlebot3_ws/install/turtlebot3_cartographer:/home/kky/turtlebot3_ws/install/dynamixel_sdk_examples:/home/kky/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces:/home/kky/turtlebot3_ws/install/dynamixel_sdk:/opt/ros/humble', 'SHELL': '/bin/bash', 'LC_NAME': 'en_GB.UTF-8', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'en_GB.UTF-8', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'GAZEBO_RESOURCE_PATH': '/usr/share/gazebo-11:', 'LC_IDENTIFICATION': 'en_GB.UTF-8', 'GAZEBO_MODEL_DATABASE_URI': 'http://models.gazebosim.org', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/kky/cde2310_ws/build/docking_pid', 'TURTLEBOT3_MODEL': 'burger', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'GAZEBO_PLUGIN_PATH': '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/kky/cde2310_ws/build/docking_pid/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/kky/cde2310_ws/install/docking_pid/lib/python3.10/site-packages:/home/kky/cde2310_ws/install/scan_filter/lib/python3.10/site-packages:/home/kky/cde2310_ws/install/random_nav/lib/python3.10/site-packages:/home/kky/cde2310_ws/install/nav2aruco/lib/python3.10/site-packages:/home/kky/cde2310_ws/install/mission_fsm/lib/python3.10/site-packages:/home/kky/cde2310_ws/install/explore_lite_msgs/local/lib/python3.10/dist-packages:/home/kky/colcon_ws/install/py_pubsub/lib/python3.10/site-packages:/home/kky/colcon_ws/install/cde2310_e2/lib/python3.10/site-packages:/home/kky/colcon_ws/install/auto_nav/lib/python3.10/site-packages:/home/kky/turtlebot3_ws/build/turtlebot3_teleop:/home/kky/turtlebot3_ws/install/turtlebot3_teleop/lib/python3.10/site-packages:/home/kky/turtlebot3_ws/build/turtlebot3_example:/home/kky/turtlebot3_ws/install/turtlebot3_example/lib/python3.10/site-packages:/home/kky/turtlebot3_ws/install/turtlebot3_msgs/local/lib/python3.10/dist-packages:/home/kky/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces/local/lib/python3.10/dist-packages:/home/kky/turtlebot3_ws/install/dynamixel_sdk/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'LC_NUMERIC': 'en_GB.UTF-8', 'LC_PAPER': 'en_GB.UTF-8', 'COLCON': '1', 'VTE_VERSION': '6800', 'CMAKE_PREFIX_PATH': '/home/kky/cde2310_ws/install/multirobot_map_merge:/home/kky/cde2310_ws/install/explore_lite:/home/kky/cde2310_ws/install/explore_lite_msgs:/home/kky/colcon_ws/install/turtlebot3_simulations:/home/kky/colcon_ws/install/turtlebot3_gazebo:/home/kky/colcon_ws/install/turtlebot3_fake_node:/home/kky/colcon_ws/install/multirobot_map_merge:/home/kky/colcon_ws/install/explore_lite:/home/kky/turtlebot3_ws/install/turtlebot3:/home/kky/turtlebot3_ws/install/turtlebot3_bringup:/home/kky/turtlebot3_ws/install/turtlebot3_node:/home/kky/turtlebot3_ws/install/turtlebot3_navigation2:/home/kky/turtlebot3_ws/install/turtlebot3_msgs:/home/kky/turtlebot3_ws/install/turtlebot3_description:/home/kky/turtlebot3_ws/install/turtlebot3_cartographer:/home/kky/turtlebot3_ws/install/dynamixel_sdk_examples:/home/kky/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces:/home/kky/turtlebot3_ws/install/dynamixel_sdk'}, 'shell': False}
+[5.181946] (-) TimerEvent: {}
+[5.284379] (-) TimerEvent: {}
+[5.385625] (-) TimerEvent: {}
+[5.486640] (-) TimerEvent: {}
+[5.588003] (-) TimerEvent: {}
+[5.689125] (-) TimerEvent: {}
+[5.790340] (-) TimerEvent: {}
+[5.891467] (-) TimerEvent: {}
+[5.992626] (-) TimerEvent: {}
+[6.094298] (-) TimerEvent: {}
+[6.195563] (-) TimerEvent: {}
+[6.296761] (-) TimerEvent: {}
+[6.398711] (-) TimerEvent: {}
+[6.500187] (-) TimerEvent: {}
+[6.601333] (-) TimerEvent: {}
+[6.702478] (-) TimerEvent: {}
+[6.803572] (-) TimerEvent: {}
+[6.904695] (-) TimerEvent: {}
+[7.005990] (-) TimerEvent: {}
+[7.107249] (-) TimerEvent: {}
+[7.208402] (-) TimerEvent: {}
+[7.255502] (docking_pid) StdoutLine: {'line': b'running egg_info\n'}
+[7.260059] (docking_pid) StdoutLine: {'line': b'creating ../../build/docking_pid/docking_pid.egg-info\n'}
+[7.261823] (docking_pid) StdoutLine: {'line': b'writing ../../build/docking_pid/docking_pid.egg-info/PKG-INFO\n'}
+[7.264171] (docking_pid) StdoutLine: {'line': b'writing dependency_links to ../../build/docking_pid/docking_pid.egg-info/dependency_links.txt\n'}
+[7.265830] (docking_pid) StdoutLine: {'line': b'writing entry points to ../../build/docking_pid/docking_pid.egg-info/entry_points.txt\n'}
+[7.267309] (docking_pid) StdoutLine: {'line': b'writing requirements to ../../build/docking_pid/docking_pid.egg-info/requires.txt\n'}
+[7.268514] (docking_pid) StdoutLine: {'line': b'writing top-level names to ../../build/docking_pid/docking_pid.egg-info/top_level.txt\n'}
+[7.269606] (docking_pid) StdoutLine: {'line': b"writing manifest file '../../build/docking_pid/docking_pid.egg-info/SOURCES.txt'\n"}
+[7.283417] (docking_pid) StdoutLine: {'line': b"reading manifest file '../../build/docking_pid/docking_pid.egg-info/SOURCES.txt'\n"}
+[7.289999] (docking_pid) StdoutLine: {'line': b"writing manifest file '../../build/docking_pid/docking_pid.egg-info/SOURCES.txt'\n"}
+[7.291317] (docking_pid) StdoutLine: {'line': b'running build\n'}
+[7.292164] (docking_pid) StdoutLine: {'line': b'running build_py\n'}
+[7.293143] (docking_pid) StdoutLine: {'line': b'creating /home/kky/cde2310_ws/build/docking_pid/build\n'}
+[7.294687] (docking_pid) StdoutLine: {'line': b'creating /home/kky/cde2310_ws/build/docking_pid/build/lib\n'}
+[7.295745] (docking_pid) StdoutLine: {'line': b'creating /home/kky/cde2310_ws/build/docking_pid/build/lib/docking_pid\n'}
+[7.296870] (docking_pid) StdoutLine: {'line': b'copying docking_pid/__init__.py -> /home/kky/cde2310_ws/build/docking_pid/build/lib/docking_pid\n'}
+[7.297898] (docking_pid) StdoutLine: {'line': b'copying docking_pid/docking_pid.py -> /home/kky/cde2310_ws/build/docking_pid/build/lib/docking_pid\n'}
+[7.299150] (docking_pid) StdoutLine: {'line': b'running install\n'}
+[7.306617] (docking_pid) StdoutLine: {'line': b'running install_lib\n'}
+[7.308522] (-) TimerEvent: {}
+[7.312184] (docking_pid) StdoutLine: {'line': b'creating /home/kky/cde2310_ws/install/docking_pid/lib/python3.10/site-packages/docking_pid\n'}
+[7.313256] (docking_pid) StdoutLine: {'line': b'copying /home/kky/cde2310_ws/build/docking_pid/build/lib/docking_pid/__init__.py -> /home/kky/cde2310_ws/install/docking_pid/lib/python3.10/site-packages/docking_pid\n'}
+[7.314110] (docking_pid) StdoutLine: {'line': b'copying /home/kky/cde2310_ws/build/docking_pid/build/lib/docking_pid/docking_pid.py -> /home/kky/cde2310_ws/install/docking_pid/lib/python3.10/site-packages/docking_pid\n'}
+[7.318956] (docking_pid) StdoutLine: {'line': b'byte-compiling /home/kky/cde2310_ws/install/docking_pid/lib/python3.10/site-packages/docking_pid/__init__.py to __init__.cpython-310.pyc\n'}
+[7.320541] (docking_pid) StdoutLine: {'line': b'byte-compiling /home/kky/cde2310_ws/install/docking_pid/lib/python3.10/site-packages/docking_pid/docking_pid.py to docking_pid.cpython-310.pyc\n'}
+[7.330243] (docking_pid) StdoutLine: {'line': b'running install_data\n'}
+[7.331282] (docking_pid) StderrLine: {'line': b'  File "/home/kky/cde2310_ws/install/docking_pid/lib/python3.10/site-packages/docking_pid/docking_pid.py", line 117\n'}
+[7.332644] (docking_pid) StderrLine: {'line': b'    import rclpy\n'}
+[7.333495] (docking_pid) StderrLine: {'line': b'    ^^^^^^\n'}
+[7.334292] (docking_pid) StderrLine: {'line': b'SyntaxError: invalid syntax\n'}
+[7.334894] (docking_pid) StderrLine: {'line': b'\n'}
+[7.335383] (docking_pid) StdoutLine: {'line': b'creating /home/kky/cde2310_ws/install/docking_pid/share/ament_index\n'}
+[7.336086] (docking_pid) StdoutLine: {'line': b'creating /home/kky/cde2310_ws/install/docking_pid/share/ament_index/resource_index\n'}
+[7.337137] (docking_pid) StdoutLine: {'line': b'creating /home/kky/cde2310_ws/install/docking_pid/share/ament_index/resource_index/packages\n'}
+[7.337737] (docking_pid) StdoutLine: {'line': b'copying resource/docking_pid -> /home/kky/cde2310_ws/install/docking_pid/share/ament_index/resource_index/packages\n'}
+[7.338323] (docking_pid) StdoutLine: {'line': b'copying package.xml -> /home/kky/cde2310_ws/install/docking_pid/share/docking_pid\n'}
+[7.338764] (docking_pid) StdoutLine: {'line': b'running install_egg_info\n'}
+[7.350147] (docking_pid) StdoutLine: {'line': b'Copying ../../build/docking_pid/docking_pid.egg-info to /home/kky/cde2310_ws/install/docking_pid/lib/python3.10/site-packages/docking_pid-0.0.0-py3.10.egg-info\n'}
+[7.361028] (docking_pid) StdoutLine: {'line': b'running install_scripts\n'}
+[7.409051] (-) TimerEvent: {}
+[7.510301] (-) TimerEvent: {}
+[7.520154] (docking_pid) StdoutLine: {'line': b'Installing docking_pid script to /home/kky/cde2310_ws/install/docking_pid/lib/docking_pid\n'}
+[7.522980] (docking_pid) StdoutLine: {'line': b"writing list of installed files to '/home/kky/cde2310_ws/build/docking_pid/install.log'\n"}
+[7.610649] (-) TimerEvent: {}
+[7.666714] (docking_pid) CommandEnded: {'returncode': 0}
+[7.713474] (-) TimerEvent: {}
+[7.750370] (docking_pid) JobEnded: {'identifier': 'docking_pid', 'rc': 0}
+[7.756685] (-) EventReactorShutdown: {}

@@ -1,0 +1,3 @@
+[console_scripts]
+docking_pid = docking_pid.docking_pid:main
+

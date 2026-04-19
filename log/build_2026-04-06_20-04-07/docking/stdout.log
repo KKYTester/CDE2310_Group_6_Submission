@@ -1,0 +1,22 @@
+running egg_info
+writing ../../build/docking/docking.egg-info/PKG-INFO
+writing dependency_links to ../../build/docking/docking.egg-info/dependency_links.txt
+writing entry points to ../../build/docking/docking.egg-info/entry_points.txt
+writing requirements to ../../build/docking/docking.egg-info/requires.txt
+writing top-level names to ../../build/docking/docking.egg-info/top_level.txt
+reading manifest file '../../build/docking/docking.egg-info/SOURCES.txt'
+writing manifest file '../../build/docking/docking.egg-info/SOURCES.txt'
+running build
+running build_py
+copying docking/docking.py -> /home/kky/cde2310_ws/build/docking/build/lib/docking
+running install
+running install_lib
+copying /home/kky/cde2310_ws/build/docking/build/lib/docking/docking.py -> /home/kky/cde2310_ws/install/docking/lib/python3.10/site-packages/docking
+byte-compiling /home/kky/cde2310_ws/install/docking/lib/python3.10/site-packages/docking/docking.py to docking.cpython-310.pyc
+running install_data
+running install_egg_info
+removing '/home/kky/cde2310_ws/install/docking/lib/python3.10/site-packages/docking-0.0.0-py3.10.egg-info' (and everything under it)
+Copying ../../build/docking/docking.egg-info to /home/kky/cde2310_ws/install/docking/lib/python3.10/site-packages/docking-0.0.0-py3.10.egg-info
+running install_scripts
+Installing docking script to /home/kky/cde2310_ws/install/docking/lib/docking
+writing list of installed files to '/home/kky/cde2310_ws/build/docking/install.log'

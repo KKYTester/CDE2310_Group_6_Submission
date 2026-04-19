@@ -1,0 +1,24 @@
+[5.170s] Invoking command in '/home/kky/cde2310_ws/src/mission_fsm': PYTHONPATH=/home/kky/cde2310_ws/build/mission_fsm/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/kky/cde2310_ws/install/mission_fsm/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/mission_fsm build --build-base /home/kky/cde2310_ws/build/mission_fsm/build install --record /home/kky/cde2310_ws/build/mission_fsm/install.log --single-version-externally-managed install_data
+[7.251s] running egg_info
+[7.257s] writing ../../build/mission_fsm/mission_fsm.egg-info/PKG-INFO
+[7.258s] writing dependency_links to ../../build/mission_fsm/mission_fsm.egg-info/dependency_links.txt
+[7.260s] writing entry points to ../../build/mission_fsm/mission_fsm.egg-info/entry_points.txt
+[7.262s] writing requirements to ../../build/mission_fsm/mission_fsm.egg-info/requires.txt
+[7.263s] writing top-level names to ../../build/mission_fsm/mission_fsm.egg-info/top_level.txt
+[7.276s] reading manifest file '../../build/mission_fsm/mission_fsm.egg-info/SOURCES.txt'
+[7.283s] writing manifest file '../../build/mission_fsm/mission_fsm.egg-info/SOURCES.txt'
+[7.284s] running build
+[7.285s] running build_py
+[7.286s] copying mission_fsm/mission_fsm.py -> /home/kky/cde2310_ws/build/mission_fsm/build/lib/mission_fsm
+[7.288s] running install
+[7.297s] running install_lib
+[7.302s] copying /home/kky/cde2310_ws/build/mission_fsm/build/lib/mission_fsm/mission_fsm.py -> /home/kky/cde2310_ws/install/mission_fsm/lib/python3.10/site-packages/mission_fsm
+[7.308s] byte-compiling /home/kky/cde2310_ws/install/mission_fsm/lib/python3.10/site-packages/mission_fsm/mission_fsm.py to mission_fsm.cpython-310.pyc
+[7.321s] running install_data
+[7.322s] running install_egg_info
+[7.337s] removing '/home/kky/cde2310_ws/install/mission_fsm/lib/python3.10/site-packages/mission_fsm-0.0.0-py3.10.egg-info' (and everything under it)
+[7.340s] Copying ../../build/mission_fsm/mission_fsm.egg-info to /home/kky/cde2310_ws/install/mission_fsm/lib/python3.10/site-packages/mission_fsm-0.0.0-py3.10.egg-info
+[7.350s] running install_scripts
+[7.513s] Installing mission_fsm script to /home/kky/cde2310_ws/install/mission_fsm/lib/mission_fsm
+[7.516s] writing list of installed files to '/home/kky/cde2310_ws/build/mission_fsm/install.log'
+[7.676s] Invoked command in '/home/kky/cde2310_ws/src/mission_fsm' returned '0': PYTHONPATH=/home/kky/cde2310_ws/build/mission_fsm/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/kky/cde2310_ws/install/mission_fsm/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/mission_fsm build --build-base /home/kky/cde2310_ws/build/mission_fsm/build install --record /home/kky/cde2310_ws/build/mission_fsm/install.log --single-version-externally-managed install_data

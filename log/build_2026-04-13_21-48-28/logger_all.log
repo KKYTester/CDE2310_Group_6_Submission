@@ -1,0 +1,360 @@
+[0.914s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--packages-select', 'docking_pid']
+[0.915s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=16, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=['docking_pid'], packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7df2c5b5a590>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7df2c5c4fa60>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7df2c5c4fa60>>)
+[2.284s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[2.284s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[2.285s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[2.285s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[2.285s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[2.286s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[2.286s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/kky/cde2310_ws'
+[2.287s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[2.288s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[2.289s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[2.289s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[2.290s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[2.290s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[2.290s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[2.291s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[2.291s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[2.556s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[2.557s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[2.558s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[2.558s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[2.559s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[2.560s] Level 1:colcon.colcon_core.package_identification:_identify(Submission_Documents) by extensions ['ignore', 'ignore_ament_install']
+[2.561s] Level 1:colcon.colcon_core.package_identification:_identify(Submission_Documents) by extension 'ignore'
+[2.561s] Level 1:colcon.colcon_core.package_identification:_identify(Submission_Documents) by extension 'ignore_ament_install'
+[2.562s] Level 1:colcon.colcon_core.package_identification:_identify(Submission_Documents) by extensions ['colcon_pkg']
+[2.563s] Level 1:colcon.colcon_core.package_identification:_identify(Submission_Documents) by extension 'colcon_pkg'
+[2.563s] Level 1:colcon.colcon_core.package_identification:_identify(Submission_Documents) by extensions ['colcon_meta']
+[2.563s] Level 1:colcon.colcon_core.package_identification:_identify(Submission_Documents) by extension 'colcon_meta'
+[2.564s] Level 1:colcon.colcon_core.package_identification:_identify(Submission_Documents) by extensions ['ros']
+[2.564s] Level 1:colcon.colcon_core.package_identification:_identify(Submission_Documents) by extension 'ros'
+[2.565s] Level 1:colcon.colcon_core.package_identification:_identify(Submission_Documents) by extensions ['cmake', 'python']
+[2.565s] Level 1:colcon.colcon_core.package_identification:_identify(Submission_Documents) by extension 'cmake'
+[2.566s] Level 1:colcon.colcon_core.package_identification:_identify(Submission_Documents) by extension 'python'
+[2.566s] Level 1:colcon.colcon_core.package_identification:_identify(Submission_Documents) by extensions ['python_setup_py']
+[2.567s] Level 1:colcon.colcon_core.package_identification:_identify(Submission_Documents) by extension 'python_setup_py'
+[2.568s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[2.569s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[2.569s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[2.570s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[2.571s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[2.571s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[2.572s] Level 1:colcon.colcon_core.package_identification:_identify(launch) by extensions ['ignore', 'ignore_ament_install']
+[2.573s] Level 1:colcon.colcon_core.package_identification:_identify(launch) by extension 'ignore'
+[2.574s] Level 1:colcon.colcon_core.package_identification:_identify(launch) by extension 'ignore_ament_install'
+[2.574s] Level 1:colcon.colcon_core.package_identification:_identify(launch) by extensions ['colcon_pkg']
+[2.574s] Level 1:colcon.colcon_core.package_identification:_identify(launch) by extension 'colcon_pkg'
+[2.575s] Level 1:colcon.colcon_core.package_identification:_identify(launch) by extensions ['colcon_meta']
+[2.575s] Level 1:colcon.colcon_core.package_identification:_identify(launch) by extension 'colcon_meta'
+[2.576s] Level 1:colcon.colcon_core.package_identification:_identify(launch) by extensions ['ros']
+[2.576s] Level 1:colcon.colcon_core.package_identification:_identify(launch) by extension 'ros'
+[2.577s] Level 1:colcon.colcon_core.package_identification:_identify(launch) by extensions ['cmake', 'python']
+[2.577s] Level 1:colcon.colcon_core.package_identification:_identify(launch) by extension 'cmake'
+[2.578s] Level 1:colcon.colcon_core.package_identification:_identify(launch) by extension 'python'
+[2.578s] Level 1:colcon.colcon_core.package_identification:_identify(launch) by extensions ['python_setup_py']
+[2.579s] Level 1:colcon.colcon_core.package_identification:_identify(launch) by extension 'python_setup_py'
+[2.580s] Level 1:colcon.colcon_core.package_identification:_identify(launch/__pycache__) by extensions ['ignore', 'ignore_ament_install']
+[2.580s] Level 1:colcon.colcon_core.package_identification:_identify(launch/__pycache__) by extension 'ignore'
+[2.581s] Level 1:colcon.colcon_core.package_identification:_identify(launch/__pycache__) by extension 'ignore_ament_install'
+[2.581s] Level 1:colcon.colcon_core.package_identification:_identify(launch/__pycache__) by extensions ['colcon_pkg']
+[2.582s] Level 1:colcon.colcon_core.package_identification:_identify(launch/__pycache__) by extension 'colcon_pkg'
+[2.582s] Level 1:colcon.colcon_core.package_identification:_identify(launch/__pycache__) by extensions ['colcon_meta']
+[2.582s] Level 1:colcon.colcon_core.package_identification:_identify(launch/__pycache__) by extension 'colcon_meta'
+[2.583s] Level 1:colcon.colcon_core.package_identification:_identify(launch/__pycache__) by extensions ['ros']
+[2.583s] Level 1:colcon.colcon_core.package_identification:_identify(launch/__pycache__) by extension 'ros'
+[2.584s] Level 1:colcon.colcon_core.package_identification:_identify(launch/__pycache__) by extensions ['cmake', 'python']
+[2.584s] Level 1:colcon.colcon_core.package_identification:_identify(launch/__pycache__) by extension 'cmake'
+[2.585s] Level 1:colcon.colcon_core.package_identification:_identify(launch/__pycache__) by extension 'python'
+[2.585s] Level 1:colcon.colcon_core.package_identification:_identify(launch/__pycache__) by extensions ['python_setup_py']
+[2.585s] Level 1:colcon.colcon_core.package_identification:_identify(launch/__pycache__) by extension 'python_setup_py'
+[2.586s] Level 1:colcon.colcon_core.package_identification:_identify(launch/param_files) by extensions ['ignore', 'ignore_ament_install']
+[2.587s] Level 1:colcon.colcon_core.package_identification:_identify(launch/param_files) by extension 'ignore'
+[2.588s] Level 1:colcon.colcon_core.package_identification:_identify(launch/param_files) by extension 'ignore_ament_install'
+[2.588s] Level 1:colcon.colcon_core.package_identification:_identify(launch/param_files) by extensions ['colcon_pkg']
+[2.588s] Level 1:colcon.colcon_core.package_identification:_identify(launch/param_files) by extension 'colcon_pkg'
+[2.589s] Level 1:colcon.colcon_core.package_identification:_identify(launch/param_files) by extensions ['colcon_meta']
+[2.589s] Level 1:colcon.colcon_core.package_identification:_identify(launch/param_files) by extension 'colcon_meta'
+[2.590s] Level 1:colcon.colcon_core.package_identification:_identify(launch/param_files) by extensions ['ros']
+[2.590s] Level 1:colcon.colcon_core.package_identification:_identify(launch/param_files) by extension 'ros'
+[2.591s] Level 1:colcon.colcon_core.package_identification:_identify(launch/param_files) by extensions ['cmake', 'python']
+[2.591s] Level 1:colcon.colcon_core.package_identification:_identify(launch/param_files) by extension 'cmake'
+[2.591s] Level 1:colcon.colcon_core.package_identification:_identify(launch/param_files) by extension 'python'
+[2.592s] Level 1:colcon.colcon_core.package_identification:_identify(launch/param_files) by extensions ['python_setup_py']
+[2.592s] Level 1:colcon.colcon_core.package_identification:_identify(launch/param_files) by extension 'python_setup_py'
+[2.594s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[2.595s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[2.596s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[2.597s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[2.597s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[2.598s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[2.598s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[2.599s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[2.599s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[2.599s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[2.600s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[2.600s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[2.600s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[2.601s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[2.601s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[2.602s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[2.602s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[2.603s] Level 1:colcon.colcon_core.package_identification:_identify(src/docking_pid) by extensions ['ignore', 'ignore_ament_install']
+[2.603s] Level 1:colcon.colcon_core.package_identification:_identify(src/docking_pid) by extension 'ignore'
+[2.604s] Level 1:colcon.colcon_core.package_identification:_identify(src/docking_pid) by extension 'ignore_ament_install'
+[2.604s] Level 1:colcon.colcon_core.package_identification:_identify(src/docking_pid) by extensions ['colcon_pkg']
+[2.605s] Level 1:colcon.colcon_core.package_identification:_identify(src/docking_pid) by extension 'colcon_pkg'
+[2.605s] Level 1:colcon.colcon_core.package_identification:_identify(src/docking_pid) by extensions ['colcon_meta']
+[2.605s] Level 1:colcon.colcon_core.package_identification:_identify(src/docking_pid) by extension 'colcon_meta'
+[2.606s] Level 1:colcon.colcon_core.package_identification:_identify(src/docking_pid) by extensions ['ros']
+[2.606s] Level 1:colcon.colcon_core.package_identification:_identify(src/docking_pid) by extension 'ros'
+[2.625s] DEBUG:colcon.colcon_core.package_identification:Package 'src/docking_pid' with type 'ros.ament_python' and name 'docking_pid'
+[2.626s] Level 1:colcon.colcon_core.package_identification:_identify(src/install) by extensions ['ignore', 'ignore_ament_install']
+[2.627s] Level 1:colcon.colcon_core.package_identification:_identify(src/install) by extension 'ignore'
+[2.627s] Level 1:colcon.colcon_core.package_identification:_identify(src/install) by extension 'ignore_ament_install'
+[2.628s] Level 1:colcon.colcon_core.package_identification:_identify(src/install) by extensions ['colcon_pkg']
+[2.628s] Level 1:colcon.colcon_core.package_identification:_identify(src/install) by extension 'colcon_pkg'
+[2.629s] Level 1:colcon.colcon_core.package_identification:_identify(src/install) by extensions ['colcon_meta']
+[2.629s] Level 1:colcon.colcon_core.package_identification:_identify(src/install) by extension 'colcon_meta'
+[2.630s] Level 1:colcon.colcon_core.package_identification:_identify(src/install) by extensions ['ros']
+[2.630s] Level 1:colcon.colcon_core.package_identification:_identify(src/install) by extension 'ros'
+[2.631s] Level 1:colcon.colcon_core.package_identification:_identify(src/install) by extensions ['cmake', 'python']
+[2.631s] Level 1:colcon.colcon_core.package_identification:_identify(src/install) by extension 'cmake'
+[2.631s] Level 1:colcon.colcon_core.package_identification:_identify(src/install) by extension 'python'
+[2.632s] Level 1:colcon.colcon_core.package_identification:_identify(src/install) by extensions ['python_setup_py']
+[2.632s] Level 1:colcon.colcon_core.package_identification:_identify(src/install) by extension 'python_setup_py'
+[2.633s] Level 1:colcon.colcon_core.package_identification:_identify(src/install/nav2aruco) by extensions ['ignore', 'ignore_ament_install']
+[2.634s] Level 1:colcon.colcon_core.package_identification:_identify(src/install/nav2aruco) by extension 'ignore'
+[2.634s] Level 1:colcon.colcon_core.package_identification:_identify(src/install/nav2aruco) by extension 'ignore_ament_install'
+[2.635s] Level 1:colcon.colcon_core.package_identification:_identify(src/install/nav2aruco) by extensions ['colcon_pkg']
+[2.635s] Level 1:colcon.colcon_core.package_identification:_identify(src/install/nav2aruco) by extension 'colcon_pkg'
+[2.635s] Level 1:colcon.colcon_core.package_identification:_identify(src/install/nav2aruco) by extensions ['colcon_meta']
+[2.636s] Level 1:colcon.colcon_core.package_identification:_identify(src/install/nav2aruco) by extension 'colcon_meta'
+[2.636s] Level 1:colcon.colcon_core.package_identification:_identify(src/install/nav2aruco) by extensions ['ros']
+[2.636s] Level 1:colcon.colcon_core.package_identification:_identify(src/install/nav2aruco) by extension 'ros'
+[2.637s] Level 1:colcon.colcon_core.package_identification:_identify(src/install/nav2aruco) by extensions ['cmake', 'python']
+[2.638s] Level 1:colcon.colcon_core.package_identification:_identify(src/install/nav2aruco) by extension 'cmake'
+[2.638s] Level 1:colcon.colcon_core.package_identification:_identify(src/install/nav2aruco) by extension 'python'
+[2.638s] Level 1:colcon.colcon_core.package_identification:_identify(src/install/nav2aruco) by extensions ['python_setup_py']
+[2.639s] Level 1:colcon.colcon_core.package_identification:_identify(src/install/nav2aruco) by extension 'python_setup_py'
+[2.640s] Level 1:colcon.colcon_core.package_identification:_identify(src/install/nav2aruco/lib) by extensions ['ignore', 'ignore_ament_install']
+[2.640s] Level 1:colcon.colcon_core.package_identification:_identify(src/install/nav2aruco/lib) by extension 'ignore'
+[2.641s] Level 1:colcon.colcon_core.package_identification:_identify(src/install/nav2aruco/lib) by extension 'ignore_ament_install'
+[2.641s] Level 1:colcon.colcon_core.package_identification:_identify(src/install/nav2aruco/lib) by extensions ['colcon_pkg']
+[2.642s] Level 1:colcon.colcon_core.package_identification:_identify(src/install/nav2aruco/lib) by extension 'colcon_pkg'
+[2.642s] Level 1:colcon.colcon_core.package_identification:_identify(src/install/nav2aruco/lib) by extensions ['colcon_meta']
+[2.642s] Level 1:colcon.colcon_core.package_identification:_identify(src/install/nav2aruco/lib) by extension 'colcon_meta'
+[2.643s] Level 1:colcon.colcon_core.package_identification:_identify(src/install/nav2aruco/lib) by extensions ['ros']
+[2.643s] Level 1:colcon.colcon_core.package_identification:_identify(src/install/nav2aruco/lib) by extension 'ros'
+[2.644s] Level 1:colcon.colcon_core.package_identification:_identify(src/install/nav2aruco/lib) by extensions ['cmake', 'python']
+[2.644s] Level 1:colcon.colcon_core.package_identification:_identify(src/install/nav2aruco/lib) by extension 'cmake'
+[2.645s] Level 1:colcon.colcon_core.package_identification:_identify(src/install/nav2aruco/lib) by extension 'python'
+[2.645s] Level 1:colcon.colcon_core.package_identification:_identify(src/install/nav2aruco/lib) by extensions ['python_setup_py']
+[2.646s] Level 1:colcon.colcon_core.package_identification:_identify(src/install/nav2aruco/lib) by extension 'python_setup_py'
+[2.647s] Level 1:colcon.colcon_core.package_identification:_identify(src/install/nav2aruco/lib/python3.10) by extensions ['ignore', 'ignore_ament_install']
+[2.647s] Level 1:colcon.colcon_core.package_identification:_identify(src/install/nav2aruco/lib/python3.10) by extension 'ignore'
+[2.648s] Level 1:colcon.colcon_core.package_identification:_identify(src/install/nav2aruco/lib/python3.10) by extension 'ignore_ament_install'
+[2.648s] Level 1:colcon.colcon_core.package_identification:_identify(src/install/nav2aruco/lib/python3.10) by extensions ['colcon_pkg']
+[2.649s] Level 1:colcon.colcon_core.package_identification:_identify(src/install/nav2aruco/lib/python3.10) by extension 'colcon_pkg'
+[2.649s] Level 1:colcon.colcon_core.package_identification:_identify(src/install/nav2aruco/lib/python3.10) by extensions ['colcon_meta']
+[2.649s] Level 1:colcon.colcon_core.package_identification:_identify(src/install/nav2aruco/lib/python3.10) by extension 'colcon_meta'
+[2.650s] Level 1:colcon.colcon_core.package_identification:_identify(src/install/nav2aruco/lib/python3.10) by extensions ['ros']
+[2.650s] Level 1:colcon.colcon_core.package_identification:_identify(src/install/nav2aruco/lib/python3.10) by extension 'ros'
+[2.651s] Level 1:colcon.colcon_core.package_identification:_identify(src/install/nav2aruco/lib/python3.10) by extensions ['cmake', 'python']
+[2.651s] Level 1:colcon.colcon_core.package_identification:_identify(src/install/nav2aruco/lib/python3.10) by extension 'cmake'
+[2.651s] Level 1:colcon.colcon_core.package_identification:_identify(src/install/nav2aruco/lib/python3.10) by extension 'python'
+[2.652s] Level 1:colcon.colcon_core.package_identification:_identify(src/install/nav2aruco/lib/python3.10) by extensions ['python_setup_py']
+[2.652s] Level 1:colcon.colcon_core.package_identification:_identify(src/install/nav2aruco/lib/python3.10) by extension 'python_setup_py'
+[2.653s] Level 1:colcon.colcon_core.package_identification:_identify(src/install/nav2aruco/lib/python3.10/site-packages) by extensions ['ignore', 'ignore_ament_install']
+[2.654s] Level 1:colcon.colcon_core.package_identification:_identify(src/install/nav2aruco/lib/python3.10/site-packages) by extension 'ignore'
+[2.654s] Level 1:colcon.colcon_core.package_identification:_identify(src/install/nav2aruco/lib/python3.10/site-packages) by extension 'ignore_ament_install'
+[2.655s] Level 1:colcon.colcon_core.package_identification:_identify(src/install/nav2aruco/lib/python3.10/site-packages) by extensions ['colcon_pkg']
+[2.655s] Level 1:colcon.colcon_core.package_identification:_identify(src/install/nav2aruco/lib/python3.10/site-packages) by extension 'colcon_pkg'
+[2.656s] Level 1:colcon.colcon_core.package_identification:_identify(src/install/nav2aruco/lib/python3.10/site-packages) by extensions ['colcon_meta']
+[2.656s] Level 1:colcon.colcon_core.package_identification:_identify(src/install/nav2aruco/lib/python3.10/site-packages) by extension 'colcon_meta'
+[2.656s] Level 1:colcon.colcon_core.package_identification:_identify(src/install/nav2aruco/lib/python3.10/site-packages) by extensions ['ros']
+[2.657s] Level 1:colcon.colcon_core.package_identification:_identify(src/install/nav2aruco/lib/python3.10/site-packages) by extension 'ros'
+[2.657s] Level 1:colcon.colcon_core.package_identification:_identify(src/install/nav2aruco/lib/python3.10/site-packages) by extensions ['cmake', 'python']
+[2.658s] Level 1:colcon.colcon_core.package_identification:_identify(src/install/nav2aruco/lib/python3.10/site-packages) by extension 'cmake'
+[2.658s] Level 1:colcon.colcon_core.package_identification:_identify(src/install/nav2aruco/lib/python3.10/site-packages) by extension 'python'
+[2.658s] Level 1:colcon.colcon_core.package_identification:_identify(src/install/nav2aruco/lib/python3.10/site-packages) by extensions ['python_setup_py']
+[2.659s] Level 1:colcon.colcon_core.package_identification:_identify(src/install/nav2aruco/lib/python3.10/site-packages) by extension 'python_setup_py'
+[2.660s] Level 1:colcon.colcon_core.package_identification:_identify(src/install/nav2aruco/lib/python3.10/site-packages/nav2aruco) by extensions ['ignore', 'ignore_ament_install']
+[2.660s] Level 1:colcon.colcon_core.package_identification:_identify(src/install/nav2aruco/lib/python3.10/site-packages/nav2aruco) by extension 'ignore'
+[2.661s] Level 1:colcon.colcon_core.package_identification:_identify(src/install/nav2aruco/lib/python3.10/site-packages/nav2aruco) by extension 'ignore_ament_install'
+[2.661s] Level 1:colcon.colcon_core.package_identification:_identify(src/install/nav2aruco/lib/python3.10/site-packages/nav2aruco) by extensions ['colcon_pkg']
+[2.662s] Level 1:colcon.colcon_core.package_identification:_identify(src/install/nav2aruco/lib/python3.10/site-packages/nav2aruco) by extension 'colcon_pkg'
+[2.662s] Level 1:colcon.colcon_core.package_identification:_identify(src/install/nav2aruco/lib/python3.10/site-packages/nav2aruco) by extensions ['colcon_meta']
+[2.662s] Level 1:colcon.colcon_core.package_identification:_identify(src/install/nav2aruco/lib/python3.10/site-packages/nav2aruco) by extension 'colcon_meta'
+[2.663s] Level 1:colcon.colcon_core.package_identification:_identify(src/install/nav2aruco/lib/python3.10/site-packages/nav2aruco) by extensions ['ros']
+[2.663s] Level 1:colcon.colcon_core.package_identification:_identify(src/install/nav2aruco/lib/python3.10/site-packages/nav2aruco) by extension 'ros'
+[2.664s] Level 1:colcon.colcon_core.package_identification:_identify(src/install/nav2aruco/lib/python3.10/site-packages/nav2aruco) by extensions ['cmake', 'python']
+[2.664s] Level 1:colcon.colcon_core.package_identification:_identify(src/install/nav2aruco/lib/python3.10/site-packages/nav2aruco) by extension 'cmake'
+[2.665s] Level 1:colcon.colcon_core.package_identification:_identify(src/install/nav2aruco/lib/python3.10/site-packages/nav2aruco) by extension 'python'
+[2.665s] Level 1:colcon.colcon_core.package_identification:_identify(src/install/nav2aruco/lib/python3.10/site-packages/nav2aruco) by extensions ['python_setup_py']
+[2.665s] Level 1:colcon.colcon_core.package_identification:_identify(src/install/nav2aruco/lib/python3.10/site-packages/nav2aruco) by extension 'python_setup_py'
+[2.666s] Level 1:colcon.colcon_core.package_identification:_identify(src/m-explore-ros2-main) by extensions ['ignore', 'ignore_ament_install']
+[2.667s] Level 1:colcon.colcon_core.package_identification:_identify(src/m-explore-ros2-main) by extension 'ignore'
+[2.667s] Level 1:colcon.colcon_core.package_identification:_identify(src/m-explore-ros2-main) by extension 'ignore_ament_install'
+[2.668s] Level 1:colcon.colcon_core.package_identification:_identify(src/m-explore-ros2-main) by extensions ['colcon_pkg']
+[2.668s] Level 1:colcon.colcon_core.package_identification:_identify(src/m-explore-ros2-main) by extension 'colcon_pkg'
+[2.668s] Level 1:colcon.colcon_core.package_identification:_identify(src/m-explore-ros2-main) by extensions ['colcon_meta']
+[2.669s] Level 1:colcon.colcon_core.package_identification:_identify(src/m-explore-ros2-main) by extension 'colcon_meta'
+[2.669s] Level 1:colcon.colcon_core.package_identification:_identify(src/m-explore-ros2-main) by extensions ['ros']
+[2.669s] Level 1:colcon.colcon_core.package_identification:_identify(src/m-explore-ros2-main) by extension 'ros'
+[2.670s] Level 1:colcon.colcon_core.package_identification:_identify(src/m-explore-ros2-main) by extensions ['cmake', 'python']
+[2.670s] Level 1:colcon.colcon_core.package_identification:_identify(src/m-explore-ros2-main) by extension 'cmake'
+[2.671s] Level 1:colcon.colcon_core.package_identification:_identify(src/m-explore-ros2-main) by extension 'python'
+[2.671s] Level 1:colcon.colcon_core.package_identification:_identify(src/m-explore-ros2-main) by extensions ['python_setup_py']
+[2.671s] Level 1:colcon.colcon_core.package_identification:_identify(src/m-explore-ros2-main) by extension 'python_setup_py'
+[2.672s] Level 1:colcon.colcon_core.package_identification:_identify(src/m-explore-ros2-main/explore) by extensions ['ignore', 'ignore_ament_install']
+[2.673s] Level 1:colcon.colcon_core.package_identification:_identify(src/m-explore-ros2-main/explore) by extension 'ignore'
+[2.673s] Level 1:colcon.colcon_core.package_identification:_identify(src/m-explore-ros2-main/explore) by extension 'ignore_ament_install'
+[2.674s] Level 1:colcon.colcon_core.package_identification:_identify(src/m-explore-ros2-main/explore) by extensions ['colcon_pkg']
+[2.674s] Level 1:colcon.colcon_core.package_identification:_identify(src/m-explore-ros2-main/explore) by extension 'colcon_pkg'
+[2.674s] Level 1:colcon.colcon_core.package_identification:_identify(src/m-explore-ros2-main/explore) by extensions ['colcon_meta']
+[2.675s] Level 1:colcon.colcon_core.package_identification:_identify(src/m-explore-ros2-main/explore) by extension 'colcon_meta'
+[2.675s] Level 1:colcon.colcon_core.package_identification:_identify(src/m-explore-ros2-main/explore) by extensions ['ros']
+[2.675s] Level 1:colcon.colcon_core.package_identification:_identify(src/m-explore-ros2-main/explore) by extension 'ros'
+[2.685s] DEBUG:colcon.colcon_core.package_identification:Package 'src/m-explore-ros2-main/explore' with type 'ros.ament_cmake' and name 'explore_lite'
+[2.686s] Level 1:colcon.colcon_core.package_identification:_identify(src/m-explore-ros2-main/explore_lite_msgs) by extensions ['ignore', 'ignore_ament_install']
+[2.687s] Level 1:colcon.colcon_core.package_identification:_identify(src/m-explore-ros2-main/explore_lite_msgs) by extension 'ignore'
+[2.687s] Level 1:colcon.colcon_core.package_identification:_identify(src/m-explore-ros2-main/explore_lite_msgs) by extension 'ignore_ament_install'
+[2.688s] Level 1:colcon.colcon_core.package_identification:_identify(src/m-explore-ros2-main/explore_lite_msgs) by extensions ['colcon_pkg']
+[2.688s] Level 1:colcon.colcon_core.package_identification:_identify(src/m-explore-ros2-main/explore_lite_msgs) by extension 'colcon_pkg'
+[2.689s] Level 1:colcon.colcon_core.package_identification:_identify(src/m-explore-ros2-main/explore_lite_msgs) by extensions ['colcon_meta']
+[2.689s] Level 1:colcon.colcon_core.package_identification:_identify(src/m-explore-ros2-main/explore_lite_msgs) by extension 'colcon_meta'
+[2.690s] Level 1:colcon.colcon_core.package_identification:_identify(src/m-explore-ros2-main/explore_lite_msgs) by extensions ['ros']
+[2.690s] Level 1:colcon.colcon_core.package_identification:_identify(src/m-explore-ros2-main/explore_lite_msgs) by extension 'ros'
+[2.694s] DEBUG:colcon.colcon_core.package_identification:Package 'src/m-explore-ros2-main/explore_lite_msgs' with type 'ros.ament_cmake' and name 'explore_lite_msgs'
+[2.695s] Level 1:colcon.colcon_core.package_identification:_identify(src/m-explore-ros2-main/map_merge) by extensions ['ignore', 'ignore_ament_install']
+[2.696s] Level 1:colcon.colcon_core.package_identification:_identify(src/m-explore-ros2-main/map_merge) by extension 'ignore'
+[2.697s] Level 1:colcon.colcon_core.package_identification:_identify(src/m-explore-ros2-main/map_merge) by extension 'ignore_ament_install'
+[2.697s] Level 1:colcon.colcon_core.package_identification:_identify(src/m-explore-ros2-main/map_merge) by extensions ['colcon_pkg']
+[2.698s] Level 1:colcon.colcon_core.package_identification:_identify(src/m-explore-ros2-main/map_merge) by extension 'colcon_pkg'
+[2.698s] Level 1:colcon.colcon_core.package_identification:_identify(src/m-explore-ros2-main/map_merge) by extensions ['colcon_meta']
+[2.698s] Level 1:colcon.colcon_core.package_identification:_identify(src/m-explore-ros2-main/map_merge) by extension 'colcon_meta'
+[2.699s] Level 1:colcon.colcon_core.package_identification:_identify(src/m-explore-ros2-main/map_merge) by extensions ['ros']
+[2.699s] Level 1:colcon.colcon_core.package_identification:_identify(src/m-explore-ros2-main/map_merge) by extension 'ros'
+[2.707s] DEBUG:colcon.colcon_core.package_identification:Package 'src/m-explore-ros2-main/map_merge' with type 'ros.ament_cmake' and name 'multirobot_map_merge'
+[2.708s] Level 1:colcon.colcon_core.package_identification:_identify(src/mission_fsm) by extensions ['ignore', 'ignore_ament_install']
+[2.708s] Level 1:colcon.colcon_core.package_identification:_identify(src/mission_fsm) by extension 'ignore'
+[2.709s] Level 1:colcon.colcon_core.package_identification:_identify(src/mission_fsm) by extension 'ignore_ament_install'
+[2.709s] Level 1:colcon.colcon_core.package_identification:_identify(src/mission_fsm) by extensions ['colcon_pkg']
+[2.709s] Level 1:colcon.colcon_core.package_identification:_identify(src/mission_fsm) by extension 'colcon_pkg'
+[2.710s] Level 1:colcon.colcon_core.package_identification:_identify(src/mission_fsm) by extensions ['colcon_meta']
+[2.710s] Level 1:colcon.colcon_core.package_identification:_identify(src/mission_fsm) by extension 'colcon_meta'
+[2.711s] Level 1:colcon.colcon_core.package_identification:_identify(src/mission_fsm) by extensions ['ros']
+[2.711s] Level 1:colcon.colcon_core.package_identification:_identify(src/mission_fsm) by extension 'ros'
+[2.715s] DEBUG:colcon.colcon_core.package_identification:Package 'src/mission_fsm' with type 'ros.ament_python' and name 'mission_fsm'
+[2.716s] Level 1:colcon.colcon_core.package_identification:_identify(src/nav2aruco) by extensions ['ignore', 'ignore_ament_install']
+[2.716s] Level 1:colcon.colcon_core.package_identification:_identify(src/nav2aruco) by extension 'ignore'
+[2.717s] Level 1:colcon.colcon_core.package_identification:_identify(src/nav2aruco) by extension 'ignore_ament_install'
+[2.717s] Level 1:colcon.colcon_core.package_identification:_identify(src/nav2aruco) by extensions ['colcon_pkg']
+[2.718s] Level 1:colcon.colcon_core.package_identification:_identify(src/nav2aruco) by extension 'colcon_pkg'
+[2.718s] Level 1:colcon.colcon_core.package_identification:_identify(src/nav2aruco) by extensions ['colcon_meta']
+[2.718s] Level 1:colcon.colcon_core.package_identification:_identify(src/nav2aruco) by extension 'colcon_meta'
+[2.719s] Level 1:colcon.colcon_core.package_identification:_identify(src/nav2aruco) by extensions ['ros']
+[2.719s] Level 1:colcon.colcon_core.package_identification:_identify(src/nav2aruco) by extension 'ros'
+[2.724s] DEBUG:colcon.colcon_core.package_identification:Package 'src/nav2aruco' with type 'ros.ament_python' and name 'nav2aruco'
+[2.725s] Level 1:colcon.colcon_core.package_identification:_identify(src/random_nav) by extensions ['ignore', 'ignore_ament_install']
+[2.725s] Level 1:colcon.colcon_core.package_identification:_identify(src/random_nav) by extension 'ignore'
+[2.726s] Level 1:colcon.colcon_core.package_identification:_identify(src/random_nav) by extension 'ignore_ament_install'
+[2.727s] Level 1:colcon.colcon_core.package_identification:_identify(src/random_nav) by extensions ['colcon_pkg']
+[2.727s] Level 1:colcon.colcon_core.package_identification:_identify(src/random_nav) by extension 'colcon_pkg'
+[2.727s] Level 1:colcon.colcon_core.package_identification:_identify(src/random_nav) by extensions ['colcon_meta']
+[2.727s] Level 1:colcon.colcon_core.package_identification:_identify(src/random_nav) by extension 'colcon_meta'
+[2.728s] Level 1:colcon.colcon_core.package_identification:_identify(src/random_nav) by extensions ['ros']
+[2.728s] Level 1:colcon.colcon_core.package_identification:_identify(src/random_nav) by extension 'ros'
+[2.732s] DEBUG:colcon.colcon_core.package_identification:Package 'src/random_nav' with type 'ros.ament_python' and name 'random_nav'
+[2.733s] Level 1:colcon.colcon_core.package_identification:_identify(src/scan_filter) by extensions ['ignore', 'ignore_ament_install']
+[2.734s] Level 1:colcon.colcon_core.package_identification:_identify(src/scan_filter) by extension 'ignore'
+[2.734s] Level 1:colcon.colcon_core.package_identification:_identify(src/scan_filter) by extension 'ignore_ament_install'
+[2.735s] Level 1:colcon.colcon_core.package_identification:_identify(src/scan_filter) by extensions ['colcon_pkg']
+[2.735s] Level 1:colcon.colcon_core.package_identification:_identify(src/scan_filter) by extension 'colcon_pkg'
+[2.735s] Level 1:colcon.colcon_core.package_identification:_identify(src/scan_filter) by extensions ['colcon_meta']
+[2.736s] Level 1:colcon.colcon_core.package_identification:_identify(src/scan_filter) by extension 'colcon_meta'
+[2.736s] Level 1:colcon.colcon_core.package_identification:_identify(src/scan_filter) by extensions ['ros']
+[2.736s] Level 1:colcon.colcon_core.package_identification:_identify(src/scan_filter) by extension 'ros'
+[2.742s] DEBUG:colcon.colcon_core.package_identification:Package 'src/scan_filter' with type 'ros.ament_python' and name 'scan_filter'
+[2.742s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[2.743s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[2.743s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[2.743s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[2.743s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[2.910s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'explore_lite_msgs' in 'src/m-explore-ros2-main/explore_lite_msgs'
+[2.910s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'mission_fsm' in 'src/mission_fsm'
+[2.910s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'multirobot_map_merge' in 'src/m-explore-ros2-main/map_merge'
+[2.911s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'nav2aruco' in 'src/nav2aruco'
+[2.911s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'random_nav' in 'src/random_nav'
+[2.911s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'scan_filter' in 'src/scan_filter'
+[2.911s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'explore_lite' in 'src/m-explore-ros2-main/explore'
+[2.914s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[2.915s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[2.937s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 7 installed packages in /home/kky/cde2310_ws/install
+[2.942s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 8 installed packages in /home/kky/colcon_ws/install
+[2.949s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 12 installed packages in /home/kky/turtlebot3_ws/install
+[2.962s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 336 installed packages in /opt/ros/humble
+[2.975s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[3.313s] Level 5:colcon.colcon_core.verb:set package 'docking_pid' build argument 'cmake_args' from command line to 'None'
+[3.313s] Level 5:colcon.colcon_core.verb:set package 'docking_pid' build argument 'cmake_target' from command line to 'None'
+[3.313s] Level 5:colcon.colcon_core.verb:set package 'docking_pid' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[3.314s] Level 5:colcon.colcon_core.verb:set package 'docking_pid' build argument 'cmake_clean_cache' from command line to 'False'
+[3.314s] Level 5:colcon.colcon_core.verb:set package 'docking_pid' build argument 'cmake_clean_first' from command line to 'False'
+[3.314s] Level 5:colcon.colcon_core.verb:set package 'docking_pid' build argument 'cmake_force_configure' from command line to 'False'
+[3.314s] Level 5:colcon.colcon_core.verb:set package 'docking_pid' build argument 'ament_cmake_args' from command line to 'None'
+[3.314s] Level 5:colcon.colcon_core.verb:set package 'docking_pid' build argument 'catkin_cmake_args' from command line to 'None'
+[3.315s] Level 5:colcon.colcon_core.verb:set package 'docking_pid' build argument 'catkin_skip_building_tests' from command line to 'False'
+[3.315s] DEBUG:colcon.colcon_core.verb:Building package 'docking_pid' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/kky/cde2310_ws/build/docking_pid', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/kky/cde2310_ws/install/docking_pid', 'merge_install': False, 'path': '/home/kky/cde2310_ws/src/docking_pid', 'symlink_install': False, 'test_result_base': None}
+[3.316s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[3.325s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[3.326s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/kky/cde2310_ws/src/docking_pid' with build type 'ament_python'
+[3.327s] Level 1:colcon.colcon_core.shell:create_environment_hook('docking_pid', 'ament_prefix_path')
+[3.346s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[3.348s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kky/cde2310_ws/install/docking_pid/share/docking_pid/hook/ament_prefix_path.ps1'
+[3.355s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kky/cde2310_ws/install/docking_pid/share/docking_pid/hook/ament_prefix_path.dsv'
+[3.359s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kky/cde2310_ws/install/docking_pid/share/docking_pid/hook/ament_prefix_path.sh'
+[3.365s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[3.366s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[5.648s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/kky/cde2310_ws/src/docking_pid'
+[5.650s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[5.651s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[8.502s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/kky/cde2310_ws/src/docking_pid': PYTHONPATH=/home/kky/cde2310_ws/build/docking_pid/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/kky/cde2310_ws/install/docking_pid/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/docking_pid build --build-base /home/kky/cde2310_ws/build/docking_pid/build install --record /home/kky/cde2310_ws/build/docking_pid/install.log --single-version-externally-managed install_data
+[10.992s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/kky/cde2310_ws/src/docking_pid' returned '0': PYTHONPATH=/home/kky/cde2310_ws/build/docking_pid/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/kky/cde2310_ws/install/docking_pid/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/docking_pid build --build-base /home/kky/cde2310_ws/build/docking_pid/build install --record /home/kky/cde2310_ws/build/docking_pid/install.log --single-version-externally-managed install_data
+[11.010s] Level 1:colcon.colcon_core.environment:checking '/home/kky/cde2310_ws/install/docking_pid' for CMake module files
+[11.013s] Level 1:colcon.colcon_core.environment:checking '/home/kky/cde2310_ws/install/docking_pid' for CMake config files
+[11.018s] Level 1:colcon.colcon_core.environment:checking '/home/kky/cde2310_ws/install/docking_pid/lib'
+[11.019s] Level 1:colcon.colcon_core.environment:checking '/home/kky/cde2310_ws/install/docking_pid/bin'
+[11.020s] Level 1:colcon.colcon_core.environment:checking '/home/kky/cde2310_ws/install/docking_pid/lib/pkgconfig/docking_pid.pc'
+[11.022s] Level 1:colcon.colcon_core.environment:checking '/home/kky/cde2310_ws/install/docking_pid/lib/python3.10/site-packages'
+[11.022s] Level 1:colcon.colcon_core.shell:create_environment_hook('docking_pid', 'pythonpath')
+[11.024s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kky/cde2310_ws/install/docking_pid/share/docking_pid/hook/pythonpath.ps1'
+[11.027s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kky/cde2310_ws/install/docking_pid/share/docking_pid/hook/pythonpath.dsv'
+[11.030s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kky/cde2310_ws/install/docking_pid/share/docking_pid/hook/pythonpath.sh'
+[11.035s] Level 1:colcon.colcon_core.environment:checking '/home/kky/cde2310_ws/install/docking_pid/bin'
+[11.037s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(docking_pid)
+[11.040s] INFO:colcon.colcon_core.shell:Creating package script '/home/kky/cde2310_ws/install/docking_pid/share/docking_pid/package.ps1'
+[11.046s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/kky/cde2310_ws/install/docking_pid/share/docking_pid/package.dsv'
+[11.050s] INFO:colcon.colcon_core.shell:Creating package script '/home/kky/cde2310_ws/install/docking_pid/share/docking_pid/package.sh'
+[11.055s] INFO:colcon.colcon_core.shell:Creating package script '/home/kky/cde2310_ws/install/docking_pid/share/docking_pid/package.bash'
+[11.062s] INFO:colcon.colcon_core.shell:Creating package script '/home/kky/cde2310_ws/install/docking_pid/share/docking_pid/package.zsh'
+[11.068s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/kky/cde2310_ws/install/docking_pid/share/colcon-core/packages/docking_pid)
+[11.072s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[11.075s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[11.078s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[11.078s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[11.127s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[11.128s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[11.129s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[11.216s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[11.218s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/kky/cde2310_ws/install/local_setup.ps1'
+[11.226s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/kky/cde2310_ws/install/_local_setup_util_ps1.py'
+[11.237s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/kky/cde2310_ws/install/setup.ps1'
+[11.253s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/kky/cde2310_ws/install/local_setup.sh'
+[11.258s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/kky/cde2310_ws/install/_local_setup_util_sh.py'
+[11.263s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/kky/cde2310_ws/install/setup.sh'
+[11.279s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/kky/cde2310_ws/install/local_setup.bash'
+[11.284s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/kky/cde2310_ws/install/setup.bash'
+[11.300s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/kky/cde2310_ws/install/local_setup.zsh'
+[11.304s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/kky/cde2310_ws/install/setup.zsh'
